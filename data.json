@@ -74,7 +74,1063 @@
       "status": "unavailable"
     }
   },
-  "generated_at": "2026-08-28T09:42:52.703463+00:00",
+  "fundamental_methodology_notes": [
+    "Tier-1 official national-statistics adapters feed live macro state and override Tier-2 calendar state role-by-role; calendar data remains only a fallback for missing official roles.",
+    "Official adapters cover BLS/BEA, Eurostat, ONS, Japan official statistics, SECO, Statistics Canada, ABS and Stats NZ and fail closed independently when an endpoint changes.",
+    "The structural macro block is 30% of Phase 2. Inside that block, official policy carries 65% and Tier-3 World Bank annual background can contribute at most 35%, equivalent to 10.5% of Phase 2 before missing-data renormalization.",
+    "Fresh release state carries 15%; recent actual-versus-consensus surprise carries 10%; CFTC positioning 25%; official central-bank communication 20%.",
+    "Official sovereign 2Y/10Y yield context is collected where practical and the 2Y-policy gap is exposed as a market-rate proxy, but is not separately weighted because it is not a pure policy-expectations measure.",
+    "Official commodity/export context is collected for commodity-sensitive AUD, CAD and NZD without adding a second directional weight that would double-count trade and macro evidence.",
+    "Tier-1 coverage raises live-state reliability; Tier-2 fallback provenance remains visible in every component.",
+    "Recent surprise evidence uses event-specific polarity and rapid time decay so old news does not masquerade as a current impulse.",
+    "Scheduled policy decisions, high-impact releases and official communication risk reduce confidence but do not change directional evidence."
+  ],
+  "fundamental_source_inventory": {
+    "by_currency": {
+      "AUD": 10,
+      "CAD": 9,
+      "CHF": 6,
+      "EUR": 8,
+      "GBP": 8,
+      "JPY": 7,
+      "NZD": 8,
+      "USD": 11
+    },
+    "cross_market": [
+      {
+        "frequency": "weekly",
+        "institution": "US Commodity Futures Trading Commission",
+        "key": "cftc",
+        "role": "positioning",
+        "tier": 1,
+        "url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm"
+      },
+      {
+        "frequency": "continuous",
+        "institution": "Trading Economics",
+        "key": "calendar",
+        "role": "actual_consensus_event_risk_pmi_fallback",
+        "tier": 2,
+        "url": "https://api.tradingeconomics.com/calendar"
+      },
+      {
+        "frequency": "annual",
+        "institution": "World Bank",
+        "key": "world_bank",
+        "role": "background_fallback_only",
+        "tier": 3,
+        "url": "https://api.worldbank.org/v2"
+      }
+    ],
+    "cross_market_entries": 3,
+    "currencies": {
+      "AUD": [
+        {
+          "frequency": "meeting",
+          "institution": "Reserve Bank of Australia",
+          "key": "policy",
+          "role": "policy",
+          "tier": 1,
+          "url": "https://www.rba.gov.au/monetary-policy/"
+        },
+        {
+          "frequency": "continuous",
+          "institution": "Reserve Bank of Australia",
+          "key": "communication",
+          "role": "communication",
+          "tier": 1,
+          "url": "https://www.rba.gov.au/media-releases/"
+        },
+        {
+          "frequency": "monthly/quarterly",
+          "institution": "Australian Bureau of Statistics",
+          "key": "cpi",
+          "role": "inflation",
+          "tier": 1,
+          "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Australian Bureau of Statistics",
+          "key": "labour",
+          "role": "labour",
+          "tier": 1,
+          "url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "Australian Bureau of Statistics",
+          "key": "wages",
+          "role": "wages",
+          "tier": 1,
+          "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/wage-price-index-australia"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "Australian Bureau of Statistics",
+          "key": "gdp",
+          "role": "growth",
+          "tier": 1,
+          "url": "https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Australian Bureau of Statistics",
+          "key": "household_spending",
+          "role": "activity",
+          "tier": 1,
+          "url": "https://www.abs.gov.au/statistics/economy/finance/monthly-household-spending-indicator"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "Australian Bureau of Statistics",
+          "key": "trade_terms",
+          "role": "trade_terms_of_trade",
+          "tier": 1,
+          "url": "https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product"
+        },
+        {
+          "frequency": "weekly/daily-observations",
+          "institution": "Reserve Bank of Australia",
+          "key": "yield_curve",
+          "role": "rate_expectations_context",
+          "tier": 1,
+          "url": "https://www.rba.gov.au/statistics/tables/"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Reserve Bank of Australia",
+          "key": "commodity_index",
+          "role": "commodity_context",
+          "tier": 1,
+          "url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/"
+        }
+      ],
+      "CAD": [
+        {
+          "frequency": "meeting",
+          "institution": "Bank of Canada",
+          "key": "policy",
+          "role": "policy",
+          "tier": 1,
+          "url": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/"
+        },
+        {
+          "frequency": "continuous",
+          "institution": "Bank of Canada",
+          "key": "communication",
+          "role": "communication",
+          "tier": 1,
+          "url": "https://www.bankofcanada.ca/press/"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Statistics Canada",
+          "key": "cpi",
+          "role": "inflation",
+          "tier": 1,
+          "url": "https://www.statcan.gc.ca/en/subjects-start/prices_and_price_indexes/consumer_price_indexes"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Statistics Canada",
+          "key": "labour",
+          "role": "labour",
+          "tier": 1,
+          "url": "https://www.statcan.gc.ca/en/subjects-start/labour_"
+        },
+        {
+          "frequency": "monthly/quarterly",
+          "institution": "Statistics Canada",
+          "key": "gdp",
+          "role": "growth",
+          "tier": 1,
+          "url": "https://www.statcan.gc.ca/en/subjects-start/economic_accounts"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Statistics Canada",
+          "key": "retail",
+          "role": "activity",
+          "tier": 1,
+          "url": "https://www.statcan.gc.ca/en/subjects-start/retail_and_wholesale"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Statistics Canada",
+          "key": "trade",
+          "role": "trade",
+          "tier": 1,
+          "url": "https://www.statcan.gc.ca/en/subjects-start/international_trade"
+        },
+        {
+          "frequency": "daily",
+          "institution": "Bank of Canada",
+          "key": "yield_curve",
+          "role": "rate_expectations_context",
+          "tier": 1,
+          "url": "https://www.bankofcanada.ca/rates/interest-rates/canadian-bonds/"
+        },
+        {
+          "frequency": "weekly/monthly",
+          "institution": "Bank of Canada",
+          "key": "commodity_index",
+          "role": "commodity_context",
+          "tier": 1,
+          "url": "https://www.bankofcanada.ca/rates/price-indexes/bcpi/"
+        }
+      ],
+      "CHF": [
+        {
+          "frequency": "quarterly/meeting",
+          "institution": "Swiss National Bank",
+          "key": "policy",
+          "role": "policy",
+          "tier": 1,
+          "url": "https://www.snb.ch/en/the-snb/mandates-goals/monetary-policy"
+        },
+        {
+          "frequency": "continuous",
+          "institution": "Swiss National Bank",
+          "key": "communication",
+          "role": "communication",
+          "tier": 1,
+          "url": "https://www.snb.ch/en/publications/communication"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Swiss Federal Statistical Office",
+          "key": "cpi",
+          "role": "inflation",
+          "tier": 1,
+          "url": "https://www.bfs.admin.ch/bfs/en/home/statistics/prices/consumer-price-index.html"
+        },
+        {
+          "frequency": "monthly/quarterly",
+          "institution": "Swiss Federal Statistical Office",
+          "key": "labour",
+          "role": "labour",
+          "tier": 1,
+          "url": "https://www.bfs.admin.ch/bfs/en/home/statistics/work-income.html"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "State Secretariat for Economic Affairs",
+          "key": "gdp",
+          "role": "growth",
+          "tier": 1,
+          "url": "https://www.seco.admin.ch/seco/en/home/wirtschaftslage---wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-.html"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Swiss Federal Office for Customs and Border Security",
+          "key": "trade",
+          "role": "trade",
+          "tier": 1,
+          "url": "https://www.bazg.admin.ch/bazg/en/home/topics/swiss-foreign-trade-statistics.html"
+        }
+      ],
+      "EUR": [
+        {
+          "frequency": "meeting",
+          "institution": "European Central Bank",
+          "key": "policy",
+          "role": "policy",
+          "tier": 1,
+          "url": "https://www.ecb.europa.eu/press/govcdec/mopo/html/index.en.html"
+        },
+        {
+          "frequency": "continuous",
+          "institution": "European Central Bank",
+          "key": "communication",
+          "role": "communication",
+          "tier": 1,
+          "url": "https://www.ecb.europa.eu/press/html/index.en.html"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Eurostat",
+          "key": "hicp",
+          "role": "inflation",
+          "tier": 1,
+          "url": "https://ec.europa.eu/eurostat/web/hicp"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Eurostat",
+          "key": "unemployment",
+          "role": "labour",
+          "tier": 1,
+          "url": "https://ec.europa.eu/eurostat/web/lfs"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "Eurostat",
+          "key": "wages",
+          "role": "wages",
+          "tier": 1,
+          "url": "https://ec.europa.eu/eurostat/web/labour-market/earnings"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "Eurostat",
+          "key": "gdp",
+          "role": "growth",
+          "tier": 1,
+          "url": "https://ec.europa.eu/eurostat/web/national-accounts"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Eurostat",
+          "key": "retail",
+          "role": "activity",
+          "tier": 1,
+          "url": "https://ec.europa.eu/eurostat/web/short-term-business-statistics"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Eurostat",
+          "key": "trade",
+          "role": "trade",
+          "tier": 1,
+          "url": "https://ec.europa.eu/eurostat/web/international-trade-in-goods"
+        }
+      ],
+      "GBP": [
+        {
+          "frequency": "meeting",
+          "institution": "Bank of England",
+          "key": "policy",
+          "role": "policy",
+          "tier": 1,
+          "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes"
+        },
+        {
+          "frequency": "continuous",
+          "institution": "Bank of England",
+          "key": "communication",
+          "role": "communication",
+          "tier": 1,
+          "url": "https://www.bankofengland.co.uk/news"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Office for National Statistics",
+          "key": "cpi",
+          "role": "inflation",
+          "tier": 1,
+          "url": "https://www.ons.gov.uk/economy/inflationandpriceindices"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Office for National Statistics",
+          "key": "labour",
+          "role": "labour",
+          "tier": 1,
+          "url": "https://www.ons.gov.uk/employmentandlabourmarket"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Office for National Statistics",
+          "key": "wages",
+          "role": "wages",
+          "tier": 1,
+          "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours"
+        },
+        {
+          "frequency": "monthly/quarterly",
+          "institution": "Office for National Statistics",
+          "key": "gdp",
+          "role": "growth",
+          "tier": 1,
+          "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Office for National Statistics",
+          "key": "retail",
+          "role": "activity",
+          "tier": 1,
+          "url": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry"
+        },
+        {
+          "frequency": "monthly/quarterly",
+          "institution": "Office for National Statistics",
+          "key": "trade",
+          "role": "trade",
+          "tier": 1,
+          "url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments"
+        }
+      ],
+      "JPY": [
+        {
+          "frequency": "meeting",
+          "institution": "Bank of Japan",
+          "key": "policy",
+          "role": "policy",
+          "tier": 1,
+          "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+        },
+        {
+          "frequency": "continuous",
+          "institution": "Bank of Japan",
+          "key": "communication",
+          "role": "communication",
+          "tier": 1,
+          "url": "https://www.boj.or.jp/en/announcements/index.htm"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Statistics Bureau of Japan",
+          "key": "cpi",
+          "role": "inflation",
+          "tier": 1,
+          "url": "https://www.stat.go.jp/english/data/cpi/index.html"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Statistics Bureau of Japan",
+          "key": "labour",
+          "role": "labour",
+          "tier": 1,
+          "url": "https://www.stat.go.jp/english/data/roudou/index.html"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "Cabinet Office Japan",
+          "key": "gdp",
+          "role": "growth",
+          "tier": 1,
+          "url": "https://www.esri.cao.go.jp/en/sna/menu.html"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Ministry of Economy Trade and Industry",
+          "key": "activity",
+          "role": "activity",
+          "tier": 1,
+          "url": "https://www.meti.go.jp/english/statistics/index.html"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Ministry of Finance Japan",
+          "key": "trade",
+          "role": "trade",
+          "tier": 1,
+          "url": "https://www.customs.go.jp/toukei/info/index_e.htm"
+        }
+      ],
+      "NZD": [
+        {
+          "frequency": "meeting",
+          "institution": "Reserve Bank of New Zealand",
+          "key": "policy",
+          "role": "policy",
+          "tier": 1,
+          "url": "https://www.rbnz.govt.nz/monetary-policy"
+        },
+        {
+          "frequency": "continuous",
+          "institution": "Reserve Bank of New Zealand",
+          "key": "communication",
+          "role": "communication",
+          "tier": 1,
+          "url": "https://www.rbnz.govt.nz/news-and-events"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "Stats NZ",
+          "key": "cpi",
+          "role": "inflation",
+          "tier": 1,
+          "url": "https://www.stats.govt.nz/topics/consumers-price-index/"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "Stats NZ",
+          "key": "labour",
+          "role": "labour",
+          "tier": 1,
+          "url": "https://www.stats.govt.nz/topics/employment-and-unemployment/"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Stats NZ",
+          "key": "employment_indicators",
+          "role": "labour_activity",
+          "tier": 1,
+          "url": "https://www.stats.govt.nz/information-releases/employment-indicators-june-2026/"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "Stats NZ",
+          "key": "gdp",
+          "role": "growth",
+          "tier": 1,
+          "url": "https://www.stats.govt.nz/topics/gross-domestic-product/"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "Stats NZ",
+          "key": "retail",
+          "role": "activity",
+          "tier": 1,
+          "url": "https://www.stats.govt.nz/topics/retail-trade/"
+        },
+        {
+          "frequency": "monthly/quarterly",
+          "institution": "Stats NZ",
+          "key": "trade_terms",
+          "role": "trade_terms_of_trade_commodity_context",
+          "tier": 1,
+          "url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx"
+        }
+      ],
+      "USD": [
+        {
+          "frequency": "meeting",
+          "institution": "Federal Reserve",
+          "key": "policy",
+          "role": "policy",
+          "tier": 1,
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "frequency": "continuous",
+          "institution": "Federal Reserve",
+          "key": "communication",
+          "role": "communication",
+          "tier": 1,
+          "url": "https://www.federalreserve.gov/newsevents.htm"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Bureau of Labor Statistics",
+          "key": "cpi",
+          "role": "inflation",
+          "tier": 1,
+          "url": "https://www.bls.gov/cpi/"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Bureau of Labor Statistics",
+          "key": "employment",
+          "role": "labour",
+          "tier": 1,
+          "url": "https://www.bls.gov/ces/"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Bureau of Labor Statistics",
+          "key": "unemployment",
+          "role": "labour",
+          "tier": 1,
+          "url": "https://www.bls.gov/cps/"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "Bureau of Labor Statistics",
+          "key": "wages",
+          "role": "wages",
+          "tier": 1,
+          "url": "https://www.bls.gov/eci/"
+        },
+        {
+          "frequency": "quarterly",
+          "institution": "Bureau of Economic Analysis",
+          "key": "gdp",
+          "role": "growth",
+          "tier": 1,
+          "url": "https://www.bea.gov/data/gdp/gross-domestic-product"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "Bureau of Economic Analysis",
+          "key": "consumption",
+          "role": "consumption",
+          "tier": 1,
+          "url": "https://www.bea.gov/data/consumer-spending/main"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "US Census Bureau",
+          "key": "retail",
+          "role": "activity",
+          "tier": 1,
+          "url": "https://www.census.gov/retail/index.html"
+        },
+        {
+          "frequency": "monthly",
+          "institution": "US Census Bureau",
+          "key": "trade",
+          "role": "trade",
+          "tier": 1,
+          "url": "https://www.census.gov/foreign-trade/index.html"
+        },
+        {
+          "frequency": "daily",
+          "institution": "U.S. Department of the Treasury",
+          "key": "yield_curve",
+          "role": "rate_expectations_context",
+          "tier": 1,
+          "url": "https://home.treasury.gov/treasury-daily-interest-rate-xml-feed"
+        }
+      ]
+    },
+    "primary_source_entries": 67,
+    "tier_counts": {
+      "1": 68,
+      "2": 1,
+      "3": 1
+    },
+    "total_source_entries": 70
+  },
+  "generated_at": "2026-08-28T09:43:43.590214+00:00",
+  "live_release_context": {
+    "AUD": {
+      "components": {
+        "growth": {
+          "actual": 0.3,
+          "actual_numeric": 0.3,
+          "category": "Real GDP q/q",
+          "date": "2026-08-28T09:43:30.498276+00:00",
+          "event": "Real GDP q/q",
+          "frequency": "quarterly",
+          "kind": "growth",
+          "period": "March 2026",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Australian Bureau of Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/sort",
+          "state_score": 15.0
+        },
+        "inflation": {
+          "actual": 3.5,
+          "actual_numeric": 3.5,
+          "category": "Consumer Price Index y/y",
+          "date": "2026-08-28T09:43:29.738718+00:00",
+          "event": "Consumer Price Index y/y",
+          "frequency": "monthly",
+          "kind": "inflation",
+          "period": "July 2026",
+          "previous": 3.8,
+          "previous_numeric": 3.8,
+          "provenance": "official_primary",
+          "source": "Australian Bureau of Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/sort",
+          "state_score": 40.0
+        },
+        "retail": {
+          "actual": 1.1,
+          "actual_numeric": 1.1,
+          "category": "Monthly Household Spending Indicator m/m",
+          "date": "2026-08-28T09:43:30.750206+00:00",
+          "event": "Monthly Household Spending Indicator m/m",
+          "frequency": "monthly",
+          "kind": "retail",
+          "period": "July 2026",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Australian Bureau of Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.abs.gov.au/statistics/economy/finance/monthly-household-spending-indicator/sort",
+          "state_score": 55.0
+        },
+        "trade": {
+          "actual": 1.1,
+          "actual_numeric": 1.1,
+          "category": "Terms of trade q/q",
+          "date": "2026-08-28T09:43:30.498296+00:00",
+          "event": "Terms of trade q/q",
+          "frequency": "quarterly",
+          "kind": "trade",
+          "period": "March 2026",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Australian Bureau of Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/sort",
+          "state_score": 36.67
+        },
+        "unemployment": {
+          "actual": 4.5,
+          "actual_numeric": 4.5,
+          "category": "Unemployment rate",
+          "date": "2026-08-28T09:43:29.993331+00:00",
+          "event": "Unemployment rate",
+          "frequency": "monthly",
+          "kind": "unemployment",
+          "period": "July 2026",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Australian Bureau of Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/sort",
+          "state_score": 0.0
+        },
+        "wages": {
+          "actual": 3.2,
+          "actual_numeric": 3.2,
+          "category": "Wage Price Index y/y",
+          "date": "2026-08-28T09:43:30.249626+00:00",
+          "event": "Wage Price Index y/y",
+          "frequency": "quarterly",
+          "kind": "wages",
+          "period": "June quarter 2026",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Australian Bureau of Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation",
+          "state_score": 100.0
+        }
+      },
+      "coverage": 0.77,
+      "official_adapter_status": "ok",
+      "official_errors": [],
+      "official_roles": [
+        "growth",
+        "inflation",
+        "retail",
+        "trade",
+        "unemployment",
+        "wages"
+      ],
+      "reliability": 0.891,
+      "score": 33.29,
+      "source_tier": 1,
+      "tier1_weight_share": 1.0
+    },
+    "CAD": {
+      "components": {
+        "inflation": {
+          "actual": 3.032140691328067,
+          "actual_numeric": 3.032140691328067,
+          "category": "All-items CPI y/y",
+          "date": "2026-08-28T09:43:41.665788+00:00",
+          "event": "All-items CPI y/y",
+          "frequency": "monthly",
+          "kind": "inflation",
+          "period": "2026-07-01",
+          "previous": 2.7980535279805263,
+          "previous_numeric": 2.7980535279805263,
+          "provenance": "official_primary",
+          "source": "Statistics Canada",
+          "source_tier": 1,
+          "source_url": "https://www.statcan.gc.ca/en/subjects-start/prices_and_price_indexes/consumer_price_indexes",
+          "state_score": 41.29
+        },
+        "unemployment": {
+          "actual": 6.4,
+          "actual_numeric": 6.4,
+          "category": "Unemployment rate",
+          "date": "2026-08-28T09:43:41.665812+00:00",
+          "event": "Unemployment rate",
+          "frequency": "monthly",
+          "kind": "unemployment",
+          "period": "2026-07-01",
+          "previous": 6.5,
+          "previous_numeric": 6.5,
+          "provenance": "official_primary",
+          "source": "Statistics Canada",
+          "source_tier": 1,
+          "source_url": "https://www.statcan.gc.ca/en/subjects-start/labour_",
+          "state_score": 10.0
+        }
+      },
+      "coverage": 0.43,
+      "official_adapter_status": "ok",
+      "official_errors": [],
+      "official_roles": [
+        "inflation",
+        "unemployment"
+      ],
+      "reliability": 0.789,
+      "score": 28.19,
+      "source_tier": 1,
+      "tier1_weight_share": 1.0
+    },
+    "CHF": {
+      "components": {
+        "growth": {
+          "actual": 1.5,
+          "actual_numeric": 1.5,
+          "category": "Real GDP q/q flash",
+          "date": "2026-08-28T09:43:30.415854+00:00",
+          "event": "Real GDP q/q flash",
+          "frequency": "quarterly",
+          "kind": "growth",
+          "period": "second quarter of 2026",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Swiss State Secretariat for Economic Affairs (SECO)",
+          "source_tier": 1,
+          "source_url": "https://www.seco.admin.ch/en/gdp-flash",
+          "state_score": 75.0
+        }
+      },
+      "coverage": 0.18,
+      "official_adapter_status": "ok",
+      "official_errors": [],
+      "official_roles": [
+        "growth"
+      ],
+      "reliability": 0.714,
+      "score": 75.0,
+      "source_tier": 1,
+      "tier1_weight_share": 1.0
+    },
+    "EUR": {
+      "components": {
+        "growth": {
+          "actual": 0.4,
+          "actual_numeric": 0.4,
+          "category": "Real GDP q/q",
+          "date": "2026-08-28T09:43:30.546021+00:00",
+          "event": "Real GDP q/q",
+          "frequency": "quarterly",
+          "kind": "growth",
+          "period": "2026-Q2",
+          "previous": 0.0,
+          "previous_numeric": 0.0,
+          "provenance": "official_primary",
+          "source": "Eurostat",
+          "source_tier": 1,
+          "source_url": "https://ec.europa.eu/eurostat/web/national-accounts",
+          "state_score": 20.0
+        }
+      },
+      "coverage": 0.18,
+      "official_adapter_status": "ok",
+      "official_errors": [],
+      "official_roles": [
+        "growth"
+      ],
+      "reliability": 0.714,
+      "score": 20.0,
+      "source_tier": 1,
+      "tier1_weight_share": 1.0
+    },
+    "GBP": {
+      "components": {
+        "growth": {
+          "actual": 0.6,
+          "actual_numeric": 0.6,
+          "category": "Real GDP q/q",
+          "date": "2026-08-28T09:43:30.009031+00:00",
+          "event": "Real GDP q/q",
+          "frequency": "quarterly",
+          "kind": "growth",
+          "period": "2026 Q1",
+          "previous": 0.1,
+          "previous_numeric": 0.1,
+          "provenance": "official_primary",
+          "source": "UK Office for National Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp",
+          "state_score": 30.0
+        },
+        "inflation": {
+          "actual": 3.1,
+          "actual_numeric": 3.1,
+          "category": "CPIH annual rate",
+          "date": "2026-08-28T09:43:29.919057+00:00",
+          "event": "CPIH annual rate",
+          "frequency": "monthly",
+          "kind": "inflation",
+          "period": "2026 JUL",
+          "previous": 2.8,
+          "previous_numeric": 2.8,
+          "provenance": "official_primary",
+          "source": "UK Office for National Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.ons.gov.uk/economy/inflationandpriceindices",
+          "state_score": 44.0
+        },
+        "unemployment": {
+          "actual": 4.9,
+          "actual_numeric": 4.9,
+          "category": "Unemployment rate",
+          "date": "2026-08-28T09:43:29.965845+00:00",
+          "event": "Unemployment rate",
+          "frequency": "monthly",
+          "kind": "unemployment",
+          "period": "2026 MAY",
+          "previous": 4.9,
+          "previous_numeric": 4.9,
+          "provenance": "official_primary",
+          "source": "UK Office for National Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.ons.gov.uk/employmentandlabourmarket",
+          "state_score": 0.0
+        }
+      },
+      "coverage": 0.61,
+      "official_adapter_status": "ok",
+      "official_errors": [],
+      "official_roles": [
+        "growth",
+        "inflation",
+        "unemployment"
+      ],
+      "reliability": 0.843,
+      "score": 26.89,
+      "source_tier": 1,
+      "tier1_weight_share": 1.0
+    },
+    "JPY": {
+      "components": {
+        "growth": {
+          "actual": 0.3,
+          "actual_numeric": 0.3,
+          "category": "Real GDP q/q",
+          "date": "2026-08-28T09:43:31.300578+00:00",
+          "event": "Real GDP q/q",
+          "frequency": "quarterly",
+          "kind": "growth",
+          "period": "2026\u5e744-6\u6708\u671f",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Cabinet Office Japan, ESRI",
+          "source_tier": 1,
+          "source_url": "https://www.esri.cao.go.jp/jp/sna/menu.html",
+          "state_score": 15.0
+        }
+      },
+      "coverage": 0.18,
+      "official_adapter_status": "ok",
+      "official_errors": [],
+      "official_roles": [
+        "growth"
+      ],
+      "reliability": 0.714,
+      "score": 15.0,
+      "source_tier": 1,
+      "tier1_weight_share": 1.0
+    },
+    "NZD": {
+      "components": {},
+      "coverage": 0.0,
+      "official_adapter_status": "unavailable",
+      "official_errors": [],
+      "official_roles": [],
+      "reliability": 0.0,
+      "score": null,
+      "source_tier": 2
+    },
+    "USD": {
+      "components": {
+        "employment": {
+          "actual": -23.0,
+          "actual_numeric": -23.0,
+          "category": "Total nonfarm payroll monthly change (thousands)",
+          "date": "2026-08-28T09:43:29.845253+00:00",
+          "event": "Total nonfarm payroll monthly change (thousands)",
+          "frequency": "monthly",
+          "kind": "employment",
+          "period": "2026-07",
+          "previous": 20.0,
+          "previous_numeric": 20.0,
+          "provenance": "official_primary",
+          "source": "U.S. Bureau of Labor Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.bls.gov/ces/",
+          "state_score": -9.2
+        },
+        "growth": {
+          "actual": 0.375,
+          "actual_numeric": 0.375,
+          "category": "Real GDP q/q (annualised headline converted to approximate q/q)",
+          "date": "2026-08-28T09:43:29.933170+00:00",
+          "event": "Real GDP q/q (annualised headline converted to approximate q/q)",
+          "frequency": "quarterly",
+          "kind": "growth",
+          "period": "second quarter of 2026",
+          "previous": 0.525,
+          "previous_numeric": 0.525,
+          "provenance": "official_primary",
+          "source": "U.S. Bureau of Economic Analysis",
+          "source_tier": 1,
+          "source_url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+          "state_score": 18.75
+        },
+        "inflation": {
+          "actual": 3.364825041479902,
+          "actual_numeric": 3.364825041479902,
+          "category": "CPI-U all items y/y",
+          "date": "2026-08-28T09:43:29.845095+00:00",
+          "event": "CPI-U all items y/y",
+          "frequency": "monthly",
+          "kind": "inflation",
+          "period": "2026-07",
+          "previous": 3.5314250637863864,
+          "previous_numeric": 3.5314250637863864,
+          "provenance": "official_primary",
+          "source": "U.S. Bureau of Labor Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.bls.gov/cpi/",
+          "state_score": 54.59
+        },
+        "unemployment": {
+          "actual": 4.1,
+          "actual_numeric": 4.1,
+          "category": "Unemployment rate",
+          "date": "2026-08-28T09:43:29.845179+00:00",
+          "event": "Unemployment rate",
+          "frequency": "monthly",
+          "kind": "unemployment",
+          "period": "2026-07",
+          "previous": 4.2,
+          "previous_numeric": 4.2,
+          "provenance": "official_primary",
+          "source": "U.S. Bureau of Labor Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.bls.gov/cps/",
+          "state_score": 10.0
+        },
+        "wages": {
+          "actual": 3.153276665752669,
+          "actual_numeric": 3.153276665752669,
+          "category": "Average hourly earnings y/y",
+          "date": "2026-08-28T09:43:29.845334+00:00",
+          "event": "Average hourly earnings y/y",
+          "frequency": "monthly",
+          "kind": "wages",
+          "period": "2026-07",
+          "previous": 3.4103410341034257,
+          "previous_numeric": 3.4103410341034257,
+          "provenance": "official_primary",
+          "source": "U.S. Bureau of Labor Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.bls.gov/ces/",
+          "state_score": 100.0
+        }
+      },
+      "coverage": 0.83,
+      "official_adapter_status": "ok",
+      "official_errors": [],
+      "official_roles": [
+        "employment",
+        "growth",
+        "inflation",
+        "unemployment",
+        "wages"
+      ],
+      "reliability": 0.909,
+      "score": 33.4,
+      "source_tier": 1,
+      "tier1_weight_share": 1.0
+    }
+  },
   "macro_context": {
     "AUD": {
       "background": {
@@ -781,6 +1837,140 @@
       }
     }
   },
+  "market_context": {
+    "commodity_sensitive": {
+      "currencies": {
+        "AUD": {
+          "aud_terms_monthly_change_pct": 1.2,
+          "currency": "AUD",
+          "reference_month": "2026-07",
+          "role": "commodity_export_price_context",
+          "sdr_annual_change_pct": 15.4,
+          "sdr_monthly_change_pct": 0.6,
+          "source": "Reserve Bank of Australia Index of Commodity Prices",
+          "source_tier": 1,
+          "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+          "status": "ok"
+        },
+        "CAD": {
+          "change_pct": -2.451,
+          "currency": "CAD",
+          "date": "2026-07-01",
+          "exposures": [
+            "energy",
+            "metals and minerals",
+            "forestry",
+            "agriculture",
+            "fisheries"
+          ],
+          "index": 697.67,
+          "previous_index": 715.2,
+          "role": "commodity_export_price_context",
+          "source": "Bank of Canada Commodity Price Index",
+          "source_tier": 1,
+          "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+          "status": "ok"
+        },
+        "NZD": {
+          "currency": "NZD",
+          "exposures": [
+            "dairy",
+            "meat",
+            "forestry",
+            "agricultural exports"
+          ],
+          "role": "commodity_and_terms_of_trade_context",
+          "source": "Stats NZ imports, exports and overseas trade indexes",
+          "source_tier": 1,
+          "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+          "status": "exposure_metadata",
+          "terms_of_trade": null
+        }
+      },
+      "methodology": "official export/commodity context for AUD, CAD and NZD; informational to avoid double-counting macro state"
+    },
+    "rate_expectations": {
+      "currencies": {
+        "AUD": {
+          "currency": "AUD",
+          "date": "26-Aug-2026",
+          "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+          "policy_path_context": "short-end near policy",
+          "policy_rate": 4.35,
+          "source": "Reserve Bank of Australia, Table F2",
+          "source_tier": 1,
+          "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+          "status": "ok",
+          "ten_year_minus_two_year": 0.404,
+          "ten_year_yield": 5.023,
+          "two_year_minus_policy": 0.269,
+          "two_year_yield": 4.619
+        },
+        "CAD": {
+          "currency": "CAD",
+          "policy_rate": 2.25,
+          "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+          "source_tier": 1,
+          "status": "policy_only",
+          "yield_error": "HTTPError",
+          "yield_status": "unavailable"
+        },
+        "CHF": {
+          "currency": "CHF",
+          "policy_rate": 0.0,
+          "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+          "source_tier": 1,
+          "status": "policy_only"
+        },
+        "EUR": {
+          "currency": "EUR",
+          "policy_rate": 2.25,
+          "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+          "source_tier": 1,
+          "status": "policy_only"
+        },
+        "GBP": {
+          "currency": "GBP",
+          "policy_rate": 3.75,
+          "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+          "source_tier": 1,
+          "status": "policy_only"
+        },
+        "JPY": {
+          "currency": "JPY",
+          "policy_rate": 0.75,
+          "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+          "source_tier": 1,
+          "status": "policy_only"
+        },
+        "NZD": {
+          "currency": "NZD",
+          "policy_rate": 2.5,
+          "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+          "source_tier": 1,
+          "status": "policy_only"
+        },
+        "USD": {
+          "currency": "USD",
+          "date": "2026-08-27T00:00:00",
+          "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+          "policy_path_context": "short-end above policy",
+          "policy_rate": 3.625,
+          "source": "U.S. Department of the Treasury",
+          "source_tier": 1,
+          "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+          "status": "ok",
+          "ten_year_minus_two_year": 0.47,
+          "ten_year_yield": 4.67,
+          "two_year_minus_policy": 0.575,
+          "two_year_yield": 4.2
+        }
+      },
+      "currencies_total": 8,
+      "currencies_with_official_yield_curve": 2,
+      "methodology": "official sovereign 2Y/10Y yields where practical; policy-only context elsewhere; not independently weighted in Phase 2"
+    }
+  },
   "official_communications": {
     "AUD": {
       "communication_score": 0.0,
@@ -888,8 +2078,8 @@
         "Report on the Bank\u2019s official market operations March 2025\u2013February 2026",
         "The Bank of England's climate-related financial...",
         "The Bank of England's climate-related financial disclosure 2026",
-        "Annual Reports 2026",
-        "Asset Purchase Facility Annual Report 2025/26"
+        "Asset Purchase Facility Annual Report 2025/26",
+        "Alternative Liquidity Facility Annual Report..."
       ]
     },
     "JPY": {
@@ -953,11 +2143,405 @@
       ]
     }
   },
+  "official_macro_context": {
+    "AUD": {
+      "currency": "AUD",
+      "errors": [],
+      "role_count": 6,
+      "roles": {
+        "growth": {
+          "actual": 0.3,
+          "actual_numeric": 0.3,
+          "category": "Real GDP q/q",
+          "date": "2026-08-28T09:43:30.498276+00:00",
+          "event": "Real GDP q/q",
+          "frequency": "quarterly",
+          "kind": "growth",
+          "period": "March 2026",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Australian Bureau of Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/sort"
+        },
+        "inflation": {
+          "actual": 3.5,
+          "actual_numeric": 3.5,
+          "category": "Consumer Price Index y/y",
+          "date": "2026-08-28T09:43:29.738718+00:00",
+          "event": "Consumer Price Index y/y",
+          "frequency": "monthly",
+          "kind": "inflation",
+          "period": "July 2026",
+          "previous": 3.8,
+          "previous_numeric": 3.8,
+          "provenance": "official_primary",
+          "source": "Australian Bureau of Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/sort"
+        },
+        "retail": {
+          "actual": 1.1,
+          "actual_numeric": 1.1,
+          "category": "Monthly Household Spending Indicator m/m",
+          "date": "2026-08-28T09:43:30.750206+00:00",
+          "event": "Monthly Household Spending Indicator m/m",
+          "frequency": "monthly",
+          "kind": "retail",
+          "period": "July 2026",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Australian Bureau of Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.abs.gov.au/statistics/economy/finance/monthly-household-spending-indicator/sort",
+          "state_score": 55.0
+        },
+        "trade": {
+          "actual": 1.1,
+          "actual_numeric": 1.1,
+          "category": "Terms of trade q/q",
+          "date": "2026-08-28T09:43:30.498296+00:00",
+          "event": "Terms of trade q/q",
+          "frequency": "quarterly",
+          "kind": "trade",
+          "period": "March 2026",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Australian Bureau of Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/sort",
+          "state_score": 36.67
+        },
+        "unemployment": {
+          "actual": 4.5,
+          "actual_numeric": 4.5,
+          "category": "Unemployment rate",
+          "date": "2026-08-28T09:43:29.993331+00:00",
+          "event": "Unemployment rate",
+          "frequency": "monthly",
+          "kind": "unemployment",
+          "period": "July 2026",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Australian Bureau of Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/sort"
+        },
+        "wages": {
+          "actual": 3.2,
+          "actual_numeric": 3.2,
+          "category": "Wage Price Index y/y",
+          "date": "2026-08-28T09:43:30.249626+00:00",
+          "event": "Wage Price Index y/y",
+          "frequency": "quarterly",
+          "kind": "wages",
+          "period": "June quarter 2026",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Australian Bureau of Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation"
+        }
+      },
+      "source": "Australian Bureau of Statistics",
+      "source_tier": 1,
+      "status": "ok"
+    },
+    "CAD": {
+      "currency": "CAD",
+      "errors": [],
+      "role_count": 2,
+      "roles": {
+        "inflation": {
+          "actual": 3.032140691328067,
+          "actual_numeric": 3.032140691328067,
+          "category": "All-items CPI y/y",
+          "date": "2026-08-28T09:43:41.665788+00:00",
+          "event": "All-items CPI y/y",
+          "frequency": "monthly",
+          "kind": "inflation",
+          "period": "2026-07-01",
+          "previous": 2.7980535279805263,
+          "previous_numeric": 2.7980535279805263,
+          "provenance": "official_primary",
+          "source": "Statistics Canada",
+          "source_tier": 1,
+          "source_url": "https://www.statcan.gc.ca/en/subjects-start/prices_and_price_indexes/consumer_price_indexes"
+        },
+        "unemployment": {
+          "actual": 6.4,
+          "actual_numeric": 6.4,
+          "category": "Unemployment rate",
+          "date": "2026-08-28T09:43:41.665812+00:00",
+          "event": "Unemployment rate",
+          "frequency": "monthly",
+          "kind": "unemployment",
+          "period": "2026-07-01",
+          "previous": 6.5,
+          "previous_numeric": 6.5,
+          "provenance": "official_primary",
+          "source": "Statistics Canada",
+          "source_tier": 1,
+          "source_url": "https://www.statcan.gc.ca/en/subjects-start/labour_"
+        }
+      },
+      "source": "Statistics Canada",
+      "source_tier": 1,
+      "status": "ok"
+    },
+    "CHF": {
+      "currency": "CHF",
+      "errors": [],
+      "role_count": 1,
+      "roles": {
+        "growth": {
+          "actual": 1.5,
+          "actual_numeric": 1.5,
+          "category": "Real GDP q/q flash",
+          "date": "2026-08-28T09:43:30.415854+00:00",
+          "event": "Real GDP q/q flash",
+          "frequency": "quarterly",
+          "kind": "growth",
+          "period": "second quarter of 2026",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Swiss State Secretariat for Economic Affairs (SECO)",
+          "source_tier": 1,
+          "source_url": "https://www.seco.admin.ch/en/gdp-flash"
+        }
+      },
+      "source": "SECO / Swiss official statistics",
+      "source_tier": 1,
+      "status": "ok"
+    },
+    "EUR": {
+      "currency": "EUR",
+      "errors": [],
+      "role_count": 1,
+      "roles": {
+        "growth": {
+          "actual": 0.4,
+          "actual_numeric": 0.4,
+          "category": "Real GDP q/q",
+          "date": "2026-08-28T09:43:30.546021+00:00",
+          "event": "Real GDP q/q",
+          "frequency": "quarterly",
+          "kind": "growth",
+          "period": "2026-Q2",
+          "previous": 0.0,
+          "previous_numeric": 0.0,
+          "provenance": "official_primary",
+          "source": "Eurostat",
+          "source_tier": 1,
+          "source_url": "https://ec.europa.eu/eurostat/web/national-accounts"
+        }
+      },
+      "source": "Eurostat",
+      "source_tier": 1,
+      "status": "ok"
+    },
+    "GBP": {
+      "currency": "GBP",
+      "errors": [],
+      "role_count": 3,
+      "roles": {
+        "growth": {
+          "actual": 0.6,
+          "actual_numeric": 0.6,
+          "category": "Real GDP q/q",
+          "date": "2026-08-28T09:43:30.009031+00:00",
+          "event": "Real GDP q/q",
+          "frequency": "quarterly",
+          "kind": "growth",
+          "period": "2026 Q1",
+          "previous": 0.1,
+          "previous_numeric": 0.1,
+          "provenance": "official_primary",
+          "source": "UK Office for National Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp"
+        },
+        "inflation": {
+          "actual": 3.1,
+          "actual_numeric": 3.1,
+          "category": "CPIH annual rate",
+          "date": "2026-08-28T09:43:29.919057+00:00",
+          "event": "CPIH annual rate",
+          "frequency": "monthly",
+          "kind": "inflation",
+          "period": "2026 JUL",
+          "previous": 2.8,
+          "previous_numeric": 2.8,
+          "provenance": "official_primary",
+          "source": "UK Office for National Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.ons.gov.uk/economy/inflationandpriceindices"
+        },
+        "unemployment": {
+          "actual": 4.9,
+          "actual_numeric": 4.9,
+          "category": "Unemployment rate",
+          "date": "2026-08-28T09:43:29.965845+00:00",
+          "event": "Unemployment rate",
+          "frequency": "monthly",
+          "kind": "unemployment",
+          "period": "2026 MAY",
+          "previous": 4.9,
+          "previous_numeric": 4.9,
+          "provenance": "official_primary",
+          "source": "UK Office for National Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.ons.gov.uk/employmentandlabourmarket"
+        }
+      },
+      "source": "UK Office for National Statistics",
+      "source_tier": 1,
+      "status": "ok"
+    },
+    "JPY": {
+      "currency": "JPY",
+      "errors": [],
+      "role_count": 1,
+      "roles": {
+        "growth": {
+          "actual": 0.3,
+          "actual_numeric": 0.3,
+          "category": "Real GDP q/q",
+          "date": "2026-08-28T09:43:31.300578+00:00",
+          "event": "Real GDP q/q",
+          "frequency": "quarterly",
+          "kind": "growth",
+          "period": "2026\u5e744-6\u6708\u671f",
+          "previous": null,
+          "previous_numeric": null,
+          "provenance": "official_primary",
+          "source": "Cabinet Office Japan, ESRI",
+          "source_tier": 1,
+          "source_url": "https://www.esri.cao.go.jp/jp/sna/menu.html"
+        }
+      },
+      "source": "Statistics Bureau + Cabinet Office",
+      "source_tier": 1,
+      "status": "ok"
+    },
+    "NZD": {
+      "currency": "NZD",
+      "errors": [],
+      "role_count": 0,
+      "roles": {},
+      "source": "Stats NZ",
+      "source_tier": 1,
+      "status": "unavailable"
+    },
+    "USD": {
+      "currency": "USD",
+      "errors": [],
+      "role_count": 5,
+      "roles": {
+        "employment": {
+          "actual": -23.0,
+          "actual_numeric": -23.0,
+          "category": "Total nonfarm payroll monthly change (thousands)",
+          "date": "2026-08-28T09:43:29.845253+00:00",
+          "event": "Total nonfarm payroll monthly change (thousands)",
+          "frequency": "monthly",
+          "kind": "employment",
+          "period": "2026-07",
+          "previous": 20.0,
+          "previous_numeric": 20.0,
+          "provenance": "official_primary",
+          "source": "U.S. Bureau of Labor Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.bls.gov/ces/",
+          "state_score": -9.2
+        },
+        "growth": {
+          "actual": 0.375,
+          "actual_numeric": 0.375,
+          "category": "Real GDP q/q (annualised headline converted to approximate q/q)",
+          "date": "2026-08-28T09:43:29.933170+00:00",
+          "event": "Real GDP q/q (annualised headline converted to approximate q/q)",
+          "frequency": "quarterly",
+          "kind": "growth",
+          "period": "second quarter of 2026",
+          "previous": 0.525,
+          "previous_numeric": 0.525,
+          "provenance": "official_primary",
+          "source": "U.S. Bureau of Economic Analysis",
+          "source_tier": 1,
+          "source_url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+          "state_score": 18.75
+        },
+        "inflation": {
+          "actual": 3.364825041479902,
+          "actual_numeric": 3.364825041479902,
+          "category": "CPI-U all items y/y",
+          "date": "2026-08-28T09:43:29.845095+00:00",
+          "event": "CPI-U all items y/y",
+          "frequency": "monthly",
+          "kind": "inflation",
+          "period": "2026-07",
+          "previous": 3.5314250637863864,
+          "previous_numeric": 3.5314250637863864,
+          "provenance": "official_primary",
+          "source": "U.S. Bureau of Labor Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.bls.gov/cpi/"
+        },
+        "unemployment": {
+          "actual": 4.1,
+          "actual_numeric": 4.1,
+          "category": "Unemployment rate",
+          "date": "2026-08-28T09:43:29.845179+00:00",
+          "event": "Unemployment rate",
+          "frequency": "monthly",
+          "kind": "unemployment",
+          "period": "2026-07",
+          "previous": 4.2,
+          "previous_numeric": 4.2,
+          "provenance": "official_primary",
+          "source": "U.S. Bureau of Labor Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.bls.gov/cps/"
+        },
+        "wages": {
+          "actual": 3.153276665752669,
+          "actual_numeric": 3.153276665752669,
+          "category": "Average hourly earnings y/y",
+          "date": "2026-08-28T09:43:29.845334+00:00",
+          "event": "Average hourly earnings y/y",
+          "frequency": "monthly",
+          "kind": "wages",
+          "period": "2026-07",
+          "previous": 3.4103410341034257,
+          "previous_numeric": 3.4103410341034257,
+          "provenance": "official_primary",
+          "source": "U.S. Bureau of Labor Statistics",
+          "source_tier": 1,
+          "source_url": "https://www.bls.gov/ces/"
+        }
+      },
+      "source": "BLS + BEA",
+      "source_tier": 1,
+      "status": "ok"
+    }
+  },
+  "official_macro_coverage": {
+    "currencies_total": 8,
+    "currencies_with_live_roles": 7,
+    "roles_retrieved": 19
+  },
   "pairs": {
     "AUD_CAD": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 45.2,
-      "combined_score": 47.85,
+      "combined_confidence": 45.99,
+      "combined_score": 46.91,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -985,8 +2569,91 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": 28.6,
+        "live_release_state_score": 2.55,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            },
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "CAD": {
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 57.74,
+        "structural_macro_score": 28.6,
         "technical_alignment": 100.0,
         "technical_direction": "bullish"
       },
@@ -995,13 +2662,13 @@
           "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.446,
+            "live_state": 0.84,
             "macro": 0.79,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.777
+          "weighted_reliability": 0.842
         },
         "direction": "bullish",
         "event_risk": {
@@ -1028,7 +2695,7 @@
         },
         "fundamental_macro_score": 28.6,
         "instrument": "AUD_CAD",
-        "live_release_state_score": 16.64,
+        "live_release_state_score": 2.55,
         "market_context": {
           "commodity_sensitive": {
             "AUD": {
@@ -1104,24 +2771,27 @@
             "status": "ok"
           },
           "CAD": {
-            "roles": [],
-            "status": "unavailable"
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
           }
         },
-        "phase2_confidence": 38.83,
-        "phase2_directional_score": 28.35,
+        "phase2_confidence": 41.46,
+        "phase2_directional_score": 26.0,
         "release_surprise_score": null,
         "sentiment_score": 57.74
       },
       "instrument": "AUD_CAD",
-      "phase2_confidence": 38.83,
-      "phase2_score": 28.35,
+      "phase2_confidence": 41.46,
+      "phase2_score": 26.0,
       "pricing": {
-        "ask": 0.9972,
-        "bid": 0.99698,
-        "mid": 0.99709,
-        "spread": 0.00021999999999999797,
-        "spread_pips": 2.1999999999999797
+        "ask": 0.99728,
+        "bid": 0.99706,
+        "mid": 0.99717,
+        "spread": 0.000220000000000109,
+        "spread_pips": 2.20000000000109
       },
       "reasons": [
         "combined confidence too low"
@@ -1305,8 +2975,69 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": 60.38,
+        "live_release_state_score": -20.86,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 40.17,
+        "structural_macro_score": 60.38,
         "technical_alignment": 100.0,
         "technical_direction": "bullish"
       },
@@ -1418,19 +3149,19 @@
       "phase2_confidence": 50.33,
       "phase2_score": 27.81,
       "pricing": {
-        "ask": 0.57856,
-        "bid": 0.57844,
-        "mid": 0.5785,
+        "ask": 0.5786,
+        "bid": 0.57848,
+        "mid": 0.57854,
         "spread": 0.00012000000000000899,
         "spread_pips": 1.2000000000000899
       },
       "reasons": [],
       "setup": {
-        "entry": 0.5785,
-        "invalidation": "H1 close below 0.577792",
+        "entry": 0.57854,
+        "invalidation": "H1 close below 0.577832",
         "risk_reward": 2.0,
-        "stop_loss": 0.577792,
-        "take_profit": 0.579917
+        "stop_loss": 0.577832,
+        "take_profit": 0.579957
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -1604,8 +3335,69 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": 44.92,
+        "live_release_state_score": 9.14,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 42.97,
+        "structural_macro_score": 44.92,
         "technical_alignment": 100.0,
         "technical_direction": "bullish"
       },
@@ -1717,19 +3509,19 @@
       "phase2_confidence": 47.26,
       "phase2_score": 28.43,
       "pricing": {
-        "ask": 114.9,
-        "bid": 114.882,
-        "mid": 114.891,
-        "spread": 0.018000000000000682,
-        "spread_pips": 1.8000000000000682
+        "ask": 114.905,
+        "bid": 114.888,
+        "mid": 114.8965,
+        "spread": 0.016999999999995907,
+        "spread_pips": 1.6999999999995907
       },
       "reasons": [],
       "setup": {
-        "entry": 114.891,
-        "invalidation": "H1 close below 114.766669",
+        "entry": 114.8965,
+        "invalidation": "H1 close below 114.772169",
         "risk_reward": 2.0,
-        "stop_loss": 114.766669,
-        "take_profit": 115.139662
+        "stop_loss": 114.772169,
+        "take_profit": 115.145162
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -1903,8 +3695,82 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": 26.89,
+        "live_release_state_score": 16.64,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": null,
+        "structural_macro_score": 26.89,
         "technical_alignment": 100.0,
         "technical_direction": "bullish"
       },
@@ -2029,11 +3895,11 @@
       "phase2_confidence": 16.26,
       "phase2_score": 23.47,
       "pricing": {
-        "ask": 1.20973,
-        "bid": 1.20948,
-        "mid": 1.209605,
-        "spread": 0.00024999999999986144,
-        "spread_pips": 2.4999999999986144
+        "ask": 1.20963,
+        "bid": 1.2094,
+        "mid": 1.2095150000000001,
+        "spread": 0.00022999999999995246,
+        "spread_pips": 2.2999999999995246
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2218,8 +4084,81 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": 6.52,
+        "live_release_state_score": -0.05,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 21.9,
+        "structural_macro_score": 6.52,
         "technical_alignment": 100.0,
         "technical_direction": "bullish"
       },
@@ -2343,19 +4282,19 @@
       "phase2_confidence": 43.68,
       "phase2_score": 8.25,
       "pricing": {
-        "ask": 0.71963,
-        "bid": 0.71955,
-        "mid": 0.71959,
-        "spread": 7.999999999996898e-05,
-        "spread_pips": 0.7999999999996898
+        "ask": 0.71967,
+        "bid": 0.71959,
+        "mid": 0.71963,
+        "spread": 8.000000000008001e-05,
+        "spread_pips": 0.8000000000008001
       },
       "reasons": [],
       "setup": {
-        "entry": 0.71959,
-        "invalidation": "H1 close below 0.718754",
+        "entry": 0.71963,
+        "invalidation": "H1 close below 0.718794",
         "risk_reward": 2.0,
-        "stop_loss": 0.718754,
-        "take_profit": 0.721262
+        "stop_loss": 0.718794,
+        "take_profit": 0.721302
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -2499,9 +4438,9 @@
       "technical_score": 63.51
     },
     "CAD_CHF": {
-      "agreement_multiplier": 0.65,
-      "combined_confidence": 17.43,
-      "combined_score": 5.46,
+      "agreement_multiplier": 1.0,
+      "combined_confidence": 27.72,
+      "combined_score": 9.35,
       "decision": "no_trade",
       "direction": "neutral",
       "event_risk": "elevated",
@@ -2529,8 +4468,66 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": 31.79,
+        "live_release_state_score": -23.41,
+        "market_context": {
+          "commodity_sensitive": {
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            },
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "CAD": {
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          },
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": -17.56,
+        "structural_macro_score": 31.79,
         "technical_alignment": 85.0,
         "technical_direction": "neutral"
       },
@@ -2539,13 +4536,13 @@
           "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.357,
+            "live_state": 0.752,
             "macro": 0.767,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.754
+          "weighted_reliability": 0.82
         },
         "direction": "neutral",
         "event_risk": {
@@ -2572,7 +4569,7 @@
         },
         "fundamental_macro_score": 31.79,
         "instrument": "CAD_CHF",
-        "live_release_state_score": -37.5,
+        "live_release_state_score": -23.41,
         "market_context": {
           "commodity_sensitive": {
             "CAD": {
@@ -2617,8 +4614,11 @@
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CAD": {
-            "roles": [],
-            "status": "unavailable"
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
           },
           "CHF": {
             "roles": [
@@ -2627,20 +4627,20 @@
             "status": "ok"
           }
         },
-        "phase2_confidence": 30.74,
-        "phase2_directional_score": -0.53,
+        "phase2_confidence": 33.77,
+        "phase2_directional_score": 1.82,
         "release_surprise_score": null,
         "sentiment_score": -17.56
       },
       "instrument": "CAD_CHF",
-      "phase2_confidence": 30.74,
-      "phase2_score": -0.53,
+      "phase2_confidence": 33.77,
+      "phase2_score": 1.82,
       "pricing": {
         "ask": 0.58024,
-        "bid": 0.58012,
-        "mid": 0.5801799999999999,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "bid": 0.58011,
+        "mid": 0.580175,
+        "spread": 0.00012999999999996348,
+        "spread_pips": 1.2999999999996348
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2796,8 +4796,8 @@
     },
     "CAD_JPY": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 40.72,
-      "combined_score": 33.76,
+      "combined_confidence": 41.7,
+      "combined_score": 34.7,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -2825,8 +4825,66 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": 16.33,
+        "live_release_state_score": 6.6,
+        "market_context": {
+          "commodity_sensitive": {
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            },
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "CAD": {
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          },
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": -14.77,
+        "structural_macro_score": 16.33,
         "technical_alignment": 100.0,
         "technical_direction": "bullish"
       },
@@ -2835,13 +4893,13 @@
           "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.357,
+            "live_state": 0.752,
             "macro": 0.606,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.7
+          "weighted_reliability": 0.766
         },
         "direction": "neutral",
         "event_risk": {
@@ -2868,7 +4926,7 @@
         },
         "fundamental_macro_score": 16.33,
         "instrument": "CAD_JPY",
-        "live_release_state_score": -7.5,
+        "live_release_state_score": 6.6,
         "market_context": {
           "commodity_sensitive": {
             "CAD": {
@@ -2913,8 +4971,11 @@
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CAD": {
-            "roles": [],
-            "status": "unavailable"
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
           },
           "JPY": {
             "roles": [
@@ -2923,20 +4984,20 @@
             "status": "ok"
           }
         },
-        "phase2_confidence": 28.45,
-        "phase2_directional_score": 0.09,
+        "phase2_confidence": 31.72,
+        "phase2_directional_score": 2.44,
         "release_surprise_score": null,
         "sentiment_score": -14.77
       },
       "instrument": "CAD_JPY",
-      "phase2_confidence": 28.45,
-      "phase2_score": 0.09,
+      "phase2_confidence": 31.72,
+      "phase2_score": 2.44,
       "pricing": {
-        "ask": 115.236,
-        "bid": 115.218,
-        "mid": 115.227,
-        "spread": 0.018000000000000682,
-        "spread_pips": 1.8000000000000682
+        "ask": 115.234,
+        "bid": 115.215,
+        "mid": 115.2245,
+        "spread": 0.018999999999991246,
+        "spread_pips": 1.8999999999991246
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -3121,8 +5182,43 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": -15.46,
+        "live_release_state_score": 30.0,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 2.79,
+        "structural_macro_score": -15.46,
         "technical_alignment": 100.0,
         "technical_direction": "bullish"
       },
@@ -3208,14 +5304,14 @@
       "phase2_confidence": 37.42,
       "phase2_score": 0.62,
       "pricing": {
-        "ask": 198.621,
-        "bid": 198.587,
-        "mid": 198.60399999999998,
-        "spread": 0.034000000000020236,
-        "spread_pips": 3.4000000000020236
+        "ask": 198.619,
+        "bid": 198.584,
+        "mid": 198.6015,
+        "spread": 0.03499999999999659,
+        "spread_pips": 3.499999999999659
       },
       "reasons": [
-        "spread too wide (3.40 pips)",
+        "spread too wide (3.50 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -3398,8 +5494,69 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": -25.99,
+        "live_release_state_score": -6.64,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": -38.39,
+        "structural_macro_score": -25.99,
         "technical_alignment": 100.0,
         "technical_direction": "bearish"
       },
@@ -3511,14 +5668,14 @@
       "phase2_confidence": 47.83,
       "phase2_score": -20.43,
       "pricing": {
-        "ask": 1.61791,
-        "bid": 1.6176,
-        "mid": 1.6177549999999998,
-        "spread": 0.00031000000000003247,
-        "spread_pips": 3.1000000000003247
+        "ask": 1.61784,
+        "bid": 1.61752,
+        "mid": 1.61768,
+        "spread": 0.00031999999999987594,
+        "spread_pips": 3.1999999999987594
       },
       "reasons": [
-        "spread too wide (3.10 pips)"
+        "spread too wide (3.20 pips)"
       ],
       "setup": {
         "entry": null,
@@ -3670,8 +5827,8 @@
     },
     "EUR_CAD": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 28.01,
-      "combined_score": 13.11,
+      "combined_confidence": 28.67,
+      "combined_score": 12.17,
       "decision": "no_trade",
       "direction": "neutral",
       "event_risk": "elevated",
@@ -3699,8 +5856,66 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": 2.6,
+        "live_release_state_score": -4.1,
+        "market_context": {
+          "commodity_sensitive": {
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            },
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "CAD": {
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          },
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 19.34,
+        "structural_macro_score": 2.6,
         "technical_alignment": 85.0,
         "technical_direction": "bullish"
       },
@@ -3709,13 +5924,13 @@
           "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.357,
+            "live_state": 0.752,
             "macro": 0.766,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.754
+          "weighted_reliability": 0.82
         },
         "direction": "neutral",
         "event_risk": {
@@ -3742,7 +5957,7 @@
         },
         "fundamental_macro_score": 2.6,
         "instrument": "EUR_CAD",
-        "live_release_state_score": 10.0,
+        "live_release_state_score": -4.1,
         "market_context": {
           "commodity_sensitive": {
             "CAD": {
@@ -3787,8 +6002,11 @@
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CAD": {
-            "roles": [],
-            "status": "unavailable"
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
           },
           "EUR": {
             "roles": [
@@ -3797,20 +6015,20 @@
             "status": "ok"
           }
         },
-        "phase2_confidence": 32.57,
-        "phase2_directional_score": 7.91,
+        "phase2_confidence": 34.78,
+        "phase2_directional_score": 5.56,
         "release_surprise_score": null,
         "sentiment_score": 19.34
       },
       "instrument": "EUR_CAD",
-      "phase2_confidence": 32.57,
-      "phase2_score": 7.91,
+      "phase2_confidence": 34.78,
+      "phase2_score": 5.56,
       "pricing": {
-        "ask": 1.61311,
-        "bid": 1.61289,
-        "mid": 1.613,
-        "spread": 0.000220000000000109,
-        "spread_pips": 2.20000000000109
+        "ask": 1.61323,
+        "bid": 1.61296,
+        "mid": 1.613095,
+        "spread": 0.00026999999999999247,
+        "spread_pips": 2.6999999999999247
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -3995,8 +6213,43 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": 34.39,
+        "live_release_state_score": -27.5,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 1.78,
+        "structural_macro_score": 34.39,
         "technical_alignment": 85.0,
         "technical_direction": "bullish"
       },
@@ -4082,11 +6335,11 @@
       "phase2_confidence": 42.28,
       "phase2_score": 7.37,
       "pricing": {
-        "ask": 0.93592,
-        "bid": 0.93578,
-        "mid": 0.93585,
-        "spread": 0.000140000000000029,
-        "spread_pips": 1.40000000000029
+        "ask": 0.93594,
+        "bid": 0.93581,
+        "mid": 0.935875,
+        "spread": 0.00012999999999996348,
+        "spread_pips": 1.2999999999996348
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -4271,8 +6524,45 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": -20.9,
+        "live_release_state_score": -3.45,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": -33.83,
+        "structural_macro_score": -20.9,
         "technical_alignment": 45.0,
         "technical_direction": "neutral"
       },
@@ -4360,11 +6650,11 @@
       "phase2_confidence": 38.08,
       "phase2_score": -16.94,
       "pricing": {
-        "ask": 0.8571,
+        "ask": 0.85708,
         "bid": 0.857,
-        "mid": 0.85705,
-        "spread": 9.999999999998899e-05,
-        "spread_pips": 0.9999999999998899
+        "mid": 0.85704,
+        "spread": 7.999999999996898e-05,
+        "spread_pips": 0.7999999999996898
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -4549,8 +6839,43 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": 18.93,
+        "live_release_state_score": 2.5,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 4.57,
+        "structural_macro_score": 18.93,
         "technical_alignment": 100.0,
         "technical_direction": "bullish"
       },
@@ -4636,11 +6961,11 @@
       "phase2_confidence": 39.65,
       "phase2_score": 8.0,
       "pricing": {
-        "ask": 185.876,
-        "bid": 185.851,
-        "mid": 185.8635,
-        "spread": 0.025000000000005684,
-        "spread_pips": 2.5000000000005684
+        "ask": 185.878,
+        "bid": 185.853,
+        "mid": 185.8655,
+        "spread": 0.024999999999977263,
+        "spread_pips": 2.4999999999977263
       },
       "reasons": [
         "combined directional evidence too weak"
@@ -4824,8 +7149,57 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": 0.89,
+        "live_release_state_score": 10.0,
+        "market_context": {
+          "commodity_sensitive": {
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": null,
+        "structural_macro_score": 0.89,
         "technical_alignment": 100.0,
         "technical_direction": "bearish"
       },
@@ -4925,14 +7299,14 @@
       "phase2_confidence": 13.12,
       "phase2_score": 3.93,
       "pricing": {
-        "ask": 1.95712,
-        "bid": 1.95654,
-        "mid": 1.95683,
-        "spread": 0.0005800000000000249,
-        "spread_pips": 5.800000000000249
+        "ask": 1.95688,
+        "bid": 1.95631,
+        "mid": 1.956595,
+        "spread": 0.0005699999999999594,
+        "spread_pips": 5.699999999999594
       },
       "reasons": [
-        "spread too wide (5.80 pips)",
+        "spread too wide (5.70 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -5115,8 +7489,55 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": -19.47,
+        "live_release_state_score": -6.7,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": -16.5,
+        "structural_macro_score": -19.47,
         "technical_alignment": 85.0,
         "technical_direction": "bullish"
       },
@@ -5214,11 +7635,11 @@
       "phase2_confidence": 43.76,
       "phase2_score": -12.19,
       "pricing": {
-        "ask": 1.16417,
-        "bid": 1.16406,
-        "mid": 1.164115,
-        "spread": 0.00010999999999983245,
-        "spread_pips": 1.0999999999983245
+        "ask": 1.16419,
+        "bid": 1.16409,
+        "mid": 1.1641400000000002,
+        "spread": 9.999999999998899e-05,
+        "spread_pips": 0.9999999999998899
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -5403,8 +7824,71 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": -5.09,
+        "live_release_state_score": -3.2,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": -4.57,
+        "structural_macro_score": -5.09,
         "technical_alignment": 100.0,
         "technical_direction": "bearish"
       },
@@ -5518,14 +8002,14 @@
       "phase2_confidence": 35.35,
       "phase2_score": -3.5,
       "pricing": {
-        "ask": 1.88792,
-        "bid": 1.88747,
-        "mid": 1.887695,
-        "spread": 0.00045000000000006146,
-        "spread_pips": 4.500000000000615
+        "ask": 1.88787,
+        "bid": 1.88743,
+        "mid": 1.8876499999999998,
+        "spread": 0.00043999999999999595,
+        "spread_pips": 4.3999999999999595
       },
       "reasons": [
-        "spread too wide (4.50 pips)",
+        "spread too wide (4.40 pips)",
         "combined confidence too low"
       ],
       "setup": {
@@ -5678,8 +8162,8 @@
     },
     "GBP_CAD": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 23.9,
-      "combined_score": 17.97,
+      "combined_confidence": 24.67,
+      "combined_score": 17.03,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -5707,8 +8191,68 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": 23.51,
+        "live_release_state_score": -0.65,
+        "market_context": {
+          "commodity_sensitive": {
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            },
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "CAD": {
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          },
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 53.17,
+        "structural_macro_score": 23.51,
         "technical_alignment": 55.0,
         "technical_direction": "neutral"
       },
@@ -5717,13 +8261,13 @@
           "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.421,
+            "live_state": 0.816,
             "macro": 0.79,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.772
+          "weighted_reliability": 0.838
         },
         "direction": "bullish",
         "event_risk": {
@@ -5750,7 +8294,7 @@
         },
         "fundamental_macro_score": 23.51,
         "instrument": "GBP_CAD",
-        "live_release_state_score": 13.45,
+        "live_release_state_score": -0.65,
         "market_context": {
           "commodity_sensitive": {
             "CAD": {
@@ -5795,8 +8339,11 @@
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CAD": {
-            "roles": [],
-            "status": "unavailable"
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
           },
           "GBP": {
             "roles": [
@@ -5807,23 +8354,23 @@
             "status": "ok"
           }
         },
-        "phase2_confidence": 37.73,
-        "phase2_directional_score": 24.85,
+        "phase2_confidence": 40.29,
+        "phase2_directional_score": 22.5,
         "release_surprise_score": null,
         "sentiment_score": 53.17
       },
       "instrument": "GBP_CAD",
-      "phase2_confidence": 37.73,
-      "phase2_score": 24.85,
+      "phase2_confidence": 40.29,
+      "phase2_score": 22.5,
       "pricing": {
-        "ask": 1.88223,
-        "bid": 1.88189,
-        "mid": 1.88206,
-        "spread": 0.00034000000000000696,
-        "spread_pips": 3.4000000000000696
+        "ask": 1.88232,
+        "bid": 1.88199,
+        "mid": 1.882155,
+        "spread": 0.00032999999999994145,
+        "spread_pips": 3.2999999999994145
       },
       "reasons": [
-        "spread too wide (3.40 pips)",
+        "spread too wide (3.30 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -6006,8 +8553,45 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": 55.3,
+        "live_release_state_score": -24.05,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 35.61,
+        "structural_macro_score": 55.3,
         "technical_alignment": 55.0,
         "technical_direction": "neutral"
       },
@@ -6095,11 +8679,11 @@
       "phase2_confidence": 40.11,
       "phase2_score": 24.32,
       "pricing": {
-        "ask": 1.092,
-        "bid": 1.09179,
-        "mid": 1.091895,
-        "spread": 0.00021000000000004349,
-        "spread_pips": 2.100000000000435
+        "ask": 1.09202,
+        "bid": 1.0918,
+        "mid": 1.09191,
+        "spread": 0.00021999999999988695,
+        "spread_pips": 2.1999999999988695
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6284,8 +8868,45 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": 39.84,
+        "live_release_state_score": 5.95,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          },
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 38.41,
+        "structural_macro_score": 39.84,
         "technical_alignment": 100.0,
         "technical_direction": "bullish"
       },
@@ -6373,13 +8994,14 @@
       "phase2_confidence": 37.66,
       "phase2_score": 24.94,
       "pricing": {
-        "ask": 216.871,
-        "bid": 216.844,
-        "mid": 216.85750000000002,
-        "spread": 0.027000000000015234,
-        "spread_pips": 2.7000000000015234
+        "ask": 216.879,
+        "bid": 216.847,
+        "mid": 216.863,
+        "spread": 0.031999999999982265,
+        "spread_pips": 3.1999999999982265
       },
       "reasons": [
+        "spread too wide (3.20 pips)",
         "combined confidence too low"
       ],
       "setup": {
@@ -6389,7 +9011,7 @@
         "stop_loss": null,
         "take_profit": null
       },
-      "spread_ok": true,
+      "spread_ok": false,
       "status": "analyzed",
       "technical_analysis": {
         "alignment_score": 100.0,
@@ -6561,8 +9183,59 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": 21.8,
+        "live_release_state_score": 13.45,
+        "market_context": {
+          "commodity_sensitive": {
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          },
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": null,
+        "structural_macro_score": 21.8,
         "technical_alignment": 80.0,
         "technical_direction": "bearish"
       },
@@ -6664,11 +9337,11 @@
       "phase2_confidence": 15.57,
       "phase2_score": 19.02,
       "pricing": {
-        "ask": 2.28362,
-        "bid": 2.28284,
-        "mid": 2.28323,
-        "spread": 0.0007799999999997809,
-        "spread_pips": 7.799999999997809
+        "ask": 2.28337,
+        "bid": 2.28259,
+        "mid": 2.2829800000000002,
+        "spread": 0.000780000000000225,
+        "spread_pips": 7.80000000000225
       },
       "reasons": [
         "spread too wide (7.80 pips)",
@@ -6854,8 +9527,57 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": 1.43,
+        "live_release_state_score": -3.25,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 17.33,
+        "structural_macro_score": 1.43,
         "technical_alignment": 55.0,
         "technical_direction": "bullish"
       },
@@ -6955,11 +9677,11 @@
       "phase2_confidence": 34.69,
       "phase2_score": 4.75,
       "pricing": {
-        "ask": 1.35841,
-        "bid": 1.35827,
-        "mid": 1.35834,
-        "spread": 0.00013999999999980695,
-        "spread_pips": 1.3999999999980695
+        "ask": 1.35846,
+        "bid": 1.35832,
+        "mid": 1.35839,
+        "spread": 0.000140000000000029,
+        "spread_pips": 1.40000000000029
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7114,11 +9836,11 @@
       "technical_score": 25.526
     },
     "NZD_CAD": {
-      "agreement_multiplier": 1.0,
-      "combined_confidence": 24.63,
-      "combined_score": 17.13,
+      "agreement_multiplier": 0.65,
+      "combined_confidence": 16.58,
+      "combined_score": 9.76,
       "decision": "no_trade",
-      "direction": "bullish",
+      "direction": "neutral",
       "event_risk": "elevated",
       "evidence": {
         "communication_score": null,
@@ -7144,23 +9866,94 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": 1.71,
+        "live_release_state_score": -14.1,
+        "market_context": {
+          "commodity_sensitive": {
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "CAD": {
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          },
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": null,
+        "structural_macro_score": 1.71,
         "technical_alignment": 85.0,
         "technical_direction": "bullish"
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.3,
+          "component_coverage": 0.45,
           "component_reliability": {
             "communication": 0.425,
-            "live_state": 0.0,
+            "live_state": 0.395,
             "macro": 0.785,
             "sentiment": 0.0,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.785
+          "weighted_reliability": 0.655
         },
         "direction": "neutral",
         "event_risk": {
@@ -7187,7 +9980,7 @@
         },
         "fundamental_macro_score": 1.71,
         "instrument": "NZD_CAD",
-        "live_release_state_score": null,
+        "live_release_state_score": -14.1,
         "market_context": {
           "commodity_sensitive": {
             "CAD": {
@@ -7247,28 +10040,31 @@
         "official_communication_score": null,
         "official_macro_coverage": {
           "CAD": {
-            "roles": [],
-            "status": "unavailable"
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
           },
           "NZD": {
             "roles": [],
             "status": "unavailable"
           }
         },
-        "phase2_confidence": 10.77,
-        "phase2_directional_score": 1.71,
+        "phase2_confidence": 13.68,
+        "phase2_directional_score": -3.56,
         "release_surprise_score": null,
         "sentiment_score": null
       },
       "instrument": "NZD_CAD",
-      "phase2_confidence": 10.77,
-      "phase2_score": 1.71,
+      "phase2_confidence": 13.68,
+      "phase2_score": -3.56,
       "pricing": {
-        "ask": 0.82444,
-        "bid": 0.8242,
-        "mid": 0.8243199999999999,
-        "spread": 0.00023999999999990695,
-        "spread_pips": 2.3999999999990695
+        "ask": 0.82457,
+        "bid": 0.82432,
+        "mid": 0.8244450000000001,
+        "spread": 0.00024999999999997247,
+        "spread_pips": 2.4999999999997247
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7453,8 +10249,57 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": 33.5,
+        "live_release_state_score": -37.5,
+        "market_context": {
+          "commodity_sensitive": {
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": null,
+        "structural_macro_score": 33.5,
         "technical_alignment": 100.0,
         "technical_direction": "bullish"
       },
@@ -7554,9 +10399,9 @@
       "phase2_confidence": 13.75,
       "phase2_score": 9.83,
       "pricing": {
-        "ask": 0.47832,
-        "bid": 0.47819,
-        "mid": 0.478255,
+        "ask": 0.47838,
+        "bid": 0.47825,
+        "mid": 0.47831500000000005,
         "spread": 0.000130000000000019,
         "spread_pips": 1.30000000000019
       },
@@ -7743,8 +10588,57 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": 18.04,
+        "live_release_state_score": -7.5,
+        "market_context": {
+          "commodity_sensitive": {
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": null,
+        "structural_macro_score": 18.04,
         "technical_alignment": 100.0,
         "technical_direction": "bullish"
       },
@@ -7844,11 +10738,11 @@
       "phase2_confidence": 11.37,
       "phase2_score": 9.53,
       "pricing": {
-        "ask": 94.996,
-        "bid": 94.974,
-        "mid": 94.985,
-        "spread": 0.02199999999999136,
-        "spread_pips": 2.199999999999136
+        "ask": 95.006,
+        "bid": 94.983,
+        "mid": 94.9945,
+        "spread": 0.022999999999996135,
+        "spread_pips": 2.2999999999996135
       },
       "reasons": [
         "combined confidence too low"
@@ -8032,8 +10926,69 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": -20.36,
+        "live_release_state_score": -16.7,
+        "market_context": {
+          "commodity_sensitive": {
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": null,
+        "structural_macro_score": -20.36,
         "technical_alignment": 100.0,
         "technical_direction": "bullish"
       },
@@ -8145,11 +11100,11 @@
       "phase2_confidence": 15.67,
       "phase2_score": -19.14,
       "pricing": {
-        "ask": 0.59497,
-        "bid": 0.59484,
-        "mid": 0.594905,
-        "spread": 0.00012999999999996348,
-        "spread_pips": 1.2999999999996348
+        "ask": 0.59505,
+        "bid": 0.59493,
+        "mid": 0.5949899999999999,
+        "spread": 0.00012000000000000899,
+        "spread_pips": 1.2000000000000899
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -8305,8 +11260,8 @@
     },
     "USD_CAD": {
       "agreement_multiplier": 0.65,
-      "combined_confidence": 20.85,
-      "combined_score": -6.52,
+      "combined_confidence": 21.33,
+      "combined_score": -7.13,
       "decision": "no_trade",
       "direction": "neutral",
       "event_risk": "elevated",
@@ -8334,8 +11289,78 @@
           ],
           "scheduled_policy_risk": "elevated"
         },
-        "macro_score": 22.07,
+        "live_release_state_score": 2.6,
+        "market_context": {
+          "commodity_sensitive": {
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "CAD": {
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 35.84,
+        "structural_macro_score": 22.07,
         "technical_alignment": 80.0,
         "technical_direction": "bearish"
       },
@@ -8344,13 +11369,13 @@
           "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.455,
+            "live_state": 0.849,
             "macro": 0.78,
             "sentiment": 0.82,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.753
+          "weighted_reliability": 0.818
         },
         "direction": "bullish",
         "event_risk": {
@@ -8377,7 +11402,7 @@
         },
         "fundamental_macro_score": 22.07,
         "instrument": "USD_CAD",
-        "live_release_state_score": 16.7,
+        "live_release_state_score": 2.6,
         "market_context": {
           "commodity_sensitive": {
             "CAD": {
@@ -8430,8 +11455,11 @@
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CAD": {
-            "roles": [],
-            "status": "unavailable"
+            "roles": [
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
           },
           "USD": {
             "roles": [
@@ -8444,18 +11472,18 @@
             "status": "ok"
           }
         },
-        "phase2_confidence": 35.57,
-        "phase2_directional_score": 20.1,
+        "phase2_confidence": 38.03,
+        "phase2_directional_score": 17.75,
         "release_surprise_score": null,
         "sentiment_score": 35.84
       },
       "instrument": "USD_CAD",
-      "phase2_confidence": 35.57,
-      "phase2_score": 20.1,
+      "phase2_confidence": 38.03,
+      "phase2_score": 17.75,
       "pricing": {
-        "ask": 1.38575,
-        "bid": 1.38562,
-        "mid": 1.385685,
+        "ask": 1.3858,
+        "bid": 1.38567,
+        "mid": 1.385735,
         "spread": 0.00012999999999996348,
         "spread_pips": 1.2999999999996348
       },
@@ -8642,8 +11670,55 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": 53.86,
+        "live_release_state_score": -20.8,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 18.27,
+        "structural_macro_score": 53.86,
         "technical_alignment": 100.0,
         "technical_direction": "neutral"
       },
@@ -8742,10 +11817,10 @@
       "phase2_score": 19.56,
       "pricing": {
         "ask": 0.80398,
-        "bid": 0.80386,
-        "mid": 0.80392,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "bid": 0.80385,
+        "mid": 0.8039149999999999,
+        "spread": 0.0001300000000000745,
+        "spread_pips": 1.300000000000745
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -8930,8 +12005,55 @@
           ],
           "scheduled_policy_risk": "normal"
         },
-        "macro_score": 38.41,
+        "live_release_state_score": 9.2,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
+        "official_macro_coverage": {
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "release_surprise_score": null,
         "sentiment_score": 21.07,
+        "structural_macro_score": 38.41,
         "technical_alignment": 65.0,
         "technical_direction": "bullish"
       },
@@ -9029,11 +12151,11 @@
       "phase2_confidence": 43.27,
       "phase2_score": 20.19,
       "pricing": {
-        "ask": 159.665,
-        "bid": 159.657,
+        "ask": 159.666,
+        "bid": 159.656,
         "mid": 159.661,
-        "spread": 0.007999999999981355,
-        "spread_pips": 0.7999999999981355
+        "spread": 0.009999999999990905,
+        "spread_pips": 0.9999999999990905
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -9190,6 +12312,14 @@
   },
   "pairs_analyzed": 28,
   "pairs_requested": 28,
+  "phase2_component_weights": {
+    "communication": 0.2,
+    "live_state": 0.15,
+    "macro": 0.3,
+    "sentiment": 0.25,
+    "surprises": 0.1
+  },
+  "phase2_schema_version": "2.5",
   "positioning_context": {
     "AUD": {
       "leveraged_money_long": 75644.0,
@@ -9263,9 +12393,9 @@
       "CHF_JPY",
       "AUD_CAD",
       "GBP_AUD",
+      "CAD_JPY",
       "USD_JPY",
       "EUR_CHF",
-      "CAD_JPY",
       "GBP_JPY",
       "NZD_JPY",
       "AUD_NZD",
@@ -9273,15 +12403,15 @@
       "EUR_USD",
       "USD_CHF",
       "EUR_CAD",
+      "CAD_CHF",
       "GBP_USD",
-      "NZD_CAD",
-      "GBP_CHF",
       "GBP_CAD",
+      "GBP_CHF",
       "USD_CAD",
       "EUR_NZD",
       "NZD_USD",
-      "CAD_CHF",
       "GBP_NZD",
+      "NZD_CAD",
       "EUR_GBP"
     ]
   },
@@ -9291,7 +12421,57 @@
     "min_trade_score": 35.0
   },
   "schema_version": "3.1",
-  "scope": "final 28-pair technical + fundamental + sentiment + event-risk + execution-context fusion",
+  "scope": "final 28-pair technical + expanded fundamental + sentiment + event-risk + execution-context fusion",
+  "surprise_context": {
+    "AUD": {
+      "event_count": 0,
+      "events_used": [],
+      "reliability": 0.0,
+      "score": null
+    },
+    "CAD": {
+      "event_count": 0,
+      "events_used": [],
+      "reliability": 0.0,
+      "score": null
+    },
+    "CHF": {
+      "event_count": 0,
+      "events_used": [],
+      "reliability": 0.0,
+      "score": null
+    },
+    "EUR": {
+      "event_count": 0,
+      "events_used": [],
+      "reliability": 0.0,
+      "score": null
+    },
+    "GBP": {
+      "event_count": 0,
+      "events_used": [],
+      "reliability": 0.0,
+      "score": null
+    },
+    "JPY": {
+      "event_count": 0,
+      "events_used": [],
+      "reliability": 0.0,
+      "score": null
+    },
+    "NZD": {
+      "event_count": 0,
+      "events_used": [],
+      "reliability": 0.0,
+      "score": null
+    },
+    "USD": {
+      "event_count": 0,
+      "events_used": [],
+      "reliability": 0.0,
+      "score": null
+    }
+  },
   "weights": {
     "phase2": 0.4,
     "technical": 0.6
