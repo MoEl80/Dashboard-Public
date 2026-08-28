@@ -1,28 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Forex Analysis Dashboard</title>
-  <meta name="description" content="Public, sanitized Forex analysis dashboard output.">
-  <style>
-    :root { color-scheme: dark; font-family: Inter, system-ui, -apple-system, sans-serif; }
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0b1220; color: #e8eef8; }
-    main { width: min(680px, calc(100% - 40px)); padding: 44px; border: 1px solid #26344e; border-radius: 18px; background: #111b2d; box-shadow: 0 20px 60px #0005; }
-    h1 { margin: 0 0 12px; font-size: clamp(2rem, 6vw, 3.5rem); letter-spacing: -0.04em; }
-    p { color: #aebbd0; line-height: 1.7; }
-    .status { display: inline-flex; align-items: center; gap: 9px; margin: 20px 0 8px; padding: 8px 12px; border-radius: 999px; background: #173b36; color: #8ce4c4; font-size: .9rem; }
-    .dot { width: 8px; height: 8px; border-radius: 50%; background: #54d6aa; }
-    footer { margin-top: 28px; color: #7586a3; font-size: .85rem; }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forex Analysis Cloud</title>
+  <meta name="description" content="Public, sanitized Forex analysis dashboard output." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="topbar">
+    <div>
+      <h1>Forex Analysis Cloud</h1>
+      <p>28-pair technical + fundamental + sentiment + execution dashboard</p>
+    </div>
+    <div class="status" id="status">Loading latest analysis…</div>
+  </header>
+
   <main>
-    <div class="status"><span class="dot" aria-hidden="true"></span> Public dashboard endpoint</div>
-    <h1>Forex Analysis Dashboard</h1>
-    <p>This site is reserved for safe, generated Forex analysis and dashboard output.</p>
-    <p>Source analysis, market-data access, credentials, and decision logic remain in the private Forex Analysis Cloud project. No secrets or account information belong in this repository.</p>
-    <footer>Generated public output will appear here when available.</footer>
+    <section class="summary-grid" id="summaryGrid"></section>
+
+    <section class="controls card">
+      <input id="search" type="search" placeholder="Search pair, e.g. AUD/JPY" />
+      <select id="decisionFilter">
+        <option value="all">All decisions</option>
+        <option value="buy">Buy</option>
+        <option value="sell">Sell</option>
+        <option value="no_trade">No trade</option>
+      </select>
+      <select id="riskFilter">
+        <option value="all">All event risk</option>
+        <option value="normal">Normal</option>
+        <option value="elevated">Elevated</option>
+        <option value="high">High</option>
+        <option value="unknown">Unknown</option>
+      </select>
+      <button id="resetFilters">Reset</button>
+    </section>
+
+    <section class="table-card card">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th><th>Pair</th><th>Recommendation</th><th>Combined</th><th>Confidence</th><th>Technical</th><th>Fundamental</th><th>Event Risk</th><th>Spread</th>
+            </tr>
+          </thead>
+          <tbody id="pairsTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="detailPanel" class="detail-panel card hidden"></section>
   </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
