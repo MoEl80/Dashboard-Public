@@ -74,7 +74,7 @@
       "status": "unavailable"
     }
   },
-  "generated_at": "2026-08-28T09:40:36.711281+00:00",
+  "generated_at": "2026-08-28T09:41:42.159205+00:00",
   "macro_context": {
     "AUD": {
       "background": {
@@ -1029,6 +1029,67 @@
         "fundamental_macro_score": 28.6,
         "instrument": "AUD_CAD",
         "live_release_state_score": 16.64,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            },
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "AUD": {
@@ -1056,11 +1117,11 @@
       "phase2_confidence": 38.83,
       "phase2_score": 28.35,
       "pricing": {
-        "ask": 0.99714,
-        "bid": 0.99692,
-        "mid": 0.9970300000000001,
-        "spread": 0.00021999999999999797,
-        "spread_pips": 2.1999999999999797
+        "ask": 0.99712,
+        "bid": 0.99691,
+        "mid": 0.997015,
+        "spread": 0.00021000000000004349,
+        "spread_pips": 2.100000000000435
       },
       "reasons": [
         "combined confidence too low"
@@ -1288,6 +1349,46 @@
         "fundamental_macro_score": 60.38,
         "instrument": "AUD_CHF",
         "live_release_state_score": -20.86,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "AUD": {
@@ -1317,19 +1418,19 @@
       "phase2_confidence": 50.33,
       "phase2_score": 27.81,
       "pricing": {
-        "ask": 0.57845,
-        "bid": 0.57832,
-        "mid": 0.5783849999999999,
-        "spread": 0.0001300000000000745,
-        "spread_pips": 1.300000000000745
+        "ask": 0.5785,
+        "bid": 0.57838,
+        "mid": 0.5784400000000001,
+        "spread": 0.00012000000000000899,
+        "spread_pips": 1.2000000000000899
       },
       "reasons": [],
       "setup": {
-        "entry": 0.578385,
-        "invalidation": "H1 close below 0.577677",
+        "entry": 0.57844,
+        "invalidation": "H1 close below 0.577732",
         "risk_reward": 2.0,
-        "stop_loss": 0.577677,
-        "take_profit": 0.579802
+        "stop_loss": 0.577732,
+        "take_profit": 0.579857
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -1547,6 +1648,46 @@
         "fundamental_macro_score": 44.92,
         "instrument": "AUD_JPY",
         "live_release_state_score": 9.14,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "AUD": {
@@ -1576,19 +1717,19 @@
       "phase2_confidence": 47.26,
       "phase2_score": 28.43,
       "pricing": {
-        "ask": 114.902,
-        "bid": 114.881,
-        "mid": 114.89150000000001,
-        "spread": 0.021000000000000796,
-        "spread_pips": 2.1000000000000796
+        "ask": 114.894,
+        "bid": 114.874,
+        "mid": 114.884,
+        "spread": 0.020000000000010232,
+        "spread_pips": 2.000000000001023
       },
       "reasons": [],
       "setup": {
-        "entry": 114.8915,
-        "invalidation": "H1 close below 114.767169",
+        "entry": 114.884,
+        "invalidation": "H1 close below 114.759669",
         "risk_reward": 2.0,
-        "stop_loss": 114.767169,
-        "take_profit": 115.140162
+        "stop_loss": 114.759669,
+        "take_profit": 115.132662
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -1806,6 +1947,61 @@
         "fundamental_macro_score": 26.89,
         "instrument": "AUD_NZD",
         "live_release_state_score": 16.64,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": null,
         "official_macro_coverage": {
           "AUD": {
@@ -1833,11 +2029,11 @@
       "phase2_confidence": 16.26,
       "phase2_score": 23.47,
       "pricing": {
-        "ask": 1.20965,
+        "ask": 1.20967,
         "bid": 1.20942,
-        "mid": 1.2095349999999998,
-        "spread": 0.00022999999999995246,
-        "spread_pips": 2.2999999999995246
+        "mid": 1.2095449999999999,
+        "spread": 0.0002500000000000835,
+        "spread_pips": 2.500000000000835
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2066,6 +2262,54 @@
         "fundamental_macro_score": 6.52,
         "instrument": "AUD_USD",
         "live_release_state_score": -0.05,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "AUD": {
@@ -2099,19 +2343,19 @@
       "phase2_confidence": 43.68,
       "phase2_score": 8.25,
       "pricing": {
-        "ask": 0.71959,
-        "bid": 0.71952,
-        "mid": 0.719555,
-        "spread": 6.999999999990347e-05,
-        "spread_pips": 0.6999999999990347
+        "ask": 0.71957,
+        "bid": 0.7195,
+        "mid": 0.719535,
+        "spread": 7.00000000000145e-05,
+        "spread_pips": 0.700000000000145
       },
       "reasons": [],
       "setup": {
-        "entry": 0.719555,
-        "invalidation": "H1 close below 0.718719",
+        "entry": 0.719535,
+        "invalidation": "H1 close below 0.718699",
         "risk_reward": 2.0,
-        "stop_loss": 0.718719,
-        "take_profit": 0.721227
+        "stop_loss": 0.718699,
+        "take_profit": 0.721207
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -2329,6 +2573,47 @@
         "fundamental_macro_score": 31.79,
         "instrument": "CAD_CHF",
         "live_release_state_score": -37.5,
+        "market_context": {
+          "commodity_sensitive": {
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            },
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CAD": {
@@ -2351,11 +2636,11 @@
       "phase2_confidence": 30.74,
       "phase2_score": -0.53,
       "pricing": {
-        "ask": 0.58018,
-        "bid": 0.58005,
-        "mid": 0.5801149999999999,
-        "spread": 0.0001300000000000745,
-        "spread_pips": 1.300000000000745
+        "ask": 0.58024,
+        "bid": 0.58012,
+        "mid": 0.5801799999999999,
+        "spread": 0.00012000000000000899,
+        "spread_pips": 1.2000000000000899
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2584,6 +2869,47 @@
         "fundamental_macro_score": 16.33,
         "instrument": "CAD_JPY",
         "live_release_state_score": -7.5,
+        "market_context": {
+          "commodity_sensitive": {
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            },
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CAD": {
@@ -2606,11 +2932,11 @@
       "phase2_confidence": 28.45,
       "phase2_score": 0.09,
       "pricing": {
-        "ask": 115.24,
-        "bid": 115.221,
-        "mid": 115.2305,
-        "spread": 0.018999999999991246,
-        "spread_pips": 1.8999999999991246
+        "ask": 115.242,
+        "bid": 115.224,
+        "mid": 115.233,
+        "spread": 0.018000000000000682,
+        "spread_pips": 1.8000000000000682
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2839,6 +3165,25 @@
         "fundamental_macro_score": -15.46,
         "instrument": "CHF_JPY",
         "live_release_state_score": 30.0,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CHF": {
@@ -2863,14 +3208,14 @@
       "phase2_confidence": 37.42,
       "phase2_score": 0.62,
       "pricing": {
-        "ask": 198.654,
-        "bid": 198.617,
-        "mid": 198.63549999999998,
-        "spread": 0.03700000000000614,
-        "spread_pips": 3.700000000000614
+        "ask": 198.63,
+        "bid": 198.596,
+        "mid": 198.613,
+        "spread": 0.033999999999991815,
+        "spread_pips": 3.3999999999991815
       },
       "reasons": [
-        "spread too wide (3.70 pips)",
+        "spread too wide (3.40 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -3097,6 +3442,46 @@
         "fundamental_macro_score": -25.99,
         "instrument": "EUR_AUD",
         "live_release_state_score": -6.64,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "AUD": {
@@ -3126,14 +3511,14 @@
       "phase2_confidence": 47.83,
       "phase2_score": -20.43,
       "pricing": {
-        "ask": 1.61805,
-        "bid": 1.61772,
-        "mid": 1.617885,
-        "spread": 0.00032999999999994145,
-        "spread_pips": 3.2999999999994145
+        "ask": 1.618,
+        "bid": 1.61768,
+        "mid": 1.6178400000000002,
+        "spread": 0.000320000000000098,
+        "spread_pips": 3.20000000000098
       },
       "reasons": [
-        "spread too wide (3.30 pips)"
+        "spread too wide (3.20 pips)"
       ],
       "setup": {
         "entry": null,
@@ -3358,6 +3743,47 @@
         "fundamental_macro_score": 2.6,
         "instrument": "EUR_CAD",
         "live_release_state_score": 10.0,
+        "market_context": {
+          "commodity_sensitive": {
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            },
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CAD": {
@@ -3380,11 +3806,11 @@
       "phase2_confidence": 32.57,
       "phase2_score": 7.91,
       "pricing": {
-        "ask": 1.61325,
-        "bid": 1.61298,
-        "mid": 1.613115,
-        "spread": 0.00026999999999999247,
-        "spread_pips": 2.6999999999999247
+        "ask": 1.61304,
+        "bid": 1.61281,
+        "mid": 1.6129250000000002,
+        "spread": 0.00022999999999995246,
+        "spread_pips": 2.2999999999995246
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -3613,6 +4039,25 @@
         "fundamental_macro_score": 34.39,
         "instrument": "EUR_CHF",
         "live_release_state_score": -27.5,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CHF": {
@@ -3637,9 +4082,9 @@
       "phase2_confidence": 42.28,
       "phase2_score": 7.37,
       "pricing": {
-        "ask": 0.93581,
-        "bid": 0.93567,
-        "mid": 0.93574,
+        "ask": 0.93586,
+        "bid": 0.93572,
+        "mid": 0.93579,
         "spread": 0.000140000000000029,
         "spread_pips": 1.40000000000029
       },
@@ -3870,6 +4315,25 @@
         "fundamental_macro_score": -20.9,
         "instrument": "EUR_GBP",
         "live_release_state_score": -3.45,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "EUR": {
@@ -3896,11 +4360,11 @@
       "phase2_confidence": 38.08,
       "phase2_score": -16.94,
       "pricing": {
-        "ask": 0.85708,
-        "bid": 0.85698,
-        "mid": 0.85703,
-        "spread": 9.999999999998899e-05,
-        "spread_pips": 0.9999999999998899
+        "ask": 0.85711,
+        "bid": 0.857,
+        "mid": 0.857055,
+        "spread": 0.0001100000000000545,
+        "spread_pips": 1.100000000000545
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -4129,6 +4593,25 @@
         "fundamental_macro_score": 18.93,
         "instrument": "EUR_JPY",
         "live_release_state_score": 2.5,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "EUR": {
@@ -4153,9 +4636,9 @@
       "phase2_confidence": 39.65,
       "phase2_score": 8.0,
       "pricing": {
-        "ask": 185.893,
-        "bid": 185.867,
-        "mid": 185.88,
+        "ask": 185.875,
+        "bid": 185.849,
+        "mid": 185.862,
         "spread": 0.02600000000001046,
         "spread_pips": 2.600000000001046
       },
@@ -4385,6 +4868,41 @@
         "fundamental_macro_score": 0.89,
         "instrument": "EUR_NZD",
         "live_release_state_score": 10.0,
+        "market_context": {
+          "commodity_sensitive": {
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": null,
         "official_macro_coverage": {
           "EUR": {
@@ -4407,14 +4925,14 @@
       "phase2_confidence": 13.12,
       "phase2_score": 3.93,
       "pricing": {
-        "ask": 1.95718,
-        "bid": 1.95656,
-        "mid": 1.9568699999999999,
-        "spread": 0.0006199999999998429,
-        "spread_pips": 6.199999999998429
+        "ask": 1.95715,
+        "bid": 1.95654,
+        "mid": 1.956845,
+        "spread": 0.0006099999999999994,
+        "spread_pips": 6.099999999999994
       },
       "reasons": [
-        "spread too wide (6.20 pips)",
+        "spread too wide (6.10 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -4641,6 +5159,33 @@
         "fundamental_macro_score": -19.47,
         "instrument": "EUR_USD",
         "live_release_state_score": -6.7,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "EUR": {
+              "currency": "EUR",
+              "policy_rate": 2.25,
+              "source": "https://www.ecb.europa.eu/mopo/implement/sf/html/index.en.html",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "EUR": {
@@ -4669,11 +5214,11 @@
       "phase2_confidence": 43.76,
       "phase2_score": -12.19,
       "pricing": {
-        "ask": 1.16425,
-        "bid": 1.16415,
-        "mid": 1.1642000000000001,
-        "spread": 9.999999999998899e-05,
-        "spread_pips": 0.9999999999998899
+        "ask": 1.16413,
+        "bid": 1.16402,
+        "mid": 1.164075,
+        "spread": 0.0001100000000000545,
+        "spread_pips": 1.100000000000545
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -4902,6 +5447,46 @@
         "fundamental_macro_score": -5.09,
         "instrument": "GBP_AUD",
         "live_release_state_score": -3.2,
+        "market_context": {
+          "commodity_sensitive": {
+            "AUD": {
+              "aud_terms_monthly_change_pct": 1.2,
+              "currency": "AUD",
+              "reference_month": "2026-07",
+              "role": "commodity_export_price_context",
+              "sdr_annual_change_pct": 15.4,
+              "sdr_monthly_change_pct": 0.6,
+              "source": "Reserve Bank of Australia Index of Commodity Prices",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/frequency/commodity-prices/2026/icp-0726.html",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "AUD": {
+              "currency": "AUD",
+              "date": "26-Aug-2026",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end near policy",
+              "policy_rate": 4.35,
+              "source": "Reserve Bank of Australia, Table F2",
+              "source_tier": 1,
+              "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.404,
+              "ten_year_yield": 5.023,
+              "two_year_minus_policy": 0.269,
+              "two_year_yield": 4.619
+            },
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "AUD": {
@@ -4933,14 +5518,14 @@
       "phase2_confidence": 35.35,
       "phase2_score": -3.5,
       "pricing": {
-        "ask": 1.88812,
-        "bid": 1.88766,
-        "mid": 1.88789,
-        "spread": 0.000460000000000127,
-        "spread_pips": 4.60000000000127
+        "ask": 1.88797,
+        "bid": 1.88752,
+        "mid": 1.887745,
+        "spread": 0.0004499999999998394,
+        "spread_pips": 4.499999999998394
       },
       "reasons": [
-        "spread too wide (4.60 pips)",
+        "spread too wide (4.50 pips)",
         "combined confidence too low"
       ],
       "setup": {
@@ -5166,6 +5751,47 @@
         "fundamental_macro_score": 23.51,
         "instrument": "GBP_CAD",
         "live_release_state_score": 13.45,
+        "market_context": {
+          "commodity_sensitive": {
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            },
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CAD": {
@@ -5190,9 +5816,9 @@
       "phase2_confidence": 37.73,
       "phase2_score": 24.85,
       "pricing": {
-        "ask": 1.88236,
-        "bid": 1.88203,
-        "mid": 1.882195,
+        "ask": 1.88215,
+        "bid": 1.88182,
+        "mid": 1.881985,
         "spread": 0.00032999999999994145,
         "spread_pips": 3.2999999999994145
       },
@@ -5424,6 +6050,25 @@
         "fundamental_macro_score": 55.3,
         "instrument": "GBP_CHF",
         "live_release_state_score": -24.05,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CHF": {
@@ -5451,10 +6096,10 @@
       "phase2_score": 24.32,
       "pricing": {
         "ask": 1.09191,
-        "bid": 1.09168,
-        "mid": 1.0917949999999998,
-        "spread": 0.00022999999999995246,
-        "spread_pips": 2.2999999999995246
+        "bid": 1.0917,
+        "mid": 1.091805,
+        "spread": 0.00021000000000004349,
+        "spread_pips": 2.100000000000435
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -5683,6 +6328,25 @@
         "fundamental_macro_score": 39.84,
         "instrument": "GBP_JPY",
         "live_release_state_score": 5.95,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "GBP": {
@@ -5709,11 +6373,11 @@
       "phase2_confidence": 37.66,
       "phase2_score": 24.94,
       "pricing": {
-        "ask": 216.896,
-        "bid": 216.867,
-        "mid": 216.8815,
-        "spread": 0.028999999999996362,
-        "spread_pips": 2.899999999999636
+        "ask": 216.867,
+        "bid": 216.839,
+        "mid": 216.853,
+        "spread": 0.027999999999991587,
+        "spread_pips": 2.7999999999991587
       },
       "reasons": [
         "combined confidence too low"
@@ -5941,6 +6605,41 @@
         "fundamental_macro_score": 21.8,
         "instrument": "GBP_NZD",
         "live_release_state_score": 13.45,
+        "market_context": {
+          "commodity_sensitive": {
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": null,
         "official_macro_coverage": {
           "GBP": {
@@ -5965,14 +6664,14 @@
       "phase2_confidence": 15.57,
       "phase2_score": 19.02,
       "pricing": {
-        "ask": 2.28377,
-        "bid": 2.28295,
-        "mid": 2.28336,
-        "spread": 0.0008200000000000429,
-        "spread_pips": 8.20000000000043
+        "ask": 2.28362,
+        "bid": 2.28284,
+        "mid": 2.28323,
+        "spread": 0.0007799999999997809,
+        "spread_pips": 7.799999999997809
       },
       "reasons": [
-        "spread too wide (8.20 pips)",
+        "spread too wide (7.80 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -6199,6 +6898,33 @@
         "fundamental_macro_score": 1.43,
         "instrument": "GBP_USD",
         "live_release_state_score": -3.25,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "GBP": {
+              "currency": "GBP",
+              "policy_rate": 3.75,
+              "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "GBP": {
@@ -6229,11 +6955,11 @@
       "phase2_confidence": 34.69,
       "phase2_score": 4.75,
       "pricing": {
-        "ask": 1.35855,
-        "bid": 1.3584,
-        "mid": 1.3584749999999999,
-        "spread": 0.00014999999999987246,
-        "spread_pips": 1.4999999999987246
+        "ask": 1.35837,
+        "bid": 1.35821,
+        "mid": 1.35829,
+        "spread": 0.00016000000000016001,
+        "spread_pips": 1.6000000000016001
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6462,6 +7188,62 @@
         "fundamental_macro_score": 1.71,
         "instrument": "NZD_CAD",
         "live_release_state_score": null,
+        "market_context": {
+          "commodity_sensitive": {
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": null,
         "official_macro_coverage": {
           "CAD": {
@@ -6482,11 +7264,11 @@
       "phase2_confidence": 10.77,
       "phase2_score": 1.71,
       "pricing": {
-        "ask": 0.82444,
-        "bid": 0.8242,
-        "mid": 0.8243199999999999,
-        "spread": 0.00023999999999990695,
-        "spread_pips": 2.3999999999990695
+        "ask": 0.82439,
+        "bid": 0.82416,
+        "mid": 0.824275,
+        "spread": 0.00022999999999995246,
+        "spread_pips": 2.2999999999995246
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6715,6 +7497,41 @@
         "fundamental_macro_score": 33.5,
         "instrument": "NZD_CHF",
         "live_release_state_score": -37.5,
+        "market_context": {
+          "commodity_sensitive": {
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": null,
         "official_macro_coverage": {
           "CHF": {
@@ -6737,9 +7554,9 @@
       "phase2_confidence": 13.75,
       "phase2_score": 9.83,
       "pricing": {
-        "ask": 0.47825,
-        "bid": 0.47812,
-        "mid": 0.47818499999999997,
+        "ask": 0.47829,
+        "bid": 0.47816,
+        "mid": 0.478225,
         "spread": 0.000130000000000019,
         "spread_pips": 1.30000000000019
       },
@@ -6970,6 +7787,41 @@
         "fundamental_macro_score": 18.04,
         "instrument": "NZD_JPY",
         "live_release_state_score": -7.5,
+        "market_context": {
+          "commodity_sensitive": {
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            }
+          }
+        },
         "official_communication_score": null,
         "official_macro_coverage": {
           "JPY": {
@@ -6992,11 +7844,11 @@
       "phase2_confidence": 11.37,
       "phase2_score": 9.53,
       "pricing": {
-        "ask": 94.997,
-        "bid": 94.973,
-        "mid": 94.985,
-        "spread": 0.02400000000000091,
-        "spread_pips": 2.400000000000091
+        "ask": 94.993,
+        "bid": 94.968,
+        "mid": 94.9805,
+        "spread": 0.024999999999991473,
+        "spread_pips": 2.4999999999991473
       },
       "reasons": [
         "combined confidence too low"
@@ -7224,6 +8076,49 @@
         "fundamental_macro_score": -20.36,
         "instrument": "NZD_USD",
         "live_release_state_score": -16.7,
+        "market_context": {
+          "commodity_sensitive": {
+            "NZD": {
+              "currency": "NZD",
+              "exposures": [
+                "dairy",
+                "meat",
+                "forestry",
+                "agricultural exports"
+              ],
+              "role": "commodity_and_terms_of_trade_context",
+              "source": "Stats NZ imports, exports and overseas trade indexes",
+              "source_tier": 1,
+              "source_url": "https://www.stats.govt.nz/topics/imports-and-exports.aspx",
+              "status": "exposure_metadata",
+              "terms_of_trade": null
+            }
+          },
+          "rates": {
+            "NZD": {
+              "currency": "NZD",
+              "policy_rate": 2.5,
+              "source": "https://www.rbnz.govt.nz/news-and-events/news/2026/07/ocr-increased-to-2-50-to-return-inflation-to-2-percent",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
         "official_communication_score": null,
         "official_macro_coverage": {
           "NZD": {
@@ -7250,11 +8145,11 @@
       "phase2_confidence": 15.67,
       "phase2_score": -19.14,
       "pricing": {
-        "ask": 0.595,
-        "bid": 0.59487,
-        "mid": 0.594935,
-        "spread": 0.00012999999999996348,
-        "spread_pips": 1.2999999999996348
+        "ask": 0.59495,
+        "bid": 0.59483,
+        "mid": 0.5948899999999999,
+        "spread": 0.00012000000000000899,
+        "spread_pips": 1.2000000000000899
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7483,6 +8378,55 @@
         "fundamental_macro_score": 22.07,
         "instrument": "USD_CAD",
         "live_release_state_score": 16.7,
+        "market_context": {
+          "commodity_sensitive": {
+            "CAD": {
+              "change_pct": -2.451,
+              "currency": "CAD",
+              "date": "2026-07-01",
+              "exposures": [
+                "energy",
+                "metals and minerals",
+                "forestry",
+                "agriculture",
+                "fisheries"
+              ],
+              "index": 697.67,
+              "previous_index": 715.2,
+              "role": "commodity_export_price_context",
+              "source": "Bank of Canada Commodity Price Index",
+              "source_tier": 1,
+              "source_url": "https://www.bankofcanada.ca/valet/observations/M.BCPI/json?start_date=1972-01-01",
+              "status": "ok"
+            }
+          },
+          "rates": {
+            "CAD": {
+              "currency": "CAD",
+              "policy_rate": 2.25,
+              "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+              "source_tier": 1,
+              "status": "policy_only",
+              "yield_error": "HTTPError",
+              "yield_status": "unavailable"
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CAD": {
@@ -7509,11 +8453,11 @@
       "phase2_confidence": 35.57,
       "phase2_score": 20.1,
       "pricing": {
-        "ask": 1.38572,
-        "bid": 1.38561,
-        "mid": 1.385665,
-        "spread": 0.0001100000000000545,
-        "spread_pips": 1.100000000000545
+        "ask": 1.38574,
+        "bid": 1.38562,
+        "mid": 1.38568,
+        "spread": 0.00011999999999989797,
+        "spread_pips": 1.1999999999989797
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7742,6 +8686,33 @@
         "fundamental_macro_score": 53.86,
         "instrument": "USD_CHF",
         "live_release_state_score": -20.8,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "CHF": {
+              "currency": "CHF",
+              "policy_rate": 0.0,
+              "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "CHF": {
@@ -7770,11 +8741,11 @@
       "phase2_confidence": 46.16,
       "phase2_score": 19.56,
       "pricing": {
-        "ask": 0.80384,
-        "bid": 0.80372,
-        "mid": 0.8037799999999999,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "ask": 0.80397,
+        "bid": 0.80384,
+        "mid": 0.803905,
+        "spread": 0.00012999999999996348,
+        "spread_pips": 1.2999999999996348
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -8003,6 +8974,33 @@
         "fundamental_macro_score": 38.41,
         "instrument": "USD_JPY",
         "live_release_state_score": 9.2,
+        "market_context": {
+          "commodity_sensitive": {},
+          "rates": {
+            "JPY": {
+              "currency": "JPY",
+              "policy_rate": 0.75,
+              "source": "https://www.boj.or.jp/en/research/brp/mor/mor260812.htm",
+              "source_tier": 1,
+              "status": "policy_only"
+            },
+            "USD": {
+              "currency": "USD",
+              "date": "2026-08-27T00:00:00",
+              "interpretation_note": "2Y-policy gap is a market-rate proxy, not a pure policy-expectations measure.",
+              "policy_path_context": "short-end above policy",
+              "policy_rate": 3.625,
+              "source": "U.S. Department of the Treasury",
+              "source_tier": 1,
+              "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+              "status": "ok",
+              "ten_year_minus_two_year": 0.47,
+              "ten_year_yield": 4.67,
+              "two_year_minus_policy": 0.575,
+              "two_year_yield": 4.2
+            }
+          }
+        },
         "official_communication_score": 0.0,
         "official_macro_coverage": {
           "JPY": {
@@ -8031,11 +9029,11 @@
       "phase2_confidence": 43.27,
       "phase2_score": 20.19,
       "pricing": {
-        "ask": 159.665,
-        "bid": 159.657,
-        "mid": 159.661,
-        "spread": 0.007999999999981355,
-        "spread_pips": 0.7999999999981355
+        "ask": 159.668,
+        "bid": 159.661,
+        "mid": 159.6645,
+        "spread": 0.007000000000005002,
+        "spread_pips": 0.7000000000005002
       },
       "reasons": [
         "combined directional evidence too weak",
