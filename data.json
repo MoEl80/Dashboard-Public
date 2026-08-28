@@ -1,5 +1,5 @@
 {
-  "actionable_count": 4,
+  "actionable_count": 3,
   "economic_calendar": {
     "AUD": {
       "error": "HTTPError",
@@ -74,7 +74,7 @@
       "status": "unavailable"
     }
   },
-  "generated_at": "2026-08-28T09:32:20.799624+00:00",
+  "generated_at": "2026-08-28T09:33:28.971126+00:00",
   "macro_context": {
     "AUD": {
       "background": {
@@ -956,8 +956,8 @@
   "pairs": {
     "AUD_CAD": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 44.25,
-      "combined_score": 48.79,
+      "combined_confidence": 45.2,
+      "combined_score": 47.85,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -992,16 +992,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.446,
             "macro": 0.79,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.843
+          "weighted_reliability": 0.777
         },
         "direction": "bullish",
         "event_risk": {
@@ -1028,22 +1028,39 @@
         },
         "fundamental_macro_score": 28.6,
         "instrument": "AUD_CAD",
-        "live_release_state_score": null,
+        "live_release_state_score": 16.64,
         "official_communication_score": 0.0,
-        "phase2_confidence": 35.66,
-        "phase2_directional_score": 30.69,
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "CAD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
+        "phase2_confidence": 38.83,
+        "phase2_directional_score": 28.35,
         "release_surprise_score": null,
         "sentiment_score": 57.74
       },
       "instrument": "AUD_CAD",
-      "phase2_confidence": 35.66,
-      "phase2_score": 30.69,
+      "phase2_confidence": 38.83,
+      "phase2_score": 28.35,
       "pricing": {
-        "ask": 0.99716,
+        "ask": 0.99717,
         "bid": 0.99695,
-        "mid": 0.997055,
-        "spread": 0.00021000000000004349,
-        "spread_pips": 2.100000000000435
+        "mid": 0.9970600000000001,
+        "spread": 0.00021999999999999797,
+        "spread_pips": 2.1999999999999797
       },
       "reasons": [
         "combined confidence too low"
@@ -1198,8 +1215,8 @@
     },
     "AUD_CHF": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 61.16,
-      "combined_score": 49.15,
+      "combined_confidence": 63.32,
+      "combined_score": 45.26,
       "decision": "buy",
       "direction": "bullish",
       "event_risk": "normal",
@@ -1234,16 +1251,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.802,
             "macro": 0.767,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 1.0,
-          "weighted_reliability": 0.833
+          "weighted_reliability": 0.828
         },
         "direction": "bullish",
         "event_risk": {
@@ -1270,30 +1287,49 @@
         },
         "fundamental_macro_score": 60.38,
         "instrument": "AUD_CHF",
-        "live_release_state_score": null,
+        "live_release_state_score": -20.86,
         "official_communication_score": 0.0,
-        "phase2_confidence": 44.94,
-        "phase2_directional_score": 37.54,
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 50.33,
+        "phase2_directional_score": 27.81,
         "release_surprise_score": null,
         "sentiment_score": 40.17
       },
       "instrument": "AUD_CHF",
-      "phase2_confidence": 44.94,
-      "phase2_score": 37.54,
+      "phase2_confidence": 50.33,
+      "phase2_score": 27.81,
       "pricing": {
-        "ask": 0.57865,
-        "bid": 0.57851,
-        "mid": 0.57858,
+        "ask": 0.57859,
+        "bid": 0.57845,
+        "mid": 0.57852,
         "spread": 0.000140000000000029,
         "spread_pips": 1.40000000000029
       },
       "reasons": [],
       "setup": {
-        "entry": 0.57858,
-        "invalidation": "H1 close below 0.577872",
+        "entry": 0.57852,
+        "invalidation": "H1 close below 0.577812",
         "risk_reward": 2.0,
-        "stop_loss": 0.577872,
-        "take_profit": 0.579997
+        "stop_loss": 0.577812,
+        "take_profit": 0.579937
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -1438,8 +1474,8 @@
     },
     "AUD_JPY": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 63.85,
-      "combined_score": 54.15,
+      "combined_confidence": 66.71,
+      "combined_score": 52.61,
       "decision": "buy",
       "direction": "bullish",
       "event_risk": "normal",
@@ -1474,16 +1510,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.802,
             "macro": 0.606,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 1.0,
-          "weighted_reliability": 0.769
+          "weighted_reliability": 0.775
         },
         "direction": "bullish",
         "event_risk": {
@@ -1510,30 +1546,49 @@
         },
         "fundamental_macro_score": 44.92,
         "instrument": "AUD_JPY",
-        "live_release_state_score": null,
+        "live_release_state_score": 9.14,
         "official_communication_score": 0.0,
-        "phase2_confidence": 40.11,
-        "phase2_directional_score": 32.29,
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 47.26,
+        "phase2_directional_score": 28.43,
         "release_surprise_score": null,
         "sentiment_score": 42.97
       },
       "instrument": "AUD_JPY",
-      "phase2_confidence": 40.11,
-      "phase2_score": 32.29,
+      "phase2_confidence": 47.26,
+      "phase2_score": 28.43,
       "pricing": {
-        "ask": 114.887,
-        "bid": 114.868,
-        "mid": 114.8775,
-        "spread": 0.019000000000005457,
-        "spread_pips": 1.9000000000005457
+        "ask": 114.891,
+        "bid": 114.871,
+        "mid": 114.881,
+        "spread": 0.020000000000010232,
+        "spread_pips": 2.000000000001023
       },
       "reasons": [],
       "setup": {
-        "entry": 114.8775,
-        "invalidation": "H1 close below 114.753169",
+        "entry": 114.881,
+        "invalidation": "H1 close below 114.756669",
         "risk_reward": 2.0,
-        "stop_loss": 114.753169,
-        "take_profit": 115.126162
+        "stop_loss": 114.756669,
+        "take_profit": 115.129662
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -1678,8 +1733,8 @@
     },
     "AUD_NZD": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 30.78,
-      "combined_score": 33.61,
+      "combined_confidence": 31.77,
+      "combined_score": 32.24,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -1714,16 +1769,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.3,
+          "component_coverage": 0.45,
           "component_reliability": {
             "communication": 0.425,
-            "live_state": 0.0,
+            "live_state": 0.446,
             "macro": 0.785,
             "sentiment": 0.0,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.785
+          "weighted_reliability": 0.672
         },
         "direction": "bullish",
         "event_risk": {
@@ -1750,22 +1805,39 @@
         },
         "fundamental_macro_score": 26.89,
         "instrument": "AUD_NZD",
-        "live_release_state_score": null,
+        "live_release_state_score": 16.64,
         "official_communication_score": null,
-        "phase2_confidence": 12.96,
-        "phase2_directional_score": 26.89,
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
+        "phase2_confidence": 16.26,
+        "phase2_directional_score": 23.47,
         "release_surprise_score": null,
         "sentiment_score": null
       },
       "instrument": "AUD_NZD",
-      "phase2_confidence": 12.96,
-      "phase2_score": 26.89,
+      "phase2_confidence": 16.26,
+      "phase2_score": 23.47,
       "pricing": {
-        "ask": 1.2097,
-        "bid": 1.20949,
-        "mid": 1.209595,
-        "spread": 0.00021000000000004349,
-        "spread_pips": 2.100000000000435
+        "ask": 1.20964,
+        "bid": 1.20941,
+        "mid": 1.2095250000000002,
+        "spread": 0.00022999999999995246,
+        "spread_pips": 2.2999999999995246
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -1921,8 +1993,8 @@
     },
     "AUD_USD": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 60.25,
-      "combined_score": 42.07,
+      "combined_confidence": 63.24,
+      "combined_score": 41.41,
       "decision": "buy",
       "direction": "bullish",
       "event_risk": "normal",
@@ -1957,16 +2029,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.9,
             "macro": 0.78,
             "sentiment": 0.82,
             "surprises": 0.0
           },
           "event_risk_multiplier": 1.0,
-          "weighted_reliability": 0.812
+          "weighted_reliability": 0.827
         },
         "direction": "neutral",
         "event_risk": {
@@ -1993,30 +2065,53 @@
         },
         "fundamental_macro_score": 6.52,
         "instrument": "AUD_USD",
-        "live_release_state_score": null,
+        "live_release_state_score": -0.05,
         "official_communication_score": 0.0,
-        "phase2_confidence": 36.21,
-        "phase2_directional_score": 9.91,
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 43.68,
+        "phase2_directional_score": 8.25,
         "release_surprise_score": null,
         "sentiment_score": 21.9
       },
       "instrument": "AUD_USD",
-      "phase2_confidence": 36.21,
-      "phase2_score": 9.91,
+      "phase2_confidence": 43.68,
+      "phase2_score": 8.25,
       "pricing": {
-        "ask": 0.71963,
-        "bid": 0.71954,
-        "mid": 0.7195849999999999,
-        "spread": 9.00000000000345e-05,
-        "spread_pips": 0.900000000000345
+        "ask": 0.71966,
+        "bid": 0.71959,
+        "mid": 0.719625,
+        "spread": 7.00000000000145e-05,
+        "spread_pips": 0.700000000000145
       },
       "reasons": [],
       "setup": {
-        "entry": 0.719585,
-        "invalidation": "H1 close below 0.718749",
+        "entry": 0.719625,
+        "invalidation": "H1 close below 0.718789",
         "risk_reward": 2.0,
-        "stop_loss": 0.718749,
-        "take_profit": 0.721257
+        "stop_loss": 0.718789,
+        "take_profit": 0.721297
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -2160,9 +2255,9 @@
       "technical_score": 63.51
     },
     "CAD_CHF": {
-      "agreement_multiplier": 1.0,
-      "combined_confidence": 26.52,
-      "combined_score": 11.36,
+      "agreement_multiplier": 0.65,
+      "combined_confidence": 17.43,
+      "combined_score": 5.46,
       "decision": "no_trade",
       "direction": "neutral",
       "event_risk": "elevated",
@@ -2197,16 +2292,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.357,
             "macro": 0.767,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.833
+          "weighted_reliability": 0.754
         },
         "direction": "neutral",
         "event_risk": {
@@ -2233,22 +2328,34 @@
         },
         "fundamental_macro_score": 31.79,
         "instrument": "CAD_CHF",
-        "live_release_state_score": null,
+        "live_release_state_score": -37.5,
         "official_communication_score": 0.0,
-        "phase2_confidence": 29.77,
-        "phase2_directional_score": 6.86,
+        "official_macro_coverage": {
+          "CAD": {
+            "roles": [],
+            "status": "unavailable"
+          },
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 30.74,
+        "phase2_directional_score": -0.53,
         "release_surprise_score": null,
         "sentiment_score": -17.56
       },
       "instrument": "CAD_CHF",
-      "phase2_confidence": 29.77,
-      "phase2_score": 6.86,
+      "phase2_confidence": 30.74,
+      "phase2_score": -0.53,
       "pricing": {
-        "ask": 0.58034,
-        "bid": 0.58022,
-        "mid": 0.5802799999999999,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "ask": 0.58027,
+        "bid": 0.58014,
+        "mid": 0.580205,
+        "spread": 0.00012999999999996348,
+        "spread_pips": 1.2999999999996348
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2404,8 +2511,8 @@
     },
     "CAD_JPY": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 40.1,
-      "combined_score": 34.36,
+      "combined_confidence": 40.72,
+      "combined_score": 33.76,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -2440,16 +2547,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.357,
             "macro": 0.606,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.769
+          "weighted_reliability": 0.7
         },
         "direction": "neutral",
         "event_risk": {
@@ -2476,22 +2583,34 @@
         },
         "fundamental_macro_score": 16.33,
         "instrument": "CAD_JPY",
-        "live_release_state_score": null,
+        "live_release_state_score": -7.5,
         "official_communication_score": 0.0,
-        "phase2_confidence": 26.36,
-        "phase2_directional_score": 1.61,
+        "official_macro_coverage": {
+          "CAD": {
+            "roles": [],
+            "status": "unavailable"
+          },
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 28.45,
+        "phase2_directional_score": 0.09,
         "release_surprise_score": null,
         "sentiment_score": -14.77
       },
       "instrument": "CAD_JPY",
-      "phase2_confidence": 26.36,
-      "phase2_score": 1.61,
+      "phase2_confidence": 28.45,
+      "phase2_score": 0.09,
       "pricing": {
-        "ask": 115.223,
-        "bid": 115.203,
-        "mid": 115.213,
-        "spread": 0.01999999999999602,
-        "spread_pips": 1.999999999999602
+        "ask": 115.227,
+        "bid": 115.21,
+        "mid": 115.2185,
+        "spread": 0.017000000000010118,
+        "spread_pips": 1.7000000000010118
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2646,11 +2765,11 @@
       "technical_score": 56.2
     },
     "CHF_JPY": {
-      "agreement_multiplier": 0.65,
-      "combined_confidence": 29.55,
-      "combined_score": 10.01,
+      "agreement_multiplier": 1.0,
+      "combined_confidence": 47.35,
+      "combined_score": 17.75,
       "decision": "no_trade",
-      "direction": "neutral",
+      "direction": "bullish",
       "event_risk": "normal",
       "evidence": {
         "communication_score": 0.0,
@@ -2683,16 +2802,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.714,
             "macro": 0.583,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 1.0,
-          "weighted_reliability": 0.76
+          "weighted_reliability": 0.752
         },
         "direction": "neutral",
         "event_risk": {
@@ -2719,25 +2838,39 @@
         },
         "fundamental_macro_score": -15.46,
         "instrument": "CHF_JPY",
-        "live_release_state_score": null,
+        "live_release_state_score": 30.0,
         "official_communication_score": 0.0,
-        "phase2_confidence": 32.69,
-        "phase2_directional_score": -5.25,
+        "official_macro_coverage": {
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 37.42,
+        "phase2_directional_score": 0.62,
         "release_surprise_score": null,
         "sentiment_score": 2.79
       },
       "instrument": "CHF_JPY",
-      "phase2_confidence": 32.69,
-      "phase2_score": -5.25,
+      "phase2_confidence": 37.42,
+      "phase2_score": 0.62,
       "pricing": {
-        "ask": 198.57,
-        "bid": 198.536,
-        "mid": 198.553,
-        "spread": 0.033999999999991815,
-        "spread_pips": 3.3999999999991815
+        "ask": 198.597,
+        "bid": 198.562,
+        "mid": 198.5795,
+        "spread": 0.03499999999999659,
+        "spread_pips": 3.499999999999659
       },
       "reasons": [
-        "spread too wide (3.40 pips)",
+        "spread too wide (3.50 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -2891,9 +3024,9 @@
     },
     "EUR_AUD": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 61.42,
-      "combined_score": -46.3,
-      "decision": "sell",
+      "combined_confidence": 64.2,
+      "combined_score": -45.2,
+      "decision": "no_trade",
       "direction": "bearish",
       "event_risk": "normal",
       "evidence": {
@@ -2927,16 +3060,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.802,
             "macro": 0.766,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 1.0,
-          "weighted_reliability": 0.833
+          "weighted_reliability": 0.828
         },
         "direction": "bearish",
         "event_risk": {
@@ -2963,32 +3096,53 @@
         },
         "fundamental_macro_score": -25.99,
         "instrument": "EUR_AUD",
-        "live_release_state_score": null,
+        "live_release_state_score": -6.64,
         "official_communication_score": 0.0,
-        "phase2_confidence": 40.88,
-        "phase2_directional_score": -23.19,
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 47.83,
+        "phase2_directional_score": -20.43,
         "release_surprise_score": null,
         "sentiment_score": -38.39
       },
       "instrument": "EUR_AUD",
-      "phase2_confidence": 40.88,
-      "phase2_score": -23.19,
+      "phase2_confidence": 47.83,
+      "phase2_score": -20.43,
       "pricing": {
         "ask": 1.61816,
-        "bid": 1.61787,
-        "mid": 1.618015,
-        "spread": 0.0002900000000001235,
-        "spread_pips": 2.900000000001235
+        "bid": 1.61785,
+        "mid": 1.6180050000000001,
+        "spread": 0.00031000000000003247,
+        "spread_pips": 3.1000000000003247
       },
-      "reasons": [],
+      "reasons": [
+        "spread too wide (3.10 pips)"
+      ],
       "setup": {
-        "entry": 1.618015,
-        "invalidation": "H1 close above 1.619470",
-        "risk_reward": 2.0,
-        "stop_loss": 1.61947,
-        "take_profit": 1.615106
+        "entry": null,
+        "invalidation": "No active directional setup",
+        "risk_reward": null,
+        "stop_loss": null,
+        "take_profit": null
       },
-      "spread_ok": true,
+      "spread_ok": false,
       "status": "analyzed",
       "technical_analysis": {
         "alignment_score": 100.0,
@@ -3131,8 +3285,8 @@
     },
     "EUR_CAD": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 27.21,
-      "combined_score": 12.94,
+      "combined_confidence": 28.01,
+      "combined_score": 13.11,
       "decision": "no_trade",
       "direction": "neutral",
       "event_risk": "elevated",
@@ -3167,16 +3321,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.357,
             "macro": 0.766,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.833
+          "weighted_reliability": 0.754
         },
         "direction": "neutral",
         "event_risk": {
@@ -3203,22 +3357,34 @@
         },
         "fundamental_macro_score": 2.6,
         "instrument": "EUR_CAD",
-        "live_release_state_score": null,
+        "live_release_state_score": 10.0,
         "official_communication_score": 0.0,
-        "phase2_confidence": 29.91,
-        "phase2_directional_score": 7.49,
+        "official_macro_coverage": {
+          "CAD": {
+            "roles": [],
+            "status": "unavailable"
+          },
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 32.57,
+        "phase2_directional_score": 7.91,
         "release_surprise_score": null,
         "sentiment_score": 19.34
       },
       "instrument": "EUR_CAD",
-      "phase2_confidence": 29.91,
-      "phase2_score": 7.49,
+      "phase2_confidence": 32.57,
+      "phase2_score": 7.91,
       "pricing": {
-        "ask": 1.61341,
-        "bid": 1.61317,
-        "mid": 1.6132900000000001,
-        "spread": 0.00024000000000001798,
-        "spread_pips": 2.4000000000001798
+        "ask": 1.61339,
+        "bid": 1.61314,
+        "mid": 1.6132650000000002,
+        "spread": 0.0002500000000000835,
+        "spread_pips": 2.500000000000835
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -3374,10 +3540,10 @@
     },
     "EUR_CHF": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 39.41,
-      "combined_score": 15.55,
+      "combined_confidence": 41.14,
+      "combined_score": 12.76,
       "decision": "no_trade",
-      "direction": "bullish",
+      "direction": "neutral",
       "event_risk": "normal",
       "evidence": {
         "communication_score": 0.0,
@@ -3410,18 +3576,18 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.714,
             "macro": 0.743,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 1.0,
-          "weighted_reliability": 0.824
+          "weighted_reliability": 0.806
         },
-        "direction": "bullish",
+        "direction": "neutral",
         "event_risk": {
           "communication_risk": "normal",
           "economic_calendar_risk": "normal",
@@ -3446,20 +3612,34 @@
         },
         "fundamental_macro_score": 34.39,
         "instrument": "EUR_CHF",
-        "live_release_state_score": null,
+        "live_release_state_score": -27.5,
         "official_communication_score": 0.0,
-        "phase2_confidence": 37.97,
-        "phase2_directional_score": 14.35,
+        "official_macro_coverage": {
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 42.28,
+        "phase2_directional_score": 7.37,
         "release_surprise_score": null,
         "sentiment_score": 1.78
       },
       "instrument": "EUR_CHF",
-      "phase2_confidence": 37.97,
-      "phase2_score": 14.35,
+      "phase2_confidence": 42.28,
+      "phase2_score": 7.37,
       "pricing": {
-        "ask": 0.93623,
-        "bid": 0.9361,
-        "mid": 0.936165,
+        "ask": 0.93612,
+        "bid": 0.93599,
+        "mid": 0.936055,
         "spread": 0.00012999999999996348,
         "spread_pips": 1.2999999999996348
       },
@@ -3617,8 +3797,8 @@
     },
     "EUR_GBP": {
       "agreement_multiplier": 0.65,
-      "combined_confidence": 12.56,
-      "combined_score": -1.87,
+      "combined_confidence": 13.61,
+      "combined_score": -1.17,
       "decision": "no_trade",
       "direction": "neutral",
       "event_risk": "elevated",
@@ -3653,16 +3833,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.778,
             "macro": 0.766,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.833
+          "weighted_reliability": 0.824
         },
         "direction": "bearish",
         "event_risk": {
@@ -3689,16 +3869,32 @@
         },
         "fundamental_macro_score": -20.9,
         "instrument": "EUR_GBP",
-        "live_release_state_score": null,
+        "live_release_state_score": -3.45,
         "official_communication_score": 0.0,
-        "phase2_confidence": 32.71,
-        "phase2_directional_score": -19.64,
+        "official_macro_coverage": {
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 38.08,
+        "phase2_directional_score": -16.94,
         "release_surprise_score": null,
         "sentiment_score": -33.83
       },
       "instrument": "EUR_GBP",
-      "phase2_confidence": 32.71,
-      "phase2_score": -19.64,
+      "phase2_confidence": 38.08,
+      "phase2_score": -16.94,
       "pricing": {
         "ask": 0.85716,
         "bid": 0.85707,
@@ -3860,8 +4056,8 @@
     },
     "EUR_JPY": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 54.14,
-      "combined_score": 33.91,
+      "combined_confidence": 56.54,
+      "combined_score": 33.47,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "normal",
@@ -3896,16 +4092,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.714,
             "macro": 0.582,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 1.0,
-          "weighted_reliability": 0.759
+          "weighted_reliability": 0.752
         },
         "direction": "neutral",
         "event_risk": {
@@ -3932,26 +4128,39 @@
         },
         "fundamental_macro_score": 18.93,
         "instrument": "EUR_JPY",
-        "live_release_state_score": null,
+        "live_release_state_score": 2.5,
         "official_communication_score": 0.0,
-        "phase2_confidence": 33.66,
-        "phase2_directional_score": 9.1,
+        "official_macro_coverage": {
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 39.65,
+        "phase2_directional_score": 8.0,
         "release_surprise_score": null,
         "sentiment_score": 4.57
       },
       "instrument": "EUR_JPY",
-      "phase2_confidence": 33.66,
-      "phase2_score": 9.1,
+      "phase2_confidence": 39.65,
+      "phase2_score": 8.0,
       "pricing": {
-        "ask": 185.886,
-        "bid": 185.861,
-        "mid": 185.87349999999998,
-        "spread": 0.025000000000005684,
-        "spread_pips": 2.5000000000005684
+        "ask": 185.89,
+        "bid": 185.866,
+        "mid": 185.878,
+        "spread": 0.023999999999972488,
+        "spread_pips": 2.399999999997249
       },
       "reasons": [
-        "combined directional evidence too weak",
-        "combined confidence too low"
+        "combined directional evidence too weak"
       ],
       "setup": {
         "entry": null,
@@ -4103,8 +4312,8 @@
     },
     "EUR_NZD": {
       "agreement_multiplier": 0.65,
-      "combined_confidence": 19.06,
-      "combined_score": -13.73,
+      "combined_confidence": 19.6,
+      "combined_score": -12.94,
       "decision": "no_trade",
       "direction": "neutral",
       "event_risk": "elevated",
@@ -4139,16 +4348,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.3,
+          "component_coverage": 0.45,
           "component_reliability": {
             "communication": 0.425,
-            "live_state": 0.0,
+            "live_state": 0.357,
             "macro": 0.761,
             "sentiment": 0.0,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.761
+          "weighted_reliability": 0.626
         },
         "direction": "neutral",
         "event_risk": {
@@ -4175,25 +4384,37 @@
         },
         "fundamental_macro_score": 0.89,
         "instrument": "EUR_NZD",
-        "live_release_state_score": null,
+        "live_release_state_score": 10.0,
         "official_communication_score": null,
-        "phase2_confidence": 10.37,
-        "phase2_directional_score": 0.89,
+        "official_macro_coverage": {
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
+        "phase2_confidence": 13.12,
+        "phase2_directional_score": 3.93,
         "release_surprise_score": null,
         "sentiment_score": null
       },
       "instrument": "EUR_NZD",
-      "phase2_confidence": 10.37,
-      "phase2_score": 0.89,
+      "phase2_confidence": 13.12,
+      "phase2_score": 3.93,
       "pricing": {
-        "ask": 1.95747,
-        "bid": 1.95686,
-        "mid": 1.957165,
-        "spread": 0.0006099999999999994,
-        "spread_pips": 6.099999999999994
+        "ask": 1.95731,
+        "bid": 1.95672,
+        "mid": 1.9570150000000002,
+        "spread": 0.0005900000000000905,
+        "spread_pips": 5.9000000000009045
       },
       "reasons": [
-        "spread too wide (6.10 pips)",
+        "spread too wide (5.90 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -4347,8 +4568,8 @@
     },
     "EUR_USD": {
       "agreement_multiplier": 0.65,
-      "combined_confidence": 27.49,
-      "combined_score": 6.31,
+      "combined_confidence": 29.33,
+      "combined_score": 6.6,
       "decision": "no_trade",
       "direction": "neutral",
       "event_risk": "normal",
@@ -4383,16 +4604,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.811,
             "macro": 0.756,
             "sentiment": 0.82,
             "surprises": 0.0
           },
           "event_risk_multiplier": 1.0,
-          "weighted_reliability": 0.802
+          "weighted_reliability": 0.804
         },
         "direction": "bearish",
         "event_risk": {
@@ -4419,22 +4640,40 @@
         },
         "fundamental_macro_score": -19.47,
         "instrument": "EUR_USD",
-        "live_release_state_score": null,
+        "live_release_state_score": -6.7,
         "official_communication_score": 0.0,
-        "phase2_confidence": 36.7,
-        "phase2_directional_score": -13.29,
+        "official_macro_coverage": {
+          "EUR": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 43.76,
+        "phase2_directional_score": -12.19,
         "release_surprise_score": null,
         "sentiment_score": -16.5
       },
       "instrument": "EUR_USD",
-      "phase2_confidence": 36.7,
-      "phase2_score": -13.29,
+      "phase2_confidence": 43.76,
+      "phase2_score": -12.19,
       "pricing": {
-        "ask": 1.16438,
-        "bid": 1.16427,
-        "mid": 1.1643249999999998,
-        "spread": 0.0001100000000000545,
-        "spread_pips": 1.100000000000545
+        "ask": 1.16443,
+        "bid": 1.16434,
+        "mid": 1.164385,
+        "spread": 9.000000000014552e-05,
+        "spread_pips": 0.9000000000014552
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -4590,8 +4829,8 @@
     },
     "GBP_AUD": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 41.77,
-      "combined_score": -36.75,
+      "combined_confidence": 43.58,
+      "combined_score": -36.73,
       "decision": "no_trade",
       "direction": "bearish",
       "event_risk": "elevated",
@@ -4626,16 +4865,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.867,
             "macro": 0.79,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.843
+          "weighted_reliability": 0.847
         },
         "direction": "neutral",
         "event_risk": {
@@ -4662,25 +4901,46 @@
         },
         "fundamental_macro_score": -5.09,
         "instrument": "GBP_AUD",
-        "live_release_state_score": null,
+        "live_release_state_score": -3.2,
         "official_communication_score": 0.0,
-        "phase2_confidence": 29.33,
-        "phase2_directional_score": -3.56,
+        "official_macro_coverage": {
+          "AUD": {
+            "roles": [
+              "growth",
+              "inflation",
+              "retail",
+              "trade",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          },
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 35.35,
+        "phase2_directional_score": -3.5,
         "release_surprise_score": null,
         "sentiment_score": -4.57
       },
       "instrument": "GBP_AUD",
-      "phase2_confidence": 29.33,
-      "phase2_score": -3.56,
+      "phase2_confidence": 35.35,
+      "phase2_score": -3.5,
       "pricing": {
-        "ask": 1.88812,
-        "bid": 1.88766,
+        "ask": 1.88813,
+        "bid": 1.88765,
         "mid": 1.88789,
-        "spread": 0.000460000000000127,
-        "spread_pips": 4.60000000000127
+        "spread": 0.00048000000000003595,
+        "spread_pips": 4.8000000000003595
       },
       "reasons": [
-        "spread too wide (4.60 pips)",
+        "spread too wide (4.80 pips)",
         "combined confidence too low"
       ],
       "setup": {
@@ -4833,8 +5093,8 @@
     },
     "GBP_CAD": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 23.03,
-      "combined_score": 18.89,
+      "combined_confidence": 23.9,
+      "combined_score": 17.97,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -4869,16 +5129,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.421,
             "macro": 0.79,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.843
+          "weighted_reliability": 0.772
         },
         "direction": "bullish",
         "event_risk": {
@@ -4905,25 +5165,38 @@
         },
         "fundamental_macro_score": 23.51,
         "instrument": "GBP_CAD",
-        "live_release_state_score": null,
+        "live_release_state_score": 13.45,
         "official_communication_score": 0.0,
-        "phase2_confidence": 34.83,
-        "phase2_directional_score": 27.13,
+        "official_macro_coverage": {
+          "CAD": {
+            "roles": [],
+            "status": "unavailable"
+          },
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 37.73,
+        "phase2_directional_score": 24.85,
         "release_surprise_score": null,
         "sentiment_score": 53.17
       },
       "instrument": "GBP_CAD",
-      "phase2_confidence": 34.83,
-      "phase2_score": 27.13,
+      "phase2_confidence": 37.73,
+      "phase2_score": 24.85,
       "pricing": {
-        "ask": 1.88241,
-        "bid": 1.88209,
-        "mid": 1.88225,
-        "spread": 0.00031999999999987594,
-        "spread_pips": 3.1999999999987594
+        "ask": 1.88234,
+        "bid": 1.88205,
+        "mid": 1.8821949999999998,
+        "spread": 0.00028999999999990145,
+        "spread_pips": 2.8999999999990145
       },
       "reasons": [
-        "spread too wide (3.20 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -4934,7 +5207,7 @@
         "stop_loss": null,
         "take_profit": null
       },
-      "spread_ok": false,
+      "spread_ok": true,
       "status": "analyzed",
       "technical_analysis": {
         "alignment_score": 55.0,
@@ -5077,8 +5350,8 @@
     },
     "GBP_CHF": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 22.95,
-      "combined_score": 20.73,
+      "combined_confidence": 24.18,
+      "combined_score": 16.87,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -5113,16 +5386,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.778,
             "macro": 0.767,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.833
+          "weighted_reliability": 0.824
         },
         "direction": "bullish",
         "event_risk": {
@@ -5149,22 +5422,38 @@
         },
         "fundamental_macro_score": 55.3,
         "instrument": "GBP_CHF",
-        "live_release_state_score": null,
+        "live_release_state_score": -24.05,
         "official_communication_score": 0.0,
-        "phase2_confidence": 36.03,
-        "phase2_directional_score": 33.99,
+        "official_macro_coverage": {
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 40.11,
+        "phase2_directional_score": 24.32,
         "release_surprise_score": null,
         "sentiment_score": 35.61
       },
       "instrument": "GBP_CHF",
-      "phase2_confidence": 36.03,
-      "phase2_score": 33.99,
+      "phase2_confidence": 40.11,
+      "phase2_score": 24.32,
       "pricing": {
-        "ask": 1.09225,
-        "bid": 1.09201,
-        "mid": 1.09213,
-        "spread": 0.00024000000000001798,
-        "spread_pips": 2.4000000000001798
+        "ask": 1.09214,
+        "bid": 1.09191,
+        "mid": 1.092025,
+        "spread": 0.0002300000000001745,
+        "spread_pips": 2.300000000001745
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -5320,8 +5609,8 @@
     },
     "GBP_JPY": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 38.82,
-      "combined_score": 39.06,
+      "combined_confidence": 40.48,
+      "combined_score": 37.54,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -5356,16 +5645,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.778,
             "macro": 0.606,
             "sentiment": 0.9,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.769
+          "weighted_reliability": 0.771
         },
         "direction": "bullish",
         "event_risk": {
@@ -5392,22 +5681,38 @@
         },
         "fundamental_macro_score": 39.84,
         "instrument": "GBP_JPY",
-        "live_release_state_score": null,
+        "live_release_state_score": 5.95,
         "official_communication_score": 0.0,
-        "phase2_confidence": 32.13,
-        "phase2_directional_score": 28.74,
+        "official_macro_coverage": {
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          },
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 37.66,
+        "phase2_directional_score": 24.94,
         "release_surprise_score": null,
         "sentiment_score": 38.41
       },
       "instrument": "GBP_JPY",
-      "phase2_confidence": 32.13,
-      "phase2_score": 28.74,
+      "phase2_confidence": 37.66,
+      "phase2_score": 24.94,
       "pricing": {
-        "ask": 216.868,
-        "bid": 216.841,
-        "mid": 216.8545,
-        "spread": 0.026999999999986812,
-        "spread_pips": 2.6999999999986812
+        "ask": 216.871,
+        "bid": 216.845,
+        "mid": 216.858,
+        "spread": 0.02600000000001046,
+        "spread_pips": 2.600000000001046
       },
       "reasons": [
         "combined confidence too low"
@@ -5562,8 +5867,8 @@
     },
     "GBP_NZD": {
       "agreement_multiplier": 0.65,
-      "combined_confidence": 16.45,
-      "combined_score": -6.26,
+      "combined_confidence": 17.04,
+      "combined_score": -6.98,
       "decision": "no_trade",
       "direction": "neutral",
       "event_risk": "elevated",
@@ -5598,16 +5903,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.3,
+          "component_coverage": 0.45,
           "component_reliability": {
             "communication": 0.425,
-            "live_state": 0.0,
+            "live_state": 0.421,
             "macro": 0.785,
             "sentiment": 0.0,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.785
+          "weighted_reliability": 0.664
         },
         "direction": "bullish",
         "event_risk": {
@@ -5634,25 +5939,39 @@
         },
         "fundamental_macro_score": 21.8,
         "instrument": "GBP_NZD",
-        "live_release_state_score": null,
+        "live_release_state_score": 13.45,
         "official_communication_score": null,
-        "phase2_confidence": 12.52,
-        "phase2_directional_score": 21.8,
+        "official_macro_coverage": {
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          },
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
+        "phase2_confidence": 15.57,
+        "phase2_directional_score": 19.02,
         "release_surprise_score": null,
         "sentiment_score": null
       },
       "instrument": "GBP_NZD",
-      "phase2_confidence": 12.52,
-      "phase2_score": 21.8,
+      "phase2_confidence": 15.57,
+      "phase2_score": 19.02,
       "pricing": {
-        "ask": 2.2839,
-        "bid": 2.28308,
-        "mid": 2.28349,
-        "spread": 0.0008200000000000429,
-        "spread_pips": 8.20000000000043
+        "ask": 2.28371,
+        "bid": 2.28292,
+        "mid": 2.283315,
+        "spread": 0.0007900000000002905,
+        "spread_pips": 7.900000000002905
       },
       "reasons": [
-        "spread too wide (8.20 pips)",
+        "spread too wide (7.90 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -5806,8 +6125,8 @@
     },
     "GBP_USD": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 24.8,
-      "combined_score": 17.86,
+      "combined_confidence": 26.54,
+      "combined_score": 17.22,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -5842,16 +6161,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.876,
             "macro": 0.78,
             "sentiment": 0.82,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.812
+          "weighted_reliability": 0.823
         },
         "direction": "neutral",
         "event_risk": {
@@ -5878,20 +6197,40 @@
         },
         "fundamental_macro_score": 1.43,
         "instrument": "GBP_USD",
-        "live_release_state_score": null,
+        "live_release_state_score": -3.25,
         "official_communication_score": 0.0,
-        "phase2_confidence": 28.89,
-        "phase2_directional_score": 6.35,
+        "official_macro_coverage": {
+          "GBP": {
+            "roles": [
+              "growth",
+              "inflation",
+              "unemployment"
+            ],
+            "status": "ok"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 34.69,
+        "phase2_directional_score": 4.75,
         "release_surprise_score": null,
         "sentiment_score": 17.33
       },
       "instrument": "GBP_USD",
-      "phase2_confidence": 28.89,
-      "phase2_score": 6.35,
+      "phase2_confidence": 34.69,
+      "phase2_score": 4.75,
       "pricing": {
-        "ask": 1.35857,
-        "bid": 1.35842,
-        "mid": 1.358495,
+        "ask": 1.35863,
+        "bid": 1.35848,
+        "mid": 1.358555,
         "spread": 0.0001500000000000945,
         "spread_pips": 1.500000000000945
       },
@@ -6123,6 +6462,16 @@
         "instrument": "NZD_CAD",
         "live_release_state_score": null,
         "official_communication_score": null,
+        "official_macro_coverage": {
+          "CAD": {
+            "roles": [],
+            "status": "unavailable"
+          },
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
         "phase2_confidence": 10.77,
         "phase2_directional_score": 1.71,
         "release_surprise_score": null,
@@ -6132,11 +6481,11 @@
       "phase2_confidence": 10.77,
       "phase2_score": 1.71,
       "pricing": {
-        "ask": 0.82442,
-        "bid": 0.8242,
-        "mid": 0.8243100000000001,
-        "spread": 0.00021999999999999797,
-        "spread_pips": 2.1999999999999797
+        "ask": 0.82448,
+        "bid": 0.82425,
+        "mid": 0.824365,
+        "spread": 0.00022999999999995246,
+        "spread_pips": 2.2999999999995246
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6292,8 +6641,8 @@
     },
     "NZD_CHF": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 29.26,
-      "combined_score": 33.02,
+      "combined_confidence": 29.44,
+      "combined_score": 23.55,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -6328,18 +6677,18 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.3,
+          "component_coverage": 0.45,
           "component_reliability": {
             "communication": 0.425,
-            "live_state": 0.0,
+            "live_state": 0.357,
             "macro": 0.762,
             "sentiment": 0.0,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.762
+          "weighted_reliability": 0.627
         },
-        "direction": "bullish",
+        "direction": "neutral",
         "event_risk": {
           "communication_risk": "normal",
           "economic_calendar_risk": "normal",
@@ -6364,22 +6713,34 @@
         },
         "fundamental_macro_score": 33.5,
         "instrument": "NZD_CHF",
-        "live_release_state_score": null,
+        "live_release_state_score": -37.5,
         "official_communication_score": null,
-        "phase2_confidence": 13.14,
-        "phase2_directional_score": 33.5,
+        "official_macro_coverage": {
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
+        "phase2_confidence": 13.75,
+        "phase2_directional_score": 9.83,
         "release_surprise_score": null,
         "sentiment_score": null
       },
       "instrument": "NZD_CHF",
-      "phase2_confidence": 13.14,
-      "phase2_score": 33.5,
+      "phase2_confidence": 13.75,
+      "phase2_score": 9.83,
       "pricing": {
-        "ask": 0.47838,
-        "bid": 0.47825,
-        "mid": 0.47831500000000005,
-        "spread": 0.000130000000000019,
-        "spread_pips": 1.30000000000019
+        "ask": 0.47837,
+        "bid": 0.47823,
+        "mid": 0.4783,
+        "spread": 0.000140000000000029,
+        "spread_pips": 1.40000000000029
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6535,8 +6896,8 @@
     },
     "NZD_JPY": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 33.98,
-      "combined_score": 38.87,
+      "combined_confidence": 34.59,
+      "combined_score": 35.46,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -6571,18 +6932,18 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.3,
+          "component_coverage": 0.45,
           "component_reliability": {
             "communication": 0.425,
-            "live_state": 0.0,
+            "live_state": 0.357,
             "macro": 0.601,
             "sentiment": 0.0,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.601
+          "weighted_reliability": 0.52
         },
-        "direction": "bullish",
+        "direction": "neutral",
         "event_risk": {
           "communication_risk": "normal",
           "economic_calendar_risk": "normal",
@@ -6607,20 +6968,32 @@
         },
         "fundamental_macro_score": 18.04,
         "instrument": "NZD_JPY",
-        "live_release_state_score": null,
+        "live_release_state_score": -7.5,
         "official_communication_score": null,
-        "phase2_confidence": 9.33,
-        "phase2_directional_score": 18.04,
+        "official_macro_coverage": {
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          }
+        },
+        "phase2_confidence": 11.37,
+        "phase2_directional_score": 9.53,
         "release_surprise_score": null,
         "sentiment_score": null
       },
       "instrument": "NZD_JPY",
-      "phase2_confidence": 9.33,
-      "phase2_score": 18.04,
+      "phase2_confidence": 11.37,
+      "phase2_score": 9.53,
       "pricing": {
-        "ask": 94.981,
-        "bid": 94.958,
-        "mid": 94.9695,
+        "ask": 94.991,
+        "bid": 94.968,
+        "mid": 94.9795,
         "spread": 0.022999999999996135,
         "spread_pips": 2.2999999999996135
       },
@@ -6777,8 +7150,8 @@
     },
     "NZD_USD": {
       "agreement_multiplier": 0.65,
-      "combined_confidence": 17.96,
-      "combined_score": 5.65,
+      "combined_confidence": 18.63,
+      "combined_score": 5.97,
       "decision": "no_trade",
       "direction": "neutral",
       "event_risk": "elevated",
@@ -6813,16 +7186,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.3,
+          "component_coverage": 0.45,
           "component_reliability": {
             "communication": 0.425,
-            "live_state": 0.0,
+            "live_state": 0.455,
             "macro": 0.774,
             "sentiment": 0.0,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.774
+          "weighted_reliability": 0.668
         },
         "direction": "bearish",
         "event_risk": {
@@ -6849,20 +7222,36 @@
         },
         "fundamental_macro_score": -20.36,
         "instrument": "NZD_USD",
-        "live_release_state_score": null,
+        "live_release_state_score": -16.7,
         "official_communication_score": null,
-        "phase2_confidence": 12.22,
-        "phase2_directional_score": -20.36,
+        "official_macro_coverage": {
+          "NZD": {
+            "roles": [],
+            "status": "unavailable"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 15.67,
+        "phase2_directional_score": -19.14,
         "release_surprise_score": null,
         "sentiment_score": null
       },
       "instrument": "NZD_USD",
-      "phase2_confidence": 12.22,
-      "phase2_score": -20.36,
+      "phase2_confidence": 15.67,
+      "phase2_score": -19.14,
       "pricing": {
-        "ask": 0.59497,
-        "bid": 0.59484,
-        "mid": 0.594905,
+        "ask": 0.59504,
+        "bid": 0.59491,
+        "mid": 0.594975,
         "spread": 0.00012999999999996348,
         "spread_pips": 1.2999999999996348
       },
@@ -7020,8 +7409,8 @@
     },
     "USD_CAD": {
       "agreement_multiplier": 0.65,
-      "combined_confidence": 20.18,
-      "combined_score": -6.34,
+      "combined_confidence": 20.85,
+      "combined_score": -6.52,
       "decision": "no_trade",
       "direction": "neutral",
       "event_risk": "elevated",
@@ -7056,16 +7445,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.455,
             "macro": 0.78,
             "sentiment": 0.82,
             "surprises": 0.0
           },
           "event_risk_multiplier": 0.82,
-          "weighted_reliability": 0.812
+          "weighted_reliability": 0.753
         },
         "direction": "bullish",
         "event_risk": {
@@ -7092,20 +7481,36 @@
         },
         "fundamental_macro_score": 22.07,
         "instrument": "USD_CAD",
-        "live_release_state_score": null,
+        "live_release_state_score": 16.7,
         "official_communication_score": 0.0,
-        "phase2_confidence": 32.13,
-        "phase2_directional_score": 20.77,
+        "official_macro_coverage": {
+          "CAD": {
+            "roles": [],
+            "status": "unavailable"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 35.57,
+        "phase2_directional_score": 20.1,
         "release_surprise_score": null,
         "sentiment_score": 35.84
       },
       "instrument": "USD_CAD",
-      "phase2_confidence": 32.13,
-      "phase2_score": 20.77,
+      "phase2_confidence": 35.57,
+      "phase2_score": 20.1,
       "pricing": {
-        "ask": 1.38575,
-        "bid": 1.38561,
-        "mid": 1.38568,
+        "ask": 1.38564,
+        "bid": 1.3855,
+        "mid": 1.38557,
         "spread": 0.000140000000000029,
         "spread_pips": 1.40000000000029
       },
@@ -7263,8 +7668,8 @@
     },
     "USD_CHF": {
       "agreement_multiplier": 0.65,
-      "combined_confidence": 27.5,
-      "combined_score": 2.11,
+      "combined_confidence": 28.95,
+      "combined_score": 0.01,
       "decision": "no_trade",
       "direction": "neutral",
       "event_risk": "normal",
@@ -7299,16 +7704,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.811,
             "macro": 0.756,
             "sentiment": 0.82,
             "surprises": 0.0
           },
           "event_risk_multiplier": 1.0,
-          "weighted_reliability": 0.802
+          "weighted_reliability": 0.804
         },
         "direction": "bullish",
         "event_risk": {
@@ -7335,22 +7740,40 @@
         },
         "fundamental_macro_score": 53.86,
         "instrument": "USD_CHF",
-        "live_release_state_score": null,
+        "live_release_state_score": -20.8,
         "official_communication_score": 0.0,
-        "phase2_confidence": 40.58,
-        "phase2_directional_score": 27.63,
+        "official_macro_coverage": {
+          "CHF": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 46.16,
+        "phase2_directional_score": 19.56,
         "release_surprise_score": null,
         "sentiment_score": 18.27
       },
       "instrument": "USD_CHF",
-      "phase2_confidence": 40.58,
-      "phase2_score": 27.63,
+      "phase2_confidence": 46.16,
+      "phase2_score": 19.56,
       "pricing": {
-        "ask": 0.80409,
-        "bid": 0.80397,
-        "mid": 0.80403,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "ask": 0.80394,
+        "bid": 0.80383,
+        "mid": 0.803885,
+        "spread": 0.00010999999999994348,
+        "spread_pips": 1.0999999999994348
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7506,8 +7929,8 @@
     },
     "USD_JPY": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 38.34,
-      "combined_score": 24.77,
+      "combined_confidence": 41.24,
+      "combined_score": 23.89,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "normal",
@@ -7542,16 +7965,16 @@
       },
       "fundamental_analysis": {
         "data_quality": {
-          "component_coverage": 0.75,
+          "component_coverage": 0.9,
           "component_reliability": {
             "communication": 0.85,
-            "live_state": 0.0,
+            "live_state": 0.811,
             "macro": 0.595,
             "sentiment": 0.82,
             "surprises": 0.0
           },
           "event_risk_multiplier": 1.0,
-          "weighted_reliability": 0.738
+          "weighted_reliability": 0.75
         },
         "direction": "bullish",
         "event_risk": {
@@ -7578,22 +8001,40 @@
         },
         "fundamental_macro_score": 38.41,
         "instrument": "USD_JPY",
-        "live_release_state_score": null,
+        "live_release_state_score": 9.2,
         "official_communication_score": 0.0,
-        "phase2_confidence": 36.02,
-        "phase2_directional_score": 22.39,
+        "official_macro_coverage": {
+          "JPY": {
+            "roles": [
+              "growth"
+            ],
+            "status": "ok"
+          },
+          "USD": {
+            "roles": [
+              "employment",
+              "growth",
+              "inflation",
+              "unemployment",
+              "wages"
+            ],
+            "status": "ok"
+          }
+        },
+        "phase2_confidence": 43.27,
+        "phase2_directional_score": 20.19,
         "release_surprise_score": null,
         "sentiment_score": 21.07
       },
       "instrument": "USD_JPY",
-      "phase2_confidence": 36.02,
-      "phase2_score": 22.39,
+      "phase2_confidence": 43.27,
+      "phase2_score": 20.19,
       "pricing": {
-        "ask": 159.646,
-        "bid": 159.637,
-        "mid": 159.6415,
-        "spread": 0.00899999999998613,
-        "spread_pips": 0.899999999998613
+        "ask": 159.641,
+        "bid": 159.633,
+        "mid": 159.637,
+        "spread": 0.007999999999981355,
+        "spread_pips": 0.7999999999981355
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7811,37 +8252,36 @@
   "rankings": {
     "actionable": [
       "AUD_JPY",
-      "EUR_AUD",
       "AUD_CHF",
       "AUD_USD"
     ],
     "overall": [
       "AUD_JPY",
-      "EUR_AUD",
       "AUD_CHF",
       "AUD_USD",
+      "EUR_AUD",
       "EUR_JPY",
+      "CHF_JPY",
       "AUD_CAD",
       "GBP_AUD",
-      "CAD_JPY",
-      "EUR_CHF",
-      "GBP_JPY",
       "USD_JPY",
+      "EUR_CHF",
+      "CAD_JPY",
+      "GBP_JPY",
       "NZD_JPY",
       "AUD_NZD",
-      "CHF_JPY",
       "NZD_CHF",
-      "USD_CHF",
       "EUR_USD",
+      "USD_CHF",
       "EUR_CAD",
-      "CAD_CHF",
       "GBP_USD",
       "NZD_CAD",
-      "GBP_CAD",
       "GBP_CHF",
+      "GBP_CAD",
       "USD_CAD",
       "EUR_NZD",
       "NZD_USD",
+      "CAD_CHF",
       "GBP_NZD",
       "EUR_GBP"
     ]
