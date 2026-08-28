@@ -1,5 +1,5 @@
 {
-  "actionable_count": 3,
+  "actionable_count": 4,
   "economic_calendar": {
     "AUD": {
       "error": "HTTPError",
@@ -58,7 +58,7 @@
       "status": "unavailable"
     }
   },
-  "generated_at": "2026-08-28T09:01:00.625728+00:00",
+  "generated_at": "2026-08-28T09:10:17.855604+00:00",
   "macro_context": {
     "AUD": {
       "background": {
@@ -836,8 +836,8 @@
   "pairs": {
     "AUD_CAD": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 47.6,
-      "combined_score": 47.46,
+      "combined_confidence": 47.32,
+      "combined_score": 46.88,
       "decision": "no_trade",
       "direction": "bullish",
       "event_risk": "elevated",
@@ -913,11 +913,11 @@
       "phase2_confidence": 45.89,
       "phase2_score": 25.92,
       "pricing": {
-        "ask": 0.99679,
-        "bid": 0.99656,
-        "mid": 0.996675,
-        "spread": 0.00022999999999995246,
-        "spread_pips": 2.2999999999995246
+        "ask": 0.99691,
+        "bid": 0.99667,
+        "mid": 0.99679,
+        "spread": 0.00024000000000001798,
+        "spread_pips": 2.4000000000001798
       },
       "reasons": [
         "combined confidence too low"
@@ -935,10 +935,10 @@
         "alignment_score": 100.0,
         "direction": "bullish",
         "instrument": "AUD_CAD",
-        "opportunity_strength": 61.82,
+        "opportunity_strength": 60.852,
         "status": "analyzed",
-        "technical_confidence": 75.183,
-        "technical_score": 61.82,
+        "technical_confidence": 74.554,
+        "technical_score": 60.852,
         "timeframes": {
           "D": {
             "complete_candles": 299,
@@ -974,61 +974,61 @@
           "H1": {
             "complete_candles": 299,
             "features": {
-              "atr14": 0.000658597466894611,
-              "atr_pct": 0.06607250013991162,
+              "atr14": 0.0006454511379753302,
+              "atr_pct": 0.06476271652505722,
               "breakout": "none",
-              "close": 0.99678,
-              "ema20": 0.9968625725991692,
-              "ema200": 0.9905963376270492,
-              "ema50": 0.9958830726006649,
-              "ema50_slope_atr": 0.799693932400141,
-              "macd_hist": -8.556499009428932e-05,
-              "macd_line": 0.0001930890185648515,
-              "macd_signal": 0.0002786540086591408,
+              "close": 0.99664,
+              "ema20": 0.9968413752087721,
+              "ema200": 0.9906488464215922,
+              "ema50": 0.9959127568873183,
+              "ema50_slope_atr": 0.7839818838962398,
+              "macd_hist": -9.876865487346383e-05,
+              "macd_line": 0.00015519319004686505,
+              "macd_signal": 0.0002539618449203289,
               "prior20_high": 0.99777,
-              "prior20_low": 0.99613,
-              "range50_position": 0.6756756756756793,
-              "roc12": -0.004012760578642194,
-              "rsi14": 50.86279262283565,
-              "true_range_atr": 1.1084160457554755,
+              "prior20_low": 0.99616,
+              "range50_position": 0.6336336336336278,
+              "roc12": -0.01605136436597654,
+              "rsi14": 48.964368288757115,
+              "true_range_atr": 0.8676102140847239,
               "volatility_regime": "normal"
             },
-            "last_completed_candle": "2026-08-28T07:00:00+00:00",
-            "score": 27.778,
+            "last_completed_candle": "2026-08-28T08:00:00+00:00",
+            "score": 25.754,
             "subscores": {
-              "momentum": -0.0296,
-              "structure": 0.123,
-              "trend": 0.5666
+              "momentum": -0.0709,
+              "structure": 0.0935,
+              "trend": 0.5653
             },
             "volatility_regime": "normal"
           },
           "H4": {
             "complete_candles": 299,
             "features": {
-              "atr14": 0.0013543779805916833,
-              "atr_pct": 0.13582898553751638,
+              "atr14": 0.0012871275831794612,
+              "atr_pct": 0.1291466912003794,
               "breakout": "none",
-              "close": 0.99712,
-              "ema20": 0.9944204682863298,
-              "ema200": 0.9860346948708686,
-              "ema50": 0.9905802768435734,
-              "ema50_slope_atr": 2.185926223913611,
-              "macd_hist": -8.817819361227677e-05,
-              "macd_line": 0.002492671501415078,
-              "macd_signal": 0.0025808496950273548,
+              "close": 0.99664,
+              "ema20": 0.9946318522590603,
+              "ema200": 0.986111267684839,
+              "ema50": 0.9908179056563855,
+              "ema50_slope_atr": 2.2650851494157616,
+              "macd_hist": -0.00017041530989391884,
+              "macd_line": 0.0023678305577781167,
+              "macd_signal": 0.0025382458676720355,
               "prior20_high": 0.99786,
               "prior20_low": 0.98923,
-              "range50_position": 0.9627016129032276,
-              "roc12": 0.20702269209897928,
-              "rsi14": 72.55079536036297,
-              "true_range_atr": 0.9081659755445209,
+              "range50_position": 0.938508064516129,
+              "roc12": 0.09340068895562492,
+              "rsi14": 68.71651896544734,
+              "true_range_atr": 0.6603851949939168,
               "volatility_regime": "normal"
             },
-            "last_completed_candle": "2026-08-28T01:00:00+00:00",
-            "score": 63.056,
+            "last_completed_candle": "2026-08-28T05:00:00+00:00",
+            "score": 60.843,
             "subscores": {
-              "momentum": 0.3461,
-              "structure": 0.3239,
+              "momentum": 0.2834,
+              "structure": 0.307,
               "trend": 1.0
             },
             "volatility_regime": "normal"
@@ -1067,13 +1067,13 @@
         },
         "warnings": []
       },
-      "technical_confidence": 75.183,
-      "technical_score": 61.82
+      "technical_confidence": 74.554,
+      "technical_score": 60.852
     },
     "AUD_CHF": {
       "agreement_multiplier": 1.0,
-      "combined_confidence": 71.08,
-      "combined_score": 54.84,
+      "combined_confidence": 66.65,
+      "combined_score": 48.02,
       "decision": "buy",
       "direction": "bullish",
       "event_risk": "normal",
@@ -1149,19 +1149,19 @@
       "phase2_confidence": 58.66,
       "phase2_score": 34.72,
       "pricing": {
-        "ask": 0.57854,
-        "bid": 0.5784,
-        "mid": 0.57847,
-        "spread": 0.000140000000000029,
-        "spread_pips": 1.40000000000029
+        "ask": 0.57861,
+        "bid": 0.57848,
+        "mid": 0.578545,
+        "spread": 0.00012999999999996348,
+        "spread_pips": 1.2999999999996348
       },
       "reasons": [],
       "setup": {
-        "entry": 0.57847,
-        "invalidation": "H1 close below 0.577791",
+        "entry": 0.578545,
+        "invalidation": "H1 close below 0.577837",
         "risk_reward": 2.0,
-        "stop_loss": 0.577791,
-        "take_profit": 0.579828
+        "stop_loss": 0.577837,
+        "take_profit": 0.579962
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -1169,10 +1169,10 @@
         "alignment_score": 100.0,
         "direction": "bullish",
         "instrument": "AUD_CHF",
-        "opportunity_strength": 68.246,
+        "opportunity_strength": 56.887,
         "status": "analyzed",
-        "technical_confidence": 79.36,
-        "technical_score": 68.246,
+        "technical_confidence": 71.976,
+        "technical_score": 56.887,
         "timeframes": {
           "D": {
             "complete_candles": 299,
@@ -1208,62 +1208,62 @@
           "H1": {
             "complete_candles": 299,
             "features": {
-              "atr14": 0.00045261195269915796,
-              "atr_pct": 0.07817672251954504,
+              "atr14": 0.00047226369233926144,
+              "atr_pct": 0.0816500159646026,
               "breakout": "none",
-              "close": 0.57896,
-              "ema20": 0.5788621615316607,
-              "ema200": 0.5756953267322529,
-              "ema50": 0.5780343044466362,
-              "ema50_slope_atr": 1.13330284737586,
-              "macd_hist": 3.07726986160104e-06,
-              "macd_line": 0.00031793501336074836,
-              "macd_signal": 0.0003148577434991473,
+              "close": 0.5784,
+              "ema20": 0.578818146147693,
+              "ema200": 0.5757236256501168,
+              "ema50": 0.5780486453889547,
+              "ema50_slope_atr": 1.038567997618311,
+              "macd_hist": -5.706462715133695e-05,
+              "macd_line": 0.0002435269595388867,
+              "macd_signal": 0.00030059158669022365,
               "prior20_high": 0.57968,
               "prior20_low": 0.57768,
-              "range50_position": 0.7692307692307884,
-              "roc12": 0.038013615786014476,
-              "rsi14": 55.35924224804958,
-              "true_range_atr": 1.4582027630160324,
+              "range50_position": 0.589743589743608,
+              "roc12": -0.04320400933206514,
+              "rsi14": 45.1589954554344,
+              "true_range_atr": 1.270476663213208,
               "volatility_regime": "normal"
             },
-            "last_completed_candle": "2026-08-28T07:00:00+00:00",
-            "score": 49.19,
+            "last_completed_candle": "2026-08-28T08:00:00+00:00",
+            "score": 24.254,
             "subscores": {
-              "momentum": 0.0979,
-              "structure": 0.1885,
-              "trend": 0.9278
+              "momentum": -0.1282,
+              "structure": 0.0628,
+              "trend": 0.5865
             },
             "volatility_regime": "normal"
           },
           "H4": {
             "complete_candles": 299,
             "features": {
-              "atr14": 0.0009471010559360801,
-              "atr_pct": 0.163453921256421,
-              "breakout": "up",
-              "close": 0.57943,
-              "ema20": 0.5771104942182154,
-              "ema200": 0.5702906705669202,
-              "ema50": 0.5752442124232341,
-              "ema50_slope_atr": 1.7067742669445791,
-              "macd_hist": 0.00012598294428148782,
-              "macd_line": 0.0014557797506853376,
-              "macd_signal": 0.0013297968064038498,
-              "prior20_high": 0.57924,
+              "atr14": 0.0009888209151445932,
+              "atr_pct": 0.17095797288115372,
+              "breakout": "none",
+              "close": 0.5784,
+              "ema20": 0.5772333042926711,
+              "ema200": 0.5703564032795626,
+              "ema50": 0.5753679653670618,
+              "ema50_slope_atr": 1.6055561762872188,
+              "macd_hist": 3.833272159623402e-05,
+              "macd_line": 0.0013777127084381169,
+              "macd_signal": 0.0013393799868418829,
+              "prior20_high": 0.57968,
               "prior20_low": 0.57313,
-              "range50_position": 1.0,
-              "roc12": 0.4646727351538926,
-              "rsi14": 74.12621059883305,
-              "true_range_atr": 1.1825559616687817,
+              "range50_position": 0.9000000000000035,
+              "roc12": 0.22873778332292982,
+              "rsi14": 63.397918526530134,
+              "true_range_atr": 1.2742448917716114,
               "volatility_regime": "normal"
             },
-            "last_completed_candle": "2026-08-28T01:00:00+00:00",
-            "score": 83.778,
+            "last_completed_candle": "2026-08-28T05:00:00+00:00",
+            "score": 58.382,
             "subscores": {
-              "momentum": 0.4551,
-              "structure": 1.0,
-              "trend": 0.9756
+              "momentum": 0.2743,
+              "structure": 0.28,
+              "trend": 0.9671
             },
             "volatility_regime": "normal"
           },
@@ -1301,8 +1301,8 @@
         },
         "warnings": []
       },
-      "technical_confidence": 79.36,
-      "technical_score": 68.246
+      "technical_confidence": 71.976,
+      "technical_score": 56.887
     },
     "AUD_JPY": {
       "agreement_multiplier": 1.0,
@@ -1383,19 +1383,19 @@
       "phase2_confidence": 51.67,
       "phase2_score": 27.09,
       "pricing": {
-        "ask": 114.806,
-        "bid": 114.788,
-        "mid": 114.797,
-        "spread": 0.018000000000000682,
-        "spread_pips": 1.8000000000000682
+        "ask": 114.86,
+        "bid": 114.838,
+        "mid": 114.84899999999999,
+        "spread": 0.02200000000000557,
+        "spread_pips": 2.200000000000557
       },
       "reasons": [],
       "setup": {
-        "entry": 114.797,
-        "invalidation": "H1 close below 114.672669",
+        "entry": 114.849,
+        "invalidation": "H1 close below 114.724669",
         "risk_reward": 2.0,
-        "stop_loss": 114.672669,
-        "take_profit": 115.045662
+        "stop_loss": 114.724669,
+        "take_profit": 115.097662
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -1617,11 +1617,11 @@
       "phase2_confidence": 23.47,
       "phase2_score": 21.63,
       "pricing": {
-        "ask": 1.20903,
-        "bid": 1.20881,
-        "mid": 1.20892,
-        "spread": 0.000220000000000109,
-        "spread_pips": 2.20000000000109
+        "ask": 1.20956,
+        "bid": 1.20935,
+        "mid": 1.209455,
+        "spread": 0.00021000000000004349,
+        "spread_pips": 2.100000000000435
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -1854,19 +1854,19 @@
       "phase2_confidence": 47.01,
       "phase2_score": 6.57,
       "pricing": {
-        "ask": 0.71945,
-        "bid": 0.71936,
-        "mid": 0.7194050000000001,
+        "ask": 0.71953,
+        "bid": 0.71944,
+        "mid": 0.7194849999999999,
         "spread": 9.00000000000345e-05,
         "spread_pips": 0.900000000000345
       },
       "reasons": [],
       "setup": {
-        "entry": 0.719405,
-        "invalidation": "H1 close below 0.718569",
+        "entry": 0.719485,
+        "invalidation": "H1 close below 0.718649",
         "risk_reward": 2.0,
-        "stop_loss": 0.718569,
-        "take_profit": 0.721077
+        "stop_loss": 0.718649,
+        "take_profit": 0.721157
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -2088,11 +2088,11 @@
       "phase2_confidence": 40.16,
       "phase2_score": 8.8,
       "pricing": {
-        "ask": 0.58044,
-        "bid": 0.58032,
-        "mid": 0.5803799999999999,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "ask": 0.58047,
+        "bid": 0.58036,
+        "mid": 0.580415,
+        "spread": 0.0001100000000000545,
+        "spread_pips": 1.100000000000545
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2148,24 +2148,24 @@
             "volatility_regime": "compressed"
           },
           "H1": {
-            "complete_candles": 300,
+            "complete_candles": 299,
             "features": {
               "atr14": 0.0003837039853506129,
               "atr_pct": 0.06611254442789428,
               "breakout": "none",
               "close": 0.58038,
               "ema20": 0.5806584204798562,
-              "ema200": 0.5811612309730753,
-              "ema50": 0.580424325087766,
-              "ema50_slope_atr": 0.5214962921937327,
-              "macd_hist": 5.44462236751615e-07,
-              "macd_line": 0.00015668562618564863,
-              "macd_signal": 0.00015614116394889701,
+              "ema200": 0.581167130859771,
+              "ema50": 0.5804243245333298,
+              "ema50_slope_atr": 0.5214970029753199,
+              "macd_hist": 5.444622397567794e-07,
+              "macd_line": 0.00015668562617943138,
+              "macd_signal": 0.0001561411639396746,
               "prior20_high": 0.58144,
               "prior20_low": 0.5796,
               "range50_position": 0.522522522522545,
               "roc12": -0.017227122381480164,
-              "rsi14": 45.688024169082745,
+              "rsi14": 45.68802414667473,
               "true_range_atr": 1.5115819020489059,
               "volatility_regime": "expanding"
             },
@@ -2179,24 +2179,24 @@
             "volatility_regime": "expanding"
           },
           "H4": {
-            "complete_candles": 300,
+            "complete_candles": 299,
             "features": {
               "atr14": 0.0007862300515878519,
               "atr_pct": 0.13546815045105826,
               "breakout": "none",
               "close": 0.58038,
               "ema20": 0.5803532198696623,
-              "ema200": 0.5783863234318665,
-              "ema50": 0.5807065037496061,
-              "ema50_slope_atr": -0.136051913456364,
-              "macd_hist": 0.0001407549907716196,
-              "macd_line": 4.083324038783864e-06,
-              "macd_signal": -0.00013667166673283574,
+              "ema200": 0.5783880003196057,
+              "ema50": 0.5807065044511642,
+              "ema50_slope_atr": -0.13605235238564786,
+              "macd_hist": 0.00014075499077926672,
+              "macd_line": 4.083324022907675e-06,
+              "macd_signal": -0.00013667166675635905,
               "prior20_high": 0.58112,
               "prior20_low": 0.57879,
               "range50_position": 0.3656387665198236,
               "roc12": 0.1397587866866834,
-              "rsi14": 49.6487493017013,
+              "rsi14": 49.648749301688156,
               "true_range_atr": 1.3990816018523529,
               "volatility_regime": "normal"
             },
@@ -2325,9 +2325,9 @@
       "phase2_confidence": 35.01,
       "phase2_score": 1.16,
       "pricing": {
-        "ask": 115.19,
-        "bid": 115.171,
-        "mid": 115.1805,
+        "ask": 115.228,
+        "bid": 115.209,
+        "mid": 115.2185,
         "spread": 0.018999999999991246,
         "spread_pips": 1.8999999999991246
       },
@@ -2562,14 +2562,14 @@
       "phase2_confidence": 44.42,
       "phase2_score": -7.63,
       "pricing": {
-        "ask": 198.468,
-        "bid": 198.435,
-        "mid": 198.4515,
-        "spread": 0.03299999999998704,
-        "spread_pips": 3.299999999998704
+        "ask": 198.526,
+        "bid": 198.496,
+        "mid": 198.51100000000002,
+        "spread": 0.030000000000001137,
+        "spread_pips": 3.0000000000001137
       },
       "reasons": [
-        "spread too wide (3.30 pips)",
+        "spread too wide (3.00 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -2725,7 +2725,7 @@
       "agreement_multiplier": 1.0,
       "combined_confidence": 66.14,
       "combined_score": -44.55,
-      "decision": "no_trade",
+      "decision": "sell",
       "direction": "bearish",
       "event_risk": "normal",
       "evidence": {
@@ -2800,23 +2800,21 @@
       "phase2_confidence": 52.68,
       "phase2_score": -18.82,
       "pricing": {
-        "ask": 1.61879,
-        "bid": 1.61846,
-        "mid": 1.618625,
-        "spread": 0.00032999999999994145,
-        "spread_pips": 3.2999999999994145
+        "ask": 1.61835,
+        "bid": 1.61805,
+        "mid": 1.6181999999999999,
+        "spread": 0.00029999999999996696,
+        "spread_pips": 2.9999999999996696
       },
-      "reasons": [
-        "spread too wide (3.30 pips)"
-      ],
+      "reasons": [],
       "setup": {
-        "entry": null,
-        "invalidation": "No active directional setup",
-        "risk_reward": null,
-        "stop_loss": null,
-        "take_profit": null
+        "entry": 1.6182,
+        "invalidation": "H1 close above 1.619655",
+        "risk_reward": 2.0,
+        "stop_loss": 1.619655,
+        "take_profit": 1.615291
       },
-      "spread_ok": false,
+      "spread_ok": true,
       "status": "analyzed",
       "technical_analysis": {
         "alignment_score": 100.0,
@@ -3036,11 +3034,11 @@
       "phase2_confidence": 39.61,
       "phase2_score": 7.1,
       "pricing": {
-        "ask": 1.61339,
-        "bid": 1.6131,
-        "mid": 1.613245,
-        "spread": 0.0002900000000001235,
-        "spread_pips": 2.900000000001235
+        "ask": 1.61314,
+        "bid": 1.61291,
+        "mid": 1.613025,
+        "spread": 0.00022999999999995246,
+        "spread_pips": 2.2999999999995246
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -3273,11 +3271,11 @@
       "phase2_confidence": 51.04,
       "phase2_score": 15.89,
       "pricing": {
-        "ask": 0.93638,
-        "bid": 0.93625,
-        "mid": 0.936315,
-        "spread": 0.00012999999999996348,
-        "spread_pips": 1.2999999999996348
+        "ask": 0.93626,
+        "bid": 0.93611,
+        "mid": 0.936185,
+        "spread": 0.00014999999999998348,
+        "spread_pips": 1.4999999999998348
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -3510,11 +3508,11 @@
       "phase2_confidence": 42.56,
       "phase2_score": -16.73,
       "pricing": {
-        "ask": 0.85712,
-        "bid": 0.85702,
-        "mid": 0.85707,
-        "spread": 9.999999999998899e-05,
-        "spread_pips": 0.9999999999998899
+        "ask": 0.8571,
+        "bid": 0.85703,
+        "mid": 0.857065,
+        "spread": 7.00000000000145e-05,
+        "spread_pips": 0.700000000000145
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -3747,9 +3745,9 @@
       "phase2_confidence": 44.61,
       "phase2_score": 8.27,
       "pricing": {
-        "ask": 185.827,
-        "bid": 185.804,
-        "mid": 185.8155,
+        "ask": 185.859,
+        "bid": 185.836,
+        "mid": 185.84750000000003,
         "spread": 0.022999999999996135,
         "spread_pips": 2.2999999999996135
       },
@@ -3983,14 +3981,14 @@
       "phase2_confidence": 20.3,
       "phase2_score": 4.87,
       "pricing": {
-        "ask": 1.95716,
-        "bid": 1.9565,
-        "mid": 1.95683,
-        "spread": 0.000660000000000105,
-        "spread_pips": 6.6000000000010495
+        "ask": 1.9575,
+        "bid": 1.95689,
+        "mid": 1.957195,
+        "spread": 0.0006099999999999994,
+        "spread_pips": 6.099999999999994
       },
       "reasons": [
-        "spread too wide (6.60 pips)",
+        "spread too wide (6.10 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -4221,11 +4219,11 @@
       "phase2_confidence": 48.52,
       "phase2_score": -12.24,
       "pricing": {
-        "ask": 1.16449,
-        "bid": 1.16439,
-        "mid": 1.16444,
-        "spread": 9.999999999998899e-05,
-        "spread_pips": 0.9999999999998899
+        "ask": 1.16432,
+        "bid": 1.16423,
+        "mid": 1.164275,
+        "spread": 8.999999999992347e-05,
+        "spread_pips": 0.8999999999992347
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -4458,14 +4456,14 @@
       "phase2_confidence": 38.5,
       "phase2_score": -2.08,
       "pricing": {
-        "ask": 1.88883,
-        "bid": 1.88839,
-        "mid": 1.88861,
-        "spread": 0.00043999999999999595,
-        "spread_pips": 4.3999999999999595
+        "ask": 1.88846,
+        "bid": 1.88799,
+        "mid": 1.888225,
+        "spread": 0.00046999999999997044,
+        "spread_pips": 4.699999999999704
       },
       "reasons": [
-        "spread too wide (4.40 pips)",
+        "spread too wide (4.70 pips)",
         "combined confidence too low"
       ],
       "setup": {
@@ -4695,14 +4693,14 @@
       "phase2_confidence": 45.24,
       "phase2_score": 23.84,
       "pricing": {
-        "ask": 1.88244,
-        "bid": 1.88207,
-        "mid": 1.8822549999999998,
-        "spread": 0.00036999999999998145,
-        "spread_pips": 3.6999999999998145
+        "ask": 1.88219,
+        "bid": 1.88181,
+        "mid": 1.8820000000000001,
+        "spread": 0.00038000000000004697,
+        "spread_pips": 3.8000000000004697
       },
       "reasons": [
-        "spread too wide (3.70 pips)",
+        "spread too wide (3.80 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -4933,11 +4931,11 @@
       "phase2_confidence": 47.46,
       "phase2_score": 32.63,
       "pricing": {
-        "ask": 1.0925,
-        "bid": 1.09228,
-        "mid": 1.09239,
-        "spread": 0.000220000000000109,
-        "spread_pips": 2.20000000000109
+        "ask": 1.09238,
+        "bid": 1.09217,
+        "mid": 1.0922749999999999,
+        "spread": 0.00020999999999982144,
+        "spread_pips": 2.0999999999982144
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -5170,13 +5168,14 @@
       "phase2_confidence": 41.78,
       "phase2_score": 25.0,
       "pricing": {
-        "ask": 216.808,
-        "bid": 216.782,
-        "mid": 216.79500000000002,
-        "spread": 0.025999999999982037,
-        "spread_pips": 2.5999999999982037
+        "ask": 216.855,
+        "bid": 216.823,
+        "mid": 216.839,
+        "spread": 0.031999999999982265,
+        "spread_pips": 3.1999999999982265
       },
       "reasons": [
+        "spread too wide (3.20 pips)",
         "combined confidence too low"
       ],
       "setup": {
@@ -5186,7 +5185,7 @@
         "stop_loss": null,
         "take_profit": null
       },
-      "spread_ok": true,
+      "spread_ok": false,
       "status": "analyzed",
       "technical_analysis": {
         "alignment_score": 100.0,
@@ -5406,14 +5405,14 @@
       "phase2_confidence": 23.19,
       "phase2_score": 19.91,
       "pricing": {
-        "ask": 2.28361,
-        "bid": 2.28274,
-        "mid": 2.283175,
-        "spread": 0.0008699999999999264,
-        "spread_pips": 8.699999999999264
+        "ask": 2.28403,
+        "bid": 2.28322,
+        "mid": 2.283625,
+        "spread": 0.0008099999999999774,
+        "spread_pips": 8.099999999999774
       },
       "reasons": [
-        "spread too wide (8.70 pips)",
+        "spread too wide (8.10 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -5644,11 +5643,11 @@
       "phase2_confidence": 37.93,
       "phase2_score": 4.49,
       "pricing": {
-        "ask": 1.35875,
-        "bid": 1.35861,
-        "mid": 1.35868,
-        "spread": 0.00013999999999980695,
-        "spread_pips": 1.3999999999980695
+        "ask": 1.35859,
+        "bid": 1.35845,
+        "mid": 1.35852,
+        "spread": 0.000140000000000029,
+        "spread_pips": 1.40000000000029
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -5881,11 +5880,11 @@
       "phase2_confidence": 20.07,
       "phase2_score": -0.75,
       "pricing": {
-        "ask": 0.82458,
-        "bid": 0.82433,
-        "mid": 0.8244549999999999,
-        "spread": 0.00024999999999997247,
-        "spread_pips": 2.4999999999997247
+        "ask": 0.82427,
+        "bid": 0.82403,
+        "mid": 0.8241499999999999,
+        "spread": 0.00023999999999990695,
+        "spread_pips": 2.3999999999990695
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6118,11 +6117,11 @@
       "phase2_confidence": 23.26,
       "phase2_score": 23.23,
       "pricing": {
-        "ask": 0.47856,
-        "bid": 0.47843,
-        "mid": 0.478495,
-        "spread": 0.00012999999999996348,
-        "spread_pips": 1.2999999999996348
+        "ask": 0.4784,
+        "bid": 0.47827,
+        "mid": 0.47833499999999995,
+        "spread": 0.000130000000000019,
+        "spread_pips": 1.30000000000019
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6355,11 +6354,11 @@
       "phase2_confidence": 17.88,
       "phase2_score": 8.09,
       "pricing": {
-        "ask": 94.97,
-        "bid": 94.948,
-        "mid": 94.959,
-        "spread": 0.02200000000000557,
-        "spread_pips": 2.200000000000557
+        "ask": 94.969,
+        "bid": 94.946,
+        "mid": 94.9575,
+        "spread": 0.022999999999996135,
+        "spread_pips": 2.2999999999996135
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6592,11 +6591,11 @@
       "phase2_confidence": 22.71,
       "phase2_score": -19.63,
       "pricing": {
-        "ask": 0.59515,
-        "bid": 0.59503,
-        "mid": 0.5950899999999999,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "ask": 0.59493,
+        "bid": 0.59483,
+        "mid": 0.59488,
+        "spread": 9.999999999998899e-05,
+        "spread_pips": 0.9999999999998899
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6829,11 +6828,11 @@
       "phase2_confidence": 42.37,
       "phase2_score": 19.34,
       "pricing": {
-        "ask": 1.38557,
-        "bid": 1.38543,
-        "mid": 1.3855,
-        "spread": 0.000140000000000029,
-        "spread_pips": 1.40000000000029
+        "ask": 1.38555,
+        "bid": 1.38542,
+        "mid": 1.385485,
+        "spread": 0.00012999999999996348,
+        "spread_pips": 1.2999999999996348
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7066,11 +7065,11 @@
       "phase2_confidence": 54.29,
       "phase2_score": 28.14,
       "pricing": {
-        "ask": 0.80413,
+        "ask": 0.80416,
         "bid": 0.80403,
-        "mid": 0.80408,
-        "spread": 9.999999999998899e-05,
-        "spread_pips": 0.9999999999998899
+        "mid": 0.804095,
+        "spread": 0.00012999999999996348,
+        "spread_pips": 1.2999999999996348
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7303,11 +7302,11 @@
       "phase2_confidence": 47.58,
       "phase2_score": 20.51,
       "pricing": {
-        "ask": 159.58,
-        "bid": 159.571,
-        "mid": 159.5755,
-        "spread": 0.009000000000014552,
-        "spread_pips": 0.9000000000014552
+        "ask": 159.63,
+        "bid": 159.621,
+        "mid": 159.6255,
+        "spread": 0.00899999999998613,
+        "spread_pips": 0.899999999998613
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7524,15 +7523,16 @@
   },
   "rankings": {
     "actionable": [
-      "AUD_CHF",
       "AUD_JPY",
+      "AUD_CHF",
+      "EUR_AUD",
       "AUD_USD"
     ],
     "overall": [
-      "AUD_CHF",
       "AUD_JPY",
-      "AUD_USD",
+      "AUD_CHF",
       "EUR_AUD",
+      "AUD_USD",
       "EUR_JPY",
       "AUD_CAD",
       "EUR_CHF",
