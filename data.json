@@ -74,7 +74,7 @@
       "status": "unavailable"
     }
   },
-  "generated_at": "2026-08-28T09:11:35.897830+00:00",
+  "generated_at": "2026-08-28T09:12:17.708003+00:00",
   "macro_context": {
     "AUD": {
       "background": {
@@ -864,6 +864,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "AUD",
@@ -902,6 +903,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "AUD",
@@ -929,9 +931,9 @@
       "phase2_confidence": 45.89,
       "phase2_score": 25.92,
       "pricing": {
-        "ask": 0.99699,
-        "bid": 0.99677,
-        "mid": 0.99688,
+        "ask": 0.99693,
+        "bid": 0.99671,
+        "mid": 0.99682,
         "spread": 0.00021999999999999797,
         "spread_pips": 2.1999999999999797
       },
@@ -1100,6 +1102,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "AUD",
@@ -1138,6 +1141,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "AUD",
@@ -1165,19 +1169,19 @@
       "phase2_confidence": 58.66,
       "phase2_score": 34.72,
       "pricing": {
-        "ask": 0.57862,
-        "bid": 0.5785,
-        "mid": 0.57856,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "ask": 0.57859,
+        "bid": 0.57845,
+        "mid": 0.57852,
+        "spread": 0.000140000000000029,
+        "spread_pips": 1.40000000000029
       },
       "reasons": [],
       "setup": {
-        "entry": 0.57856,
-        "invalidation": "H1 close below 0.577852",
+        "entry": 0.57852,
+        "invalidation": "H1 close below 0.577812",
         "risk_reward": 2.0,
-        "stop_loss": 0.577852,
-        "take_profit": 0.579977
+        "stop_loss": 0.577812,
+        "take_profit": 0.579937
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -1334,6 +1338,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "AUD",
@@ -1372,6 +1377,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "AUD",
@@ -1399,19 +1405,19 @@
       "phase2_confidence": 51.67,
       "phase2_score": 27.09,
       "pricing": {
-        "ask": 114.866,
-        "bid": 114.845,
-        "mid": 114.8555,
+        "ask": 114.857,
+        "bid": 114.836,
+        "mid": 114.84649999999999,
         "spread": 0.021000000000000796,
         "spread_pips": 2.1000000000000796
       },
       "reasons": [],
       "setup": {
-        "entry": 114.8555,
-        "invalidation": "H1 close below 114.731169",
+        "entry": 114.8465,
+        "invalidation": "H1 close below 114.722169",
         "risk_reward": 2.0,
-        "stop_loss": 114.731169,
-        "take_profit": 115.104162
+        "stop_loss": 114.722169,
+        "take_profit": 115.095162
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -1568,6 +1574,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "AUD",
@@ -1606,6 +1613,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "AUD",
@@ -1633,11 +1641,11 @@
       "phase2_confidence": 23.47,
       "phase2_score": 21.63,
       "pricing": {
-        "ask": 1.20965,
-        "bid": 1.20945,
-        "mid": 1.20955,
-        "spread": 0.00019999999999997797,
-        "spread_pips": 1.9999999999997797
+        "ask": 1.2096,
+        "bid": 1.20941,
+        "mid": 1.209505,
+        "spread": 0.00018999999999991246,
+        "spread_pips": 1.8999999999991246
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -1805,6 +1813,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "AUD",
@@ -1843,6 +1852,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "AUD",
@@ -1870,19 +1880,19 @@
       "phase2_confidence": 47.01,
       "phase2_score": 6.57,
       "pricing": {
-        "ask": 0.71957,
-        "bid": 0.71949,
-        "mid": 0.71953,
-        "spread": 8.000000000008001e-05,
-        "spread_pips": 0.8000000000008001
+        "ask": 0.71953,
+        "bid": 0.71946,
+        "mid": 0.719495,
+        "spread": 7.00000000000145e-05,
+        "spread_pips": 0.700000000000145
       },
       "reasons": [],
       "setup": {
-        "entry": 0.71953,
-        "invalidation": "H1 close below 0.718694",
+        "entry": 0.719495,
+        "invalidation": "H1 close below 0.718659",
         "risk_reward": 2.0,
-        "stop_loss": 0.718694,
-        "take_profit": 0.721202
+        "stop_loss": 0.718659,
+        "take_profit": 0.721167
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -2039,6 +2049,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "CAD",
@@ -2077,6 +2088,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "CAD",
@@ -2104,11 +2116,11 @@
       "phase2_confidence": 40.16,
       "phase2_score": 8.8,
       "pricing": {
-        "ask": 0.58043,
-        "bid": 0.58032,
-        "mid": 0.580375,
-        "spread": 0.0001100000000000545,
-        "spread_pips": 1.100000000000545
+        "ask": 0.58045,
+        "bid": 0.58031,
+        "mid": 0.58038,
+        "spread": 0.000140000000000029,
+        "spread_pips": 1.40000000000029
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2276,6 +2288,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "CAD",
@@ -2314,6 +2327,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "CAD",
@@ -2341,11 +2355,11 @@
       "phase2_confidence": 35.01,
       "phase2_score": 1.16,
       "pricing": {
-        "ask": 115.225,
-        "bid": 115.206,
-        "mid": 115.21549999999999,
-        "spread": 0.018999999999991246,
-        "spread_pips": 1.8999999999991246
+        "ask": 115.223,
+        "bid": 115.204,
+        "mid": 115.2135,
+        "spread": 0.019000000000005457,
+        "spread_pips": 1.9000000000005457
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2513,6 +2527,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "CHF",
@@ -2551,6 +2566,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "CHF",
@@ -2578,14 +2594,14 @@
       "phase2_confidence": 44.42,
       "phase2_score": -7.63,
       "pricing": {
-        "ask": 198.533,
-        "bid": 198.498,
-        "mid": 198.51549999999997,
-        "spread": 0.03499999999999659,
-        "spread_pips": 3.499999999999659
+        "ask": 198.53,
+        "bid": 198.499,
+        "mid": 198.5145,
+        "spread": 0.03100000000000591,
+        "spread_pips": 3.100000000000591
       },
       "reasons": [
-        "spread too wide (3.50 pips)",
+        "spread too wide (3.10 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -2751,6 +2767,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -2789,6 +2806,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -2816,14 +2834,14 @@
       "phase2_confidence": 52.68,
       "phase2_score": -18.82,
       "pricing": {
-        "ask": 1.61826,
-        "bid": 1.61795,
-        "mid": 1.618105,
-        "spread": 0.00031000000000003247,
-        "spread_pips": 3.1000000000003247
+        "ask": 1.61839,
+        "bid": 1.61805,
+        "mid": 1.61822,
+        "spread": 0.00034000000000000696,
+        "spread_pips": 3.4000000000000696
       },
       "reasons": [
-        "spread too wide (3.10 pips)"
+        "spread too wide (3.40 pips)"
       ],
       "setup": {
         "entry": null,
@@ -2987,6 +3005,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -3025,6 +3044,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -3052,11 +3072,11 @@
       "phase2_confidence": 39.61,
       "phase2_score": 7.1,
       "pricing": {
-        "ask": 1.61323,
-        "bid": 1.61296,
-        "mid": 1.613095,
-        "spread": 0.00026999999999999247,
-        "spread_pips": 2.6999999999999247
+        "ask": 1.61319,
+        "bid": 1.61293,
+        "mid": 1.61306,
+        "spread": 0.00025999999999992696,
+        "spread_pips": 2.5999999999992696
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -3224,6 +3244,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -3262,6 +3283,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -3289,9 +3311,9 @@
       "phase2_confidence": 51.04,
       "phase2_score": 15.89,
       "pricing": {
-        "ask": 0.93627,
-        "bid": 0.93613,
-        "mid": 0.9362,
+        "ask": 0.93626,
+        "bid": 0.93612,
+        "mid": 0.93619,
         "spread": 0.000140000000000029,
         "spread_pips": 1.40000000000029
       },
@@ -3461,6 +3483,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -3499,6 +3522,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -3698,6 +3722,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -3736,6 +3761,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -3763,11 +3789,11 @@
       "phase2_confidence": 44.61,
       "phase2_score": 8.27,
       "pricing": {
-        "ask": 185.862,
-        "bid": 185.836,
-        "mid": 185.849,
-        "spread": 0.025999999999982037,
-        "spread_pips": 2.5999999999982037
+        "ask": 185.859,
+        "bid": 185.838,
+        "mid": 185.8485,
+        "spread": 0.021000000000015007,
+        "spread_pips": 2.1000000000015007
       },
       "reasons": [
         "combined directional evidence too weak"
@@ -3934,6 +3960,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -3972,6 +3999,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -3999,14 +4027,14 @@
       "phase2_confidence": 20.3,
       "phase2_score": 4.87,
       "pricing": {
-        "ask": 1.95757,
-        "bid": 1.95699,
-        "mid": 1.95728,
-        "spread": 0.0005800000000000249,
-        "spread_pips": 5.800000000000249
+        "ask": 1.95761,
+        "bid": 1.95702,
+        "mid": 1.957315,
+        "spread": 0.0005900000000000905,
+        "spread_pips": 5.9000000000009045
       },
       "reasons": [
-        "spread too wide (5.80 pips)",
+        "spread too wide (5.90 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -4172,6 +4200,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -4210,6 +4239,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "EUR",
@@ -4237,11 +4267,11 @@
       "phase2_confidence": 48.52,
       "phase2_score": -12.24,
       "pricing": {
-        "ask": 1.16433,
-        "bid": 1.16424,
-        "mid": 1.164285,
-        "spread": 9.000000000014552e-05,
-        "spread_pips": 0.9000000000014552
+        "ask": 1.16436,
+        "bid": 1.16426,
+        "mid": 1.16431,
+        "spread": 9.999999999998899e-05,
+        "spread_pips": 0.9999999999998899
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -4409,6 +4439,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "GBP",
@@ -4447,6 +4478,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "GBP",
@@ -4474,14 +4506,14 @@
       "phase2_confidence": 38.5,
       "phase2_score": -2.08,
       "pricing": {
-        "ask": 1.88848,
-        "bid": 1.88803,
-        "mid": 1.888255,
-        "spread": 0.0004499999999998394,
-        "spread_pips": 4.499999999998394
+        "ask": 1.8886,
+        "bid": 1.88813,
+        "mid": 1.888365,
+        "spread": 0.00046999999999997044,
+        "spread_pips": 4.699999999999704
       },
       "reasons": [
-        "spread too wide (4.50 pips)",
+        "spread too wide (4.70 pips)",
         "combined confidence too low"
       ],
       "setup": {
@@ -4646,6 +4678,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "GBP",
@@ -4684,6 +4717,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "GBP",
@@ -4711,14 +4745,14 @@
       "phase2_confidence": 45.24,
       "phase2_score": 23.84,
       "pricing": {
-        "ask": 1.8824,
-        "bid": 1.88203,
+        "ask": 1.88239,
+        "bid": 1.88204,
         "mid": 1.882215,
-        "spread": 0.00036999999999998145,
-        "spread_pips": 3.6999999999998145
+        "spread": 0.0003500000000000725,
+        "spread_pips": 3.5000000000007248
       },
       "reasons": [
-        "spread too wide (3.70 pips)",
+        "spread too wide (3.50 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -4884,6 +4918,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "GBP",
@@ -4922,6 +4957,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "GBP",
@@ -4949,11 +4985,11 @@
       "phase2_confidence": 47.46,
       "phase2_score": 32.63,
       "pricing": {
-        "ask": 1.09243,
-        "bid": 1.09223,
+        "ask": 1.09245,
+        "bid": 1.09221,
         "mid": 1.09233,
-        "spread": 0.00019999999999997797,
-        "spread_pips": 1.9999999999997797
+        "spread": 0.00024000000000001798,
+        "spread_pips": 2.4000000000001798
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -5121,6 +5157,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "GBP",
@@ -5159,6 +5196,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "GBP",
@@ -5186,14 +5224,13 @@
       "phase2_confidence": 41.78,
       "phase2_score": 25.0,
       "pricing": {
-        "ask": 216.871,
-        "bid": 216.838,
-        "mid": 216.8545,
-        "spread": 0.03300000000001546,
-        "spread_pips": 3.300000000001546
+        "ask": 216.864,
+        "bid": 216.835,
+        "mid": 216.8495,
+        "spread": 0.028999999999996362,
+        "spread_pips": 2.899999999999636
       },
       "reasons": [
-        "spread too wide (3.30 pips)",
         "combined confidence too low"
       ],
       "setup": {
@@ -5203,7 +5240,7 @@
         "stop_loss": null,
         "take_profit": null
       },
-      "spread_ok": false,
+      "spread_ok": true,
       "status": "analyzed",
       "technical_analysis": {
         "alignment_score": 100.0,
@@ -5358,6 +5395,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "GBP",
@@ -5396,6 +5434,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "GBP",
@@ -5423,14 +5462,14 @@
       "phase2_confidence": 23.19,
       "phase2_score": 19.91,
       "pricing": {
-        "ask": 2.2843,
-        "bid": 2.2835,
-        "mid": 2.2839,
-        "spread": 0.0007999999999999119,
-        "spread_pips": 7.999999999999119
+        "ask": 2.28441,
+        "bid": 2.28359,
+        "mid": 2.284,
+        "spread": 0.0008200000000000429,
+        "spread_pips": 8.20000000000043
       },
       "reasons": [
-        "spread too wide (8.00 pips)",
+        "spread too wide (8.20 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -5596,6 +5635,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "GBP",
@@ -5634,6 +5674,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "GBP",
@@ -5661,9 +5702,9 @@
       "phase2_confidence": 37.93,
       "phase2_score": 4.49,
       "pricing": {
-        "ask": 1.3587,
-        "bid": 1.35855,
-        "mid": 1.358625,
+        "ask": 1.35871,
+        "bid": 1.35856,
+        "mid": 1.358635,
         "spread": 0.0001500000000000945,
         "spread_pips": 1.500000000000945
       },
@@ -5833,6 +5874,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "NZD",
@@ -5871,6 +5913,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "NZD",
@@ -5898,11 +5941,11 @@
       "phase2_confidence": 20.07,
       "phase2_score": -0.75,
       "pricing": {
-        "ask": 0.82426,
+        "ask": 0.82425,
         "bid": 0.82402,
-        "mid": 0.82414,
-        "spread": 0.00024000000000001798,
-        "spread_pips": 2.4000000000001798
+        "mid": 0.8241350000000001,
+        "spread": 0.0002300000000000635,
+        "spread_pips": 2.300000000000635
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6070,6 +6113,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "NZD",
@@ -6108,6 +6152,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "NZD",
@@ -6136,10 +6181,10 @@
       "phase2_score": 23.23,
       "pricing": {
         "ask": 0.47837,
-        "bid": 0.47825,
-        "mid": 0.47831,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "bid": 0.47823,
+        "mid": 0.4783,
+        "spread": 0.000140000000000029,
+        "spread_pips": 1.40000000000029
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6307,6 +6352,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "NZD",
@@ -6345,6 +6391,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "NZD",
@@ -6372,11 +6419,11 @@
       "phase2_confidence": 17.88,
       "phase2_score": 8.09,
       "pricing": {
-        "ask": 94.966,
-        "bid": 94.942,
-        "mid": 94.954,
-        "spread": 0.02400000000000091,
-        "spread_pips": 2.400000000000091
+        "ask": 94.962,
+        "bid": 94.94,
+        "mid": 94.951,
+        "spread": 0.02200000000000557,
+        "spread_pips": 2.200000000000557
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6544,6 +6591,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "NZD",
@@ -6582,6 +6630,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "NZD",
@@ -6610,10 +6659,10 @@
       "phase2_score": -19.63,
       "pricing": {
         "ask": 0.59492,
-        "bid": 0.5948,
-        "mid": 0.5948599999999999,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "bid": 0.59481,
+        "mid": 0.594865,
+        "spread": 0.0001100000000000545,
+        "spread_pips": 1.100000000000545
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6781,6 +6830,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "USD",
@@ -6819,6 +6869,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "elevated",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "USD",
@@ -6846,11 +6897,11 @@
       "phase2_confidence": 42.37,
       "phase2_score": 19.34,
       "pricing": {
-        "ask": 1.3856,
-        "bid": 1.38547,
-        "mid": 1.385535,
-        "spread": 0.00012999999999996348,
-        "spread_pips": 1.2999999999996348
+        "ask": 1.38557,
+        "bid": 1.38542,
+        "mid": 1.3854950000000001,
+        "spread": 0.00014999999999987246,
+        "spread_pips": 1.4999999999987246
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7018,6 +7069,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "USD",
@@ -7056,6 +7108,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "USD",
@@ -7083,11 +7136,11 @@
       "phase2_confidence": 54.29,
       "phase2_score": 28.14,
       "pricing": {
-        "ask": 0.80415,
-        "bid": 0.80403,
-        "mid": 0.80409,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "ask": 0.80413,
+        "bid": 0.804,
+        "mid": 0.804065,
+        "spread": 0.00012999999999996348,
+        "spread_pips": 1.2999999999996348
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7255,6 +7308,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "USD",
@@ -7293,6 +7347,7 @@
           "economic_calendar_risk": "normal",
           "high_impact_events": [],
           "level": "normal",
+          "recent_economic_surprises": [],
           "scheduled_policy_events": [
             {
               "currency": "USD",
@@ -7320,11 +7375,11 @@
       "phase2_confidence": 47.58,
       "phase2_score": 20.51,
       "pricing": {
-        "ask": 159.63,
-        "bid": 159.621,
-        "mid": 159.6255,
-        "spread": 0.00899999999998613,
-        "spread_pips": 0.899999999998613
+        "ask": 159.626,
+        "bid": 159.617,
+        "mid": 159.6215,
+        "spread": 0.009000000000014552,
+        "spread_pips": 0.9000000000014552
       },
       "reasons": [
         "combined directional evidence too weak",
