@@ -1,5 +1,5 @@
 {
-  "actionable_count": 3,
+  "actionable_count": 4,
   "economic_calendar": {
     "AUD": {
       "error": "HTTPError",
@@ -685,7 +685,7 @@
     },
     "total_source_entries": 70
   },
-  "generated_at": "2026-08-28T09:44:49.380181+00:00",
+  "generated_at": "2026-08-28T09:46:16.030502+00:00",
   "live_release_context": {
     "AUD": {
       "components": {
@@ -693,7 +693,7 @@
           "actual": 0.3,
           "actual_numeric": 0.3,
           "category": "Real GDP q/q",
-          "date": "2026-08-28T09:44:22.796107+00:00",
+          "date": "2026-08-28T09:45:49.932161+00:00",
           "event": "Real GDP q/q",
           "frequency": "quarterly",
           "kind": "growth",
@@ -710,7 +710,7 @@
           "actual": 3.5,
           "actual_numeric": 3.5,
           "category": "Consumer Price Index y/y",
-          "date": "2026-08-28T09:44:21.953186+00:00",
+          "date": "2026-08-28T09:45:49.126125+00:00",
           "event": "Consumer Price Index y/y",
           "frequency": "monthly",
           "kind": "inflation",
@@ -727,7 +727,7 @@
           "actual": 1.1,
           "actual_numeric": 1.1,
           "category": "Monthly Household Spending Indicator m/m",
-          "date": "2026-08-28T09:44:23.069096+00:00",
+          "date": "2026-08-28T09:45:50.198826+00:00",
           "event": "Monthly Household Spending Indicator m/m",
           "frequency": "monthly",
           "kind": "retail",
@@ -744,7 +744,7 @@
           "actual": 1.1,
           "actual_numeric": 1.1,
           "category": "Terms of trade q/q",
-          "date": "2026-08-28T09:44:22.796128+00:00",
+          "date": "2026-08-28T09:45:49.932184+00:00",
           "event": "Terms of trade q/q",
           "frequency": "quarterly",
           "kind": "trade",
@@ -761,7 +761,7 @@
           "actual": 4.5,
           "actual_numeric": 4.5,
           "category": "Unemployment rate",
-          "date": "2026-08-28T09:44:22.229335+00:00",
+          "date": "2026-08-28T09:45:49.399812+00:00",
           "event": "Unemployment rate",
           "frequency": "monthly",
           "kind": "unemployment",
@@ -778,7 +778,7 @@
           "actual": 3.2,
           "actual_numeric": 3.2,
           "category": "Wage Price Index y/y",
-          "date": "2026-08-28T09:44:22.533206+00:00",
+          "date": "2026-08-28T09:45:49.669175+00:00",
           "event": "Wage Price Index y/y",
           "frequency": "quarterly",
           "kind": "wages",
@@ -826,7 +826,7 @@
           "actual": 1.5,
           "actual_numeric": 1.5,
           "category": "Real GDP q/q flash",
-          "date": "2026-08-28T09:44:22.627453+00:00",
+          "date": "2026-08-28T09:45:49.688672+00:00",
           "event": "Real GDP q/q flash",
           "frequency": "quarterly",
           "kind": "growth",
@@ -857,7 +857,7 @@
           "actual": 0.4,
           "actual_numeric": 0.4,
           "category": "Real GDP q/q",
-          "date": "2026-08-28T09:44:22.742502+00:00",
+          "date": "2026-08-28T09:45:49.782263+00:00",
           "event": "Real GDP q/q",
           "frequency": "quarterly",
           "kind": "growth",
@@ -888,7 +888,7 @@
           "actual": 0.6,
           "actual_numeric": 0.6,
           "category": "Real GDP q/q",
-          "date": "2026-08-28T09:44:21.894824+00:00",
+          "date": "2026-08-28T09:45:49.286350+00:00",
           "event": "Real GDP q/q",
           "frequency": "quarterly",
           "kind": "growth",
@@ -905,7 +905,7 @@
           "actual": 3.1,
           "actual_numeric": 3.1,
           "category": "CPIH annual rate",
-          "date": "2026-08-28T09:44:21.789467+00:00",
+          "date": "2026-08-28T09:45:49.040751+00:00",
           "event": "CPIH annual rate",
           "frequency": "monthly",
           "kind": "inflation",
@@ -922,7 +922,7 @@
           "actual": 4.9,
           "actual_numeric": 4.9,
           "category": "Unemployment rate",
-          "date": "2026-08-28T09:44:21.843908+00:00",
+          "date": "2026-08-28T09:45:49.234087+00:00",
           "event": "Unemployment rate",
           "frequency": "monthly",
           "kind": "unemployment",
@@ -955,7 +955,7 @@
           "actual": 0.3,
           "actual_numeric": 0.3,
           "category": "Real GDP q/q",
-          "date": "2026-08-28T09:44:23.574847+00:00",
+          "date": "2026-08-28T09:45:50.436691+00:00",
           "event": "Real GDP q/q",
           "frequency": "quarterly",
           "kind": "growth",
@@ -996,7 +996,7 @@
           "actual": -23.0,
           "actual_numeric": -23.0,
           "category": "Total nonfarm payroll monthly change (thousands)",
-          "date": "2026-08-28T09:44:21.958386+00:00",
+          "date": "2026-08-28T09:45:48.897265+00:00",
           "event": "Total nonfarm payroll monthly change (thousands)",
           "frequency": "monthly",
           "kind": "employment",
@@ -1013,7 +1013,7 @@
           "actual": 0.375,
           "actual_numeric": 0.375,
           "category": "Real GDP q/q (annualised headline converted to approximate q/q)",
-          "date": "2026-08-28T09:44:22.057658+00:00",
+          "date": "2026-08-28T09:45:48.988576+00:00",
           "event": "Real GDP q/q (annualised headline converted to approximate q/q)",
           "frequency": "quarterly",
           "kind": "growth",
@@ -1030,7 +1030,7 @@
           "actual": 3.364825041479902,
           "actual_numeric": 3.364825041479902,
           "category": "CPI-U all items y/y",
-          "date": "2026-08-28T09:44:21.958149+00:00",
+          "date": "2026-08-28T09:45:48.897070+00:00",
           "event": "CPI-U all items y/y",
           "frequency": "monthly",
           "kind": "inflation",
@@ -1047,7 +1047,7 @@
           "actual": 4.1,
           "actual_numeric": 4.1,
           "category": "Unemployment rate",
-          "date": "2026-08-28T09:44:21.958265+00:00",
+          "date": "2026-08-28T09:45:48.897164+00:00",
           "event": "Unemployment rate",
           "frequency": "monthly",
           "kind": "unemployment",
@@ -1064,7 +1064,7 @@
           "actual": 3.153276665752669,
           "actual_numeric": 3.153276665752669,
           "category": "Average hourly earnings y/y",
-          "date": "2026-08-28T09:44:21.958781+00:00",
+          "date": "2026-08-28T09:45:48.897361+00:00",
           "event": "Average hourly earnings y/y",
           "frequency": "monthly",
           "kind": "wages",
@@ -2116,7 +2116,7 @@
           "actual": 0.3,
           "actual_numeric": 0.3,
           "category": "Real GDP q/q",
-          "date": "2026-08-28T09:44:22.796107+00:00",
+          "date": "2026-08-28T09:45:49.932161+00:00",
           "event": "Real GDP q/q",
           "frequency": "quarterly",
           "kind": "growth",
@@ -2132,7 +2132,7 @@
           "actual": 3.5,
           "actual_numeric": 3.5,
           "category": "Consumer Price Index y/y",
-          "date": "2026-08-28T09:44:21.953186+00:00",
+          "date": "2026-08-28T09:45:49.126125+00:00",
           "event": "Consumer Price Index y/y",
           "frequency": "monthly",
           "kind": "inflation",
@@ -2148,7 +2148,7 @@
           "actual": 1.1,
           "actual_numeric": 1.1,
           "category": "Monthly Household Spending Indicator m/m",
-          "date": "2026-08-28T09:44:23.069096+00:00",
+          "date": "2026-08-28T09:45:50.198826+00:00",
           "event": "Monthly Household Spending Indicator m/m",
           "frequency": "monthly",
           "kind": "retail",
@@ -2165,7 +2165,7 @@
           "actual": 1.1,
           "actual_numeric": 1.1,
           "category": "Terms of trade q/q",
-          "date": "2026-08-28T09:44:22.796128+00:00",
+          "date": "2026-08-28T09:45:49.932184+00:00",
           "event": "Terms of trade q/q",
           "frequency": "quarterly",
           "kind": "trade",
@@ -2182,7 +2182,7 @@
           "actual": 4.5,
           "actual_numeric": 4.5,
           "category": "Unemployment rate",
-          "date": "2026-08-28T09:44:22.229335+00:00",
+          "date": "2026-08-28T09:45:49.399812+00:00",
           "event": "Unemployment rate",
           "frequency": "monthly",
           "kind": "unemployment",
@@ -2198,7 +2198,7 @@
           "actual": 3.2,
           "actual_numeric": 3.2,
           "category": "Wage Price Index y/y",
-          "date": "2026-08-28T09:44:22.533206+00:00",
+          "date": "2026-08-28T09:45:49.669175+00:00",
           "event": "Wage Price Index y/y",
           "frequency": "quarterly",
           "kind": "wages",
@@ -2235,7 +2235,7 @@
           "actual": 1.5,
           "actual_numeric": 1.5,
           "category": "Real GDP q/q flash",
-          "date": "2026-08-28T09:44:22.627453+00:00",
+          "date": "2026-08-28T09:45:49.688672+00:00",
           "event": "Real GDP q/q flash",
           "frequency": "quarterly",
           "kind": "growth",
@@ -2261,7 +2261,7 @@
           "actual": 0.4,
           "actual_numeric": 0.4,
           "category": "Real GDP q/q",
-          "date": "2026-08-28T09:44:22.742502+00:00",
+          "date": "2026-08-28T09:45:49.782263+00:00",
           "event": "Real GDP q/q",
           "frequency": "quarterly",
           "kind": "growth",
@@ -2287,7 +2287,7 @@
           "actual": 0.6,
           "actual_numeric": 0.6,
           "category": "Real GDP q/q",
-          "date": "2026-08-28T09:44:21.894824+00:00",
+          "date": "2026-08-28T09:45:49.286350+00:00",
           "event": "Real GDP q/q",
           "frequency": "quarterly",
           "kind": "growth",
@@ -2303,7 +2303,7 @@
           "actual": 3.1,
           "actual_numeric": 3.1,
           "category": "CPIH annual rate",
-          "date": "2026-08-28T09:44:21.789467+00:00",
+          "date": "2026-08-28T09:45:49.040751+00:00",
           "event": "CPIH annual rate",
           "frequency": "monthly",
           "kind": "inflation",
@@ -2319,7 +2319,7 @@
           "actual": 4.9,
           "actual_numeric": 4.9,
           "category": "Unemployment rate",
-          "date": "2026-08-28T09:44:21.843908+00:00",
+          "date": "2026-08-28T09:45:49.234087+00:00",
           "event": "Unemployment rate",
           "frequency": "monthly",
           "kind": "unemployment",
@@ -2345,7 +2345,7 @@
           "actual": 0.3,
           "actual_numeric": 0.3,
           "category": "Real GDP q/q",
-          "date": "2026-08-28T09:44:23.574847+00:00",
+          "date": "2026-08-28T09:45:50.436691+00:00",
           "event": "Real GDP q/q",
           "frequency": "quarterly",
           "kind": "growth",
@@ -2380,7 +2380,7 @@
           "actual": -23.0,
           "actual_numeric": -23.0,
           "category": "Total nonfarm payroll monthly change (thousands)",
-          "date": "2026-08-28T09:44:21.958386+00:00",
+          "date": "2026-08-28T09:45:48.897265+00:00",
           "event": "Total nonfarm payroll monthly change (thousands)",
           "frequency": "monthly",
           "kind": "employment",
@@ -2397,7 +2397,7 @@
           "actual": 0.375,
           "actual_numeric": 0.375,
           "category": "Real GDP q/q (annualised headline converted to approximate q/q)",
-          "date": "2026-08-28T09:44:22.057658+00:00",
+          "date": "2026-08-28T09:45:48.988576+00:00",
           "event": "Real GDP q/q (annualised headline converted to approximate q/q)",
           "frequency": "quarterly",
           "kind": "growth",
@@ -2414,7 +2414,7 @@
           "actual": 3.364825041479902,
           "actual_numeric": 3.364825041479902,
           "category": "CPI-U all items y/y",
-          "date": "2026-08-28T09:44:21.958149+00:00",
+          "date": "2026-08-28T09:45:48.897070+00:00",
           "event": "CPI-U all items y/y",
           "frequency": "monthly",
           "kind": "inflation",
@@ -2430,7 +2430,7 @@
           "actual": 4.1,
           "actual_numeric": 4.1,
           "category": "Unemployment rate",
-          "date": "2026-08-28T09:44:21.958265+00:00",
+          "date": "2026-08-28T09:45:48.897164+00:00",
           "event": "Unemployment rate",
           "frequency": "monthly",
           "kind": "unemployment",
@@ -2446,7 +2446,7 @@
           "actual": 3.153276665752669,
           "actual_numeric": 3.153276665752669,
           "category": "Average hourly earnings y/y",
-          "date": "2026-08-28T09:44:21.958781+00:00",
+          "date": "2026-08-28T09:45:48.897361+00:00",
           "event": "Average hourly earnings y/y",
           "frequency": "monthly",
           "kind": "wages",
@@ -2713,11 +2713,11 @@
       "phase2_confidence": 38.83,
       "phase2_score": 28.35,
       "pricing": {
-        "ask": 0.99733,
-        "bid": 0.9971,
-        "mid": 0.997215,
-        "spread": 0.0002300000000000635,
-        "spread_pips": 2.300000000000635
+        "ask": 0.99726,
+        "bid": 0.99704,
+        "mid": 0.99715,
+        "spread": 0.00021999999999999797,
+        "spread_pips": 2.1999999999999797
       },
       "reasons": [
         "combined confidence too low"
@@ -3075,19 +3075,19 @@
       "phase2_confidence": 50.33,
       "phase2_score": 27.81,
       "pricing": {
-        "ask": 0.57856,
-        "bid": 0.57843,
-        "mid": 0.578495,
-        "spread": 0.00012999999999996348,
-        "spread_pips": 1.2999999999996348
+        "ask": 0.57854,
+        "bid": 0.57841,
+        "mid": 0.5784750000000001,
+        "spread": 0.0001300000000000745,
+        "spread_pips": 1.300000000000745
       },
       "reasons": [],
       "setup": {
-        "entry": 0.578495,
-        "invalidation": "H1 close below 0.577787",
+        "entry": 0.578475,
+        "invalidation": "H1 close below 0.577767",
         "risk_reward": 2.0,
-        "stop_loss": 0.577787,
-        "take_profit": 0.579912
+        "stop_loss": 0.577767,
+        "take_profit": 0.579892
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -3435,19 +3435,19 @@
       "phase2_confidence": 47.26,
       "phase2_score": 28.43,
       "pricing": {
-        "ask": 114.914,
-        "bid": 114.894,
-        "mid": 114.904,
+        "ask": 114.908,
+        "bid": 114.888,
+        "mid": 114.898,
         "spread": 0.01999999999999602,
         "spread_pips": 1.999999999999602
       },
       "reasons": [],
       "setup": {
-        "entry": 114.904,
-        "invalidation": "H1 close below 114.779669",
+        "entry": 114.898,
+        "invalidation": "H1 close below 114.773669",
         "risk_reward": 2.0,
-        "stop_loss": 114.779669,
-        "take_profit": 115.152662
+        "stop_loss": 114.773669,
+        "take_profit": 115.146662
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -3821,11 +3821,11 @@
       "phase2_confidence": 16.26,
       "phase2_score": 23.47,
       "pricing": {
-        "ask": 1.20961,
-        "bid": 1.20936,
-        "mid": 1.209485,
-        "spread": 0.0002500000000000835,
-        "spread_pips": 2.500000000000835
+        "ask": 1.20951,
+        "bid": 1.20927,
+        "mid": 1.20939,
+        "spread": 0.00024000000000001798,
+        "spread_pips": 2.4000000000001798
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -4556,11 +4556,11 @@
       "phase2_confidence": 30.74,
       "phase2_score": -0.53,
       "pricing": {
-        "ask": 0.58017,
-        "bid": 0.58005,
-        "mid": 0.5801099999999999,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "ask": 0.58018,
+        "bid": 0.58007,
+        "mid": 0.580125,
+        "spread": 0.0001100000000000545,
+        "spread_pips": 1.100000000000545
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -4907,9 +4907,9 @@
       "phase2_confidence": 28.45,
       "phase2_score": 0.09,
       "pricing": {
-        "ask": 115.233,
-        "bid": 115.216,
-        "mid": 115.2245,
+        "ask": 115.23,
+        "bid": 115.213,
+        "mid": 115.22149999999999,
         "spread": 0.017000000000010118,
         "spread_pips": 1.7000000000010118
       },
@@ -5218,11 +5218,11 @@
       "phase2_confidence": 37.42,
       "phase2_score": 0.62,
       "pricing": {
-        "ask": 198.645,
-        "bid": 198.611,
-        "mid": 198.628,
-        "spread": 0.034000000000020236,
-        "spread_pips": 3.4000000000020236
+        "ask": 198.635,
+        "bid": 198.601,
+        "mid": 198.618,
+        "spread": 0.033999999999991815,
+        "spread_pips": 3.3999999999991815
       },
       "reasons": [
         "spread too wide (3.40 pips)",
@@ -5381,7 +5381,7 @@
       "agreement_multiplier": 1.0,
       "combined_confidence": 64.2,
       "combined_score": -45.2,
-      "decision": "no_trade",
+      "decision": "sell",
       "direction": "bearish",
       "event_risk": "normal",
       "evidence": {
@@ -5582,23 +5582,21 @@
       "phase2_confidence": 47.83,
       "phase2_score": -20.43,
       "pricing": {
-        "ask": 1.61775,
-        "bid": 1.61744,
-        "mid": 1.6175950000000001,
-        "spread": 0.00031000000000003247,
-        "spread_pips": 3.1000000000003247
+        "ask": 1.61781,
+        "bid": 1.61752,
+        "mid": 1.6176650000000001,
+        "spread": 0.00028999999999990145,
+        "spread_pips": 2.8999999999990145
       },
-      "reasons": [
-        "spread too wide (3.10 pips)"
-      ],
+      "reasons": [],
       "setup": {
-        "entry": null,
-        "invalidation": "No active directional setup",
-        "risk_reward": null,
-        "stop_loss": null,
-        "take_profit": null
+        "entry": 1.617665,
+        "invalidation": "H1 close above 1.619120",
+        "risk_reward": 2.0,
+        "stop_loss": 1.61912,
+        "take_profit": 1.614756
       },
-      "spread_ok": false,
+      "spread_ok": true,
       "status": "analyzed",
       "technical_analysis": {
         "alignment_score": 100.0,
@@ -5932,11 +5930,11 @@
       "phase2_confidence": 32.57,
       "phase2_score": 7.91,
       "pricing": {
-        "ask": 1.61323,
-        "bid": 1.61297,
-        "mid": 1.6131,
-        "spread": 0.00025999999999992696,
-        "spread_pips": 2.5999999999992696
+        "ask": 1.61325,
+        "bid": 1.613,
+        "mid": 1.6131250000000001,
+        "spread": 0.0002500000000000835,
+        "spread_pips": 2.500000000000835
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6243,11 +6241,11 @@
       "phase2_confidence": 42.28,
       "phase2_score": 7.37,
       "pricing": {
-        "ask": 0.93585,
-        "bid": 0.93571,
-        "mid": 0.9357800000000001,
-        "spread": 0.00013999999999991797,
-        "spread_pips": 1.3999999999991797
+        "ask": 0.93587,
+        "bid": 0.93573,
+        "mid": 0.9358,
+        "spread": 0.000140000000000029,
+        "spread_pips": 1.40000000000029
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6558,11 +6556,11 @@
       "phase2_confidence": 38.08,
       "phase2_score": -16.94,
       "pricing": {
-        "ask": 0.85706,
-        "bid": 0.85696,
-        "mid": 0.85701,
-        "spread": 9.999999999998899e-05,
-        "spread_pips": 0.9999999999998899
+        "ask": 0.85708,
+        "bid": 0.85699,
+        "mid": 0.857035,
+        "spread": 8.999999999992347e-05,
+        "spread_pips": 0.8999999999992347
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6869,11 +6867,11 @@
       "phase2_confidence": 39.65,
       "phase2_score": 8.0,
       "pricing": {
-        "ask": 185.879,
-        "bid": 185.856,
-        "mid": 185.8675,
-        "spread": 0.022999999999996135,
-        "spread_pips": 2.2999999999996135
+        "ask": 185.876,
+        "bid": 185.855,
+        "mid": 185.8655,
+        "spread": 0.021000000000015007,
+        "spread_pips": 2.1000000000015007
       },
       "reasons": [
         "combined directional evidence too weak"
@@ -7207,14 +7205,14 @@
       "phase2_confidence": 13.12,
       "phase2_score": 3.93,
       "pricing": {
-        "ask": 1.95674,
-        "bid": 1.95612,
-        "mid": 1.9564300000000001,
-        "spread": 0.0006199999999998429,
-        "spread_pips": 6.199999999998429
+        "ask": 1.95668,
+        "bid": 1.95609,
+        "mid": 1.956385,
+        "spread": 0.0005899999999998684,
+        "spread_pips": 5.899999999998684
       },
       "reasons": [
-        "spread too wide (6.20 pips)",
+        "spread too wide (5.90 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -7543,11 +7541,11 @@
       "phase2_confidence": 43.76,
       "phase2_score": -12.19,
       "pricing": {
-        "ask": 1.16422,
-        "bid": 1.16413,
-        "mid": 1.1641750000000002,
-        "spread": 8.999999999992347e-05,
-        "spread_pips": 0.8999999999992347
+        "ask": 1.16426,
+        "bid": 1.16416,
+        "mid": 1.1642100000000002,
+        "spread": 9.999999999998899e-05,
+        "spread_pips": 0.9999999999998899
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7910,14 +7908,14 @@
       "phase2_confidence": 35.35,
       "phase2_score": -3.5,
       "pricing": {
-        "ask": 1.88785,
-        "bid": 1.8874,
-        "mid": 1.8876249999999999,
-        "spread": 0.00045000000000006146,
-        "spread_pips": 4.500000000000615
+        "ask": 1.8879,
+        "bid": 1.88743,
+        "mid": 1.887665,
+        "spread": 0.00046999999999997044,
+        "spread_pips": 4.699999999999704
       },
       "reasons": [
-        "spread too wide (4.50 pips)",
+        "spread too wide (4.70 pips)",
         "combined confidence too low"
       ],
       "setup": {
@@ -8265,14 +8263,14 @@
       "phase2_confidence": 37.73,
       "phase2_score": 24.85,
       "pricing": {
-        "ask": 1.88241,
+        "ask": 1.8824,
         "bid": 1.88206,
-        "mid": 1.882235,
-        "spread": 0.00034999999999985043,
-        "spread_pips": 3.4999999999985043
+        "mid": 1.88223,
+        "spread": 0.00034000000000000696,
+        "spread_pips": 3.4000000000000696
       },
       "reasons": [
-        "spread too wide (3.50 pips)",
+        "spread too wide (3.40 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -8581,11 +8579,11 @@
       "phase2_confidence": 40.11,
       "phase2_score": 24.32,
       "pricing": {
-        "ask": 1.09192,
-        "bid": 1.09171,
-        "mid": 1.091815,
-        "spread": 0.00021000000000004349,
-        "spread_pips": 2.100000000000435
+        "ask": 1.09196,
+        "bid": 1.09174,
+        "mid": 1.09185,
+        "spread": 0.000220000000000109,
+        "spread_pips": 2.20000000000109
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -8896,14 +8894,14 @@
       "phase2_confidence": 37.66,
       "phase2_score": 24.94,
       "pricing": {
-        "ask": 216.889,
-        "bid": 216.857,
-        "mid": 216.873,
-        "spread": 0.03200000000001069,
-        "spread_pips": 3.2000000000010687
+        "ask": 216.882,
+        "bid": 216.852,
+        "mid": 216.86700000000002,
+        "spread": 0.030000000000001137,
+        "spread_pips": 3.0000000000001137
       },
       "reasons": [
-        "spread too wide (3.20 pips)",
+        "spread too wide (3.00 pips)",
         "combined confidence too low"
       ],
       "setup": {
@@ -9239,14 +9237,14 @@
       "phase2_confidence": 15.57,
       "phase2_score": 19.02,
       "pricing": {
-        "ask": 2.28331,
-        "bid": 2.28258,
-        "mid": 2.282945,
-        "spread": 0.0007300000000003415,
-        "spread_pips": 7.300000000003415
+        "ask": 2.28322,
+        "bid": 2.28242,
+        "mid": 2.28282,
+        "spread": 0.0007999999999999119,
+        "spread_pips": 7.999999999999119
       },
       "reasons": [
-        "spread too wide (7.30 pips)",
+        "spread too wide (8.00 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -9579,9 +9577,9 @@
       "phase2_confidence": 34.69,
       "phase2_score": 4.75,
       "pricing": {
-        "ask": 1.35856,
-        "bid": 1.3584,
-        "mid": 1.3584800000000001,
+        "ask": 1.35858,
+        "bid": 1.35842,
+        "mid": 1.3584999999999998,
         "spread": 0.00015999999999993797,
         "spread_pips": 1.5999999999993797
       },
@@ -9956,11 +9954,11 @@
       "phase2_confidence": 10.77,
       "phase2_score": 1.71,
       "pricing": {
-        "ask": 0.82464,
-        "bid": 0.82438,
-        "mid": 0.8245100000000001,
-        "spread": 0.000260000000000038,
-        "spread_pips": 2.60000000000038
+        "ask": 0.82467,
+        "bid": 0.82442,
+        "mid": 0.8245450000000001,
+        "spread": 0.00024999999999997247,
+        "spread_pips": 2.4999999999997247
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -10295,9 +10293,9 @@
       "phase2_confidence": 13.75,
       "phase2_score": 9.83,
       "pricing": {
-        "ask": 0.47836,
-        "bid": 0.47823,
-        "mid": 0.478295,
+        "ask": 0.4784,
+        "bid": 0.47827,
+        "mid": 0.47833499999999995,
         "spread": 0.000130000000000019,
         "spread_pips": 1.30000000000019
       },
@@ -10634,11 +10632,11 @@
       "phase2_confidence": 11.37,
       "phase2_score": 9.53,
       "pricing": {
-        "ask": 95.013,
-        "bid": 94.992,
-        "mid": 95.0025,
-        "spread": 0.021000000000000796,
-        "spread_pips": 2.1000000000000796
+        "ask": 95.017,
+        "bid": 94.995,
+        "mid": 95.006,
+        "spread": 0.02199999999999136,
+        "spread_pips": 2.199999999999136
       },
       "reasons": [
         "combined confidence too low"
@@ -10996,11 +10994,11 @@
       "phase2_confidence": 15.67,
       "phase2_score": -19.14,
       "pricing": {
-        "ask": 0.59511,
-        "bid": 0.59498,
-        "mid": 0.595045,
-        "spread": 0.0001300000000000745,
-        "spread_pips": 1.300000000000745
+        "ask": 0.59515,
+        "bid": 0.59502,
+        "mid": 0.595085,
+        "spread": 0.00012999999999996348,
+        "spread_pips": 1.2999999999996348
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -11371,11 +11369,11 @@
       "phase2_confidence": 35.57,
       "phase2_score": 20.1,
       "pricing": {
-        "ask": 1.38576,
-        "bid": 1.38561,
-        "mid": 1.385685,
-        "spread": 0.0001500000000000945,
-        "spread_pips": 1.500000000000945
+        "ask": 1.38571,
+        "bid": 1.38557,
+        "mid": 1.38564,
+        "spread": 0.000140000000000029,
+        "spread_pips": 1.40000000000029
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -12041,11 +12039,11 @@
       "phase2_confidence": 43.27,
       "phase2_score": 20.19,
       "pricing": {
-        "ask": 159.66,
-        "bid": 159.652,
-        "mid": 159.656,
-        "spread": 0.008000000000009777,
-        "spread_pips": 0.8000000000009777
+        "ask": 159.652,
+        "bid": 159.644,
+        "mid": 159.648,
+        "spread": 0.007999999999981355,
+        "spread_pips": 0.7999999999981355
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -12271,14 +12269,15 @@
   "rankings": {
     "actionable": [
       "AUD_JPY",
+      "EUR_AUD",
       "AUD_CHF",
       "AUD_USD"
     ],
     "overall": [
       "AUD_JPY",
+      "EUR_AUD",
       "AUD_CHF",
       "AUD_USD",
-      "EUR_AUD",
       "EUR_JPY",
       "CHF_JPY",
       "AUD_CAD",
