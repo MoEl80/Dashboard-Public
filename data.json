@@ -1,5 +1,5 @@
 {
-  "actionable_count": 3,
+  "actionable_count": 4,
   "economic_calendar": {
     "AUD": {
       "error": "HTTPError",
@@ -74,7 +74,7 @@
       "status": "unavailable"
     }
   },
-  "generated_at": "2026-08-28T09:31:08.888518+00:00",
+  "generated_at": "2026-08-28T09:32:20.799624+00:00",
   "macro_context": {
     "AUD": {
       "background": {
@@ -888,8 +888,8 @@
         "Report on the Bank\u2019s official market operations March 2025\u2013February 2026",
         "The Bank of England's climate-related financial...",
         "The Bank of England's climate-related financial disclosure 2026",
-        "Annual Reports 2026",
-        "Asset Purchase Facility Annual Report 2025/26"
+        "Asset Purchase Facility Annual Report 2025/26",
+        "Alternative Liquidity Facility Annual Report..."
       ]
     },
     "JPY": {
@@ -1039,9 +1039,9 @@
       "phase2_confidence": 35.66,
       "phase2_score": 30.69,
       "pricing": {
-        "ask": 0.99722,
-        "bid": 0.99701,
-        "mid": 0.997115,
+        "ask": 0.99716,
+        "bid": 0.99695,
+        "mid": 0.997055,
         "spread": 0.00021000000000004349,
         "spread_pips": 2.100000000000435
       },
@@ -1281,19 +1281,19 @@
       "phase2_confidence": 44.94,
       "phase2_score": 37.54,
       "pricing": {
-        "ask": 0.57864,
-        "bid": 0.57854,
-        "mid": 0.57859,
-        "spread": 9.999999999998899e-05,
-        "spread_pips": 0.9999999999998899
+        "ask": 0.57865,
+        "bid": 0.57851,
+        "mid": 0.57858,
+        "spread": 0.000140000000000029,
+        "spread_pips": 1.40000000000029
       },
       "reasons": [],
       "setup": {
-        "entry": 0.57859,
-        "invalidation": "H1 close below 0.577882",
+        "entry": 0.57858,
+        "invalidation": "H1 close below 0.577872",
         "risk_reward": 2.0,
-        "stop_loss": 0.577882,
-        "take_profit": 0.580007
+        "stop_loss": 0.577872,
+        "take_profit": 0.579997
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -1521,19 +1521,19 @@
       "phase2_confidence": 40.11,
       "phase2_score": 32.29,
       "pricing": {
-        "ask": 114.891,
-        "bid": 114.871,
-        "mid": 114.881,
-        "spread": 0.020000000000010232,
-        "spread_pips": 2.000000000001023
+        "ask": 114.887,
+        "bid": 114.868,
+        "mid": 114.8775,
+        "spread": 0.019000000000005457,
+        "spread_pips": 1.9000000000005457
       },
       "reasons": [],
       "setup": {
-        "entry": 114.881,
-        "invalidation": "H1 close below 114.756669",
+        "entry": 114.8775,
+        "invalidation": "H1 close below 114.753169",
         "risk_reward": 2.0,
-        "stop_loss": 114.756669,
-        "take_profit": 115.129662
+        "stop_loss": 114.753169,
+        "take_profit": 115.126162
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -1762,10 +1762,10 @@
       "phase2_score": 26.89,
       "pricing": {
         "ask": 1.2097,
-        "bid": 1.20951,
-        "mid": 1.209605,
-        "spread": 0.00018999999999991246,
-        "spread_pips": 1.8999999999991246
+        "bid": 1.20949,
+        "mid": 1.209595,
+        "spread": 0.00021000000000004349,
+        "spread_pips": 2.100000000000435
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2005,18 +2005,18 @@
       "phase2_score": 9.91,
       "pricing": {
         "ask": 0.71963,
-        "bid": 0.71956,
-        "mid": 0.719595,
-        "spread": 7.00000000000145e-05,
-        "spread_pips": 0.700000000000145
+        "bid": 0.71954,
+        "mid": 0.7195849999999999,
+        "spread": 9.00000000000345e-05,
+        "spread_pips": 0.900000000000345
       },
       "reasons": [],
       "setup": {
-        "entry": 0.719595,
-        "invalidation": "H1 close below 0.718759",
+        "entry": 0.719585,
+        "invalidation": "H1 close below 0.718749",
         "risk_reward": 2.0,
-        "stop_loss": 0.718759,
-        "take_profit": 0.721267
+        "stop_loss": 0.718749,
+        "take_profit": 0.721257
       },
       "spread_ok": true,
       "status": "analyzed",
@@ -2245,10 +2245,10 @@
       "phase2_score": 6.86,
       "pricing": {
         "ask": 0.58034,
-        "bid": 0.58023,
-        "mid": 0.5802849999999999,
-        "spread": 0.00010999999999994348,
-        "spread_pips": 1.0999999999994348
+        "bid": 0.58022,
+        "mid": 0.5802799999999999,
+        "spread": 0.00012000000000000899,
+        "spread_pips": 1.2000000000000899
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2487,11 +2487,11 @@
       "phase2_confidence": 26.36,
       "phase2_score": 1.61,
       "pricing": {
-        "ask": 115.224,
-        "bid": 115.21,
-        "mid": 115.217,
-        "spread": 0.014000000000010004,
-        "spread_pips": 1.4000000000010004
+        "ask": 115.223,
+        "bid": 115.203,
+        "mid": 115.213,
+        "spread": 0.01999999999999602,
+        "spread_pips": 1.999999999999602
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -2730,9 +2730,9 @@
       "phase2_confidence": 32.69,
       "phase2_score": -5.25,
       "pricing": {
-        "ask": 198.571,
-        "bid": 198.537,
-        "mid": 198.554,
+        "ask": 198.57,
+        "bid": 198.536,
+        "mid": 198.553,
         "spread": 0.033999999999991815,
         "spread_pips": 3.3999999999991815
       },
@@ -2893,7 +2893,7 @@
       "agreement_multiplier": 1.0,
       "combined_confidence": 61.42,
       "combined_score": -46.3,
-      "decision": "no_trade",
+      "decision": "sell",
       "direction": "bearish",
       "event_risk": "normal",
       "evidence": {
@@ -2974,23 +2974,21 @@
       "phase2_confidence": 40.88,
       "phase2_score": -23.19,
       "pricing": {
-        "ask": 1.61813,
-        "bid": 1.6178,
-        "mid": 1.6179649999999999,
-        "spread": 0.0003300000000001635,
-        "spread_pips": 3.300000000001635
+        "ask": 1.61816,
+        "bid": 1.61787,
+        "mid": 1.618015,
+        "spread": 0.0002900000000001235,
+        "spread_pips": 2.900000000001235
       },
-      "reasons": [
-        "spread too wide (3.30 pips)"
-      ],
+      "reasons": [],
       "setup": {
-        "entry": null,
-        "invalidation": "No active directional setup",
-        "risk_reward": null,
-        "stop_loss": null,
-        "take_profit": null
+        "entry": 1.618015,
+        "invalidation": "H1 close above 1.619470",
+        "risk_reward": 2.0,
+        "stop_loss": 1.61947,
+        "take_profit": 1.615106
       },
-      "spread_ok": false,
+      "spread_ok": true,
       "status": "analyzed",
       "technical_analysis": {
         "alignment_score": 100.0,
@@ -3216,9 +3214,9 @@
       "phase2_confidence": 29.91,
       "phase2_score": 7.49,
       "pricing": {
-        "ask": 1.61339,
-        "bid": 1.61315,
-        "mid": 1.61327,
+        "ask": 1.61341,
+        "bid": 1.61317,
+        "mid": 1.6132900000000001,
         "spread": 0.00024000000000001798,
         "spread_pips": 2.4000000000001798
       },
@@ -3459,11 +3457,11 @@
       "phase2_confidence": 37.97,
       "phase2_score": 14.35,
       "pricing": {
-        "ask": 0.9362,
-        "bid": 0.93607,
-        "mid": 0.9361349999999999,
-        "spread": 0.0001300000000000745,
-        "spread_pips": 1.300000000000745
+        "ask": 0.93623,
+        "bid": 0.9361,
+        "mid": 0.936165,
+        "spread": 0.00012999999999996348,
+        "spread_pips": 1.2999999999996348
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -3702,11 +3700,11 @@
       "phase2_confidence": 32.71,
       "phase2_score": -19.64,
       "pricing": {
-        "ask": 0.85715,
-        "bid": 0.85706,
-        "mid": 0.857105,
-        "spread": 8.999999999992347e-05,
-        "spread_pips": 0.8999999999992347
+        "ask": 0.85716,
+        "bid": 0.85707,
+        "mid": 0.8571150000000001,
+        "spread": 9.00000000000345e-05,
+        "spread_pips": 0.900000000000345
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -3945,11 +3943,11 @@
       "phase2_confidence": 33.66,
       "phase2_score": 9.1,
       "pricing": {
-        "ask": 185.887,
+        "ask": 185.886,
         "bid": 185.861,
-        "mid": 185.874,
-        "spread": 0.02600000000001046,
-        "spread_pips": 2.600000000001046
+        "mid": 185.87349999999998,
+        "spread": 0.025000000000005684,
+        "spread_pips": 2.5000000000005684
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -4188,14 +4186,14 @@
       "phase2_confidence": 10.37,
       "phase2_score": 0.89,
       "pricing": {
-        "ask": 1.95746,
-        "bid": 1.95684,
-        "mid": 1.95715,
-        "spread": 0.0006200000000000649,
-        "spread_pips": 6.200000000000649
+        "ask": 1.95747,
+        "bid": 1.95686,
+        "mid": 1.957165,
+        "spread": 0.0006099999999999994,
+        "spread_pips": 6.099999999999994
       },
       "reasons": [
-        "spread too wide (6.20 pips)",
+        "spread too wide (6.10 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -4432,11 +4430,11 @@
       "phase2_confidence": 36.7,
       "phase2_score": -13.29,
       "pricing": {
-        "ask": 1.16432,
-        "bid": 1.16422,
-        "mid": 1.1642700000000001,
-        "spread": 9.999999999998899e-05,
-        "spread_pips": 0.9999999999998899
+        "ask": 1.16438,
+        "bid": 1.16427,
+        "mid": 1.1643249999999998,
+        "spread": 0.0001100000000000545,
+        "spread_pips": 1.100000000000545
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -4675,14 +4673,14 @@
       "phase2_confidence": 29.33,
       "phase2_score": -3.56,
       "pricing": {
-        "ask": 1.88807,
-        "bid": 1.88758,
-        "mid": 1.8878249999999999,
-        "spread": 0.0004899999999998794,
-        "spread_pips": 4.899999999998794
+        "ask": 1.88812,
+        "bid": 1.88766,
+        "mid": 1.88789,
+        "spread": 0.000460000000000127,
+        "spread_pips": 4.60000000000127
       },
       "reasons": [
-        "spread too wide (4.90 pips)",
+        "spread too wide (4.60 pips)",
         "combined confidence too low"
       ],
       "setup": {
@@ -4918,14 +4916,14 @@
       "phase2_confidence": 34.83,
       "phase2_score": 27.13,
       "pricing": {
-        "ask": 1.88237,
-        "bid": 1.88206,
-        "mid": 1.882215,
-        "spread": 0.00031000000000003247,
-        "spread_pips": 3.1000000000003247
+        "ask": 1.88241,
+        "bid": 1.88209,
+        "mid": 1.88225,
+        "spread": 0.00031999999999987594,
+        "spread_pips": 3.1999999999987594
       },
       "reasons": [
-        "spread too wide (3.10 pips)",
+        "spread too wide (3.20 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -5163,10 +5161,10 @@
       "phase2_score": 33.99,
       "pricing": {
         "ask": 1.09225,
-        "bid": 1.09204,
-        "mid": 1.092145,
-        "spread": 0.00021000000000004349,
-        "spread_pips": 2.100000000000435
+        "bid": 1.09201,
+        "mid": 1.09213,
+        "spread": 0.00024000000000001798,
+        "spread_pips": 2.4000000000001798
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -5406,10 +5404,10 @@
       "phase2_score": 28.74,
       "pricing": {
         "ask": 216.868,
-        "bid": 216.843,
-        "mid": 216.8555,
-        "spread": 0.025000000000005684,
-        "spread_pips": 2.5000000000005684
+        "bid": 216.841,
+        "mid": 216.8545,
+        "spread": 0.026999999999986812,
+        "spread_pips": 2.6999999999986812
       },
       "reasons": [
         "combined confidence too low"
@@ -5647,14 +5645,14 @@
       "phase2_confidence": 12.52,
       "phase2_score": 21.8,
       "pricing": {
-        "ask": 2.28391,
-        "bid": 2.2831,
-        "mid": 2.283505,
-        "spread": 0.0008099999999999774,
-        "spread_pips": 8.099999999999774
+        "ask": 2.2839,
+        "bid": 2.28308,
+        "mid": 2.28349,
+        "spread": 0.0008200000000000429,
+        "spread_pips": 8.20000000000043
       },
       "reasons": [
-        "spread too wide (8.10 pips)",
+        "spread too wide (8.20 pips)",
         "combined directional evidence too weak",
         "combined confidence too low"
       ],
@@ -5891,11 +5889,11 @@
       "phase2_confidence": 28.89,
       "phase2_score": 6.35,
       "pricing": {
-        "ask": 1.35851,
-        "bid": 1.35837,
-        "mid": 1.35844,
-        "spread": 0.000140000000000029,
-        "spread_pips": 1.40000000000029
+        "ask": 1.35857,
+        "bid": 1.35842,
+        "mid": 1.358495,
+        "spread": 0.0001500000000000945,
+        "spread_pips": 1.500000000000945
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6134,11 +6132,11 @@
       "phase2_confidence": 10.77,
       "phase2_score": 1.71,
       "pricing": {
-        "ask": 0.82444,
-        "bid": 0.82419,
-        "mid": 0.8243149999999999,
-        "spread": 0.00024999999999997247,
-        "spread_pips": 2.4999999999997247
+        "ask": 0.82442,
+        "bid": 0.8242,
+        "mid": 0.8243100000000001,
+        "spread": 0.00021999999999999797,
+        "spread_pips": 2.1999999999999797
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6377,11 +6375,11 @@
       "phase2_confidence": 13.14,
       "phase2_score": 33.5,
       "pricing": {
-        "ask": 0.47839,
-        "bid": 0.47826,
-        "mid": 0.478325,
-        "spread": 0.00012999999999996348,
-        "spread_pips": 1.2999999999996348
+        "ask": 0.47838,
+        "bid": 0.47825,
+        "mid": 0.47831500000000005,
+        "spread": 0.000130000000000019,
+        "spread_pips": 1.30000000000019
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -6620,11 +6618,11 @@
       "phase2_confidence": 9.33,
       "phase2_score": 18.04,
       "pricing": {
-        "ask": 94.983,
-        "bid": 94.96,
-        "mid": 94.97149999999999,
-        "spread": 0.023000000000010346,
-        "spread_pips": 2.3000000000010346
+        "ask": 94.981,
+        "bid": 94.958,
+        "mid": 94.9695,
+        "spread": 0.022999999999996135,
+        "spread_pips": 2.2999999999996135
       },
       "reasons": [
         "combined confidence too low"
@@ -6862,11 +6860,11 @@
       "phase2_confidence": 12.22,
       "phase2_score": -20.36,
       "pricing": {
-        "ask": 0.59495,
-        "bid": 0.59483,
-        "mid": 0.5948899999999999,
-        "spread": 0.00012000000000000899,
-        "spread_pips": 1.2000000000000899
+        "ask": 0.59497,
+        "bid": 0.59484,
+        "mid": 0.594905,
+        "spread": 0.00012999999999996348,
+        "spread_pips": 1.2999999999996348
       },
       "reasons": [
         "combined directional evidence too weak",
@@ -7105,9 +7103,9 @@
       "phase2_confidence": 32.13,
       "phase2_score": 20.77,
       "pricing": {
-        "ask": 1.38578,
-        "bid": 1.38564,
-        "mid": 1.38571,
+        "ask": 1.38575,
+        "bid": 1.38561,
+        "mid": 1.38568,
         "spread": 0.000140000000000029,
         "spread_pips": 1.40000000000029
       },
@@ -7348,9 +7346,9 @@
       "phase2_confidence": 40.58,
       "phase2_score": 27.63,
       "pricing": {
-        "ask": 0.80411,
-        "bid": 0.80399,
-        "mid": 0.8040499999999999,
+        "ask": 0.80409,
+        "bid": 0.80397,
+        "mid": 0.80403,
         "spread": 0.00012000000000000899,
         "spread_pips": 1.2000000000000899
       },
@@ -7591,9 +7589,9 @@
       "phase2_confidence": 36.02,
       "phase2_score": 22.39,
       "pricing": {
-        "ask": 159.653,
-        "bid": 159.644,
-        "mid": 159.6485,
+        "ask": 159.646,
+        "bid": 159.637,
+        "mid": 159.6415,
         "spread": 0.00899999999998613,
         "spread_pips": 0.899999999998613
       },
@@ -7813,14 +7811,15 @@
   "rankings": {
     "actionable": [
       "AUD_JPY",
+      "EUR_AUD",
       "AUD_CHF",
       "AUD_USD"
     ],
     "overall": [
       "AUD_JPY",
+      "EUR_AUD",
       "AUD_CHF",
       "AUD_USD",
-      "EUR_AUD",
       "EUR_JPY",
       "AUD_CAD",
       "GBP_AUD",
